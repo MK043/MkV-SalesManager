@@ -1,0 +1,34 @@
+[
+  {
+    "action": "checklist.item_created",
+    "label": "Пункт чек-листа добавлен"
+  },
+  {
+    "action": "checklist.item_deleted",
+    "label": "Пункт чек-листа удалён"
+  },
+  {
+    "action": "checklist.item_updated",
+    "label": "Пункт чек-листа изменён"
+  },
+  {
+    "action": "order.assign",
+    "label": "Назначение исполнителя"
+  },
+  {
+    "action": "order.checklist_checked",
+    "label": "Отметка чек-листа"
+  },
+  {
+    "action": "order.checklist_unchecked",
+    "label": "Снята отметка чек-листа"
+  },
+  {
+    "action": "order.review_confirmed",
+    "label": "Проверка принята"
+  },
+  {
+    "action": "order.submitted_for_review",
+    "label": "Сдача на проверку"
+  }
+]

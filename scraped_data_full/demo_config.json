@@ -1,0 +1,97 @@
+{
+  "stand": "avto",
+  "company_name": "Автосервис",
+  "worker_label": "Механик",
+  "roles": {
+    "owner": {
+      "title": "Владелец",
+      "description": "Конвейер, заказы, оплаты и сотрудники на одном экране"
+    },
+    "worker": {
+      "title": "Механик",
+      "description": "Свои машины в ремонте и чек-лист по каждой"
+    }
+  },
+  "role_picker_title": "Кем зайти в демо автосервиса",
+  "role_picker_text": "Владелец видит весь сервис и деньги, а у каждого сотрудника своя работа: приёмщик оформляет машины, механик ремонтирует, запчастник заказывает запчасти.",
+  "telegram_topic": "про автосервис",
+  "bookings_title": "Запись на ремонт",
+  "object_word": {
+    "one": "машина",
+    "few": "машины",
+    "many": "машин",
+    "gen_one": "машины",
+    "gen_many": "машин",
+    "plural": "машины"
+  },
+  "lead_bot_url": "https://t.me/aivinity_bot?start=avto_lead",
+  "landing_url": "https://avto.demo.aivinity.ru",
+  "icon": "wrench",
+  "labels": {
+    "today_title": "Сервис сегодня",
+    "order_prefix": "ЗН",
+    "parts_title": "Запчасти",
+    "parts_back": "К запчастям",
+    "objects_in_work": "Машин в работе",
+    "no_objects_in_work": "Машин в работе нет",
+    "all_in_time": "Все машины укладываются в срок",
+    "intake_title": "Приём и выдача сегодня",
+    "issued_word": "выдано",
+    "pipeline_subtitle": "Машины по этапам работ",
+    "object_card_title": "Машина и клиент",
+    "brand_label": "Марка",
+    "model_label": "Модель",
+    "plate_label": "Госномер",
+    "bookings_subtitle": "Клиенты, которые договорились приехать",
+    "booking_new_title": "Новая запись на ремонт",
+    "booking_object_label": "Машина",
+    "booking_object_placeholder": "Марка, модель, цвет",
+    "booking_object_empty": "Машину не указали"
+  },
+  "staff_roles": [
+    {
+      "key": "receiver",
+      "title": "Приёмщик",
+      "description": "Принимает машины, оформляет заказы, оплаты и запись клиентов",
+      "name": "Денис Кравцов"
+    },
+    {
+      "key": "mechanic",
+      "title": "Механик",
+      "description": "Свои машины в ремонте и чек-лист по каждой",
+      "name": "Сергей Маслов"
+    },
+    {
+      "key": "parts",
+      "title": "Запчастник",
+      "description": "Заказывает запчасти под ремонт и ведёт склад",
+      "name": "Светлана Орлова"
+    },
+    {
+      "key": "chief",
+      "title": "Нач. производства",
+      "description": "Раздаёт машины мастерам и принимает работу",
+      "name": "Олег Данилов"
+    },
+    {
+      "key": "electric",
+      "title": "Автоэлектрик",
+      "description": "Диагностика и ремонт электрики",
+      "name": "Никита Ершов"
+    },
+    {
+      "key": "body",
+      "title": "Кузовщик",
+      "description": "Кузовной ремонт по своим заказам",
+      "name": "Павел Юдин"
+    },
+    {
+      "key": "washer",
+      "title": "Мойщик",
+      "description": "Моет машины перед выдачей клиенту",
+      "name": "Руслан Хасанов"
+    }
+  ],
+  "shift_approval": true,
+  "work_review": true
+}

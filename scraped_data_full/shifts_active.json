@@ -1,0 +1,90 @@
+[
+  {
+    "id": 6939,
+    "user_id": 9272,
+    "status": "active",
+    "started_at": "2026-10-06T06:10:02.303477Z",
+    "ended_at": null,
+    "approved_by_id": 9271,
+    "approved_at": "2026-10-06T06:10:02.303477Z",
+    "full_name": "Денис Кравцов",
+    "position": "Мастер приёмщик"
+  },
+  {
+    "id": 6940,
+    "user_id": 9273,
+    "status": "active",
+    "started_at": "2026-10-06T06:10:02.303477Z",
+    "ended_at": null,
+    "approved_by_id": 9271,
+    "approved_at": "2026-10-06T06:10:02.303477Z",
+    "full_name": "Светлана Орлова",
+    "position": "Менеджер по запчастям"
+  },
+  {
+    "id": 6941,
+    "user_id": 9274,
+    "status": "active",
+    "started_at": "2026-10-06T06:10:02.303477Z",
+    "ended_at": null,
+    "approved_by_id": 9271,
+    "approved_at": "2026-10-06T06:10:02.303477Z",
+    "full_name": "Сергей Маслов",
+    "position": "Механик"
+  },
+  {
+    "id": 6942,
+    "user_id": 9275,
+    "status": "active",
+    "started_at": "2026-10-06T06:10:02.303477Z",
+    "ended_at": null,
+    "approved_by_id": 9271,
+    "approved_at": "2026-10-06T06:10:02.303477Z",
+    "full_name": "Артур Галиев",
+    "position": "Механик"
+  },
+  {
+    "id": 6943,
+    "user_id": 9276,
+    "status": "active",
+    "started_at": "2026-10-06T06:10:02.303477Z",
+    "ended_at": null,
+    "approved_by_id": 9271,
+    "approved_at": "2026-10-06T06:10:02.303477Z",
+    "full_name": "Никита Ершов",
+    "position": "Автоэлектрик"
+  },
+  {
+    "id": 6944,
+    "user_id": 9277,
+    "status": "active",
+    "started_at": "2026-10-06T06:10:02.303477Z",
+    "ended_at": null,
+    "approved_by_id": 9271,
+    "approved_at": "2026-10-06T06:10:02.303477Z",
+    "full_name": "Павел Юдин",
+    "position": "Кузовщик"
+  },
+  {
+    "id": 6945,
+    "user_id": 9278,
+    "status": "active",
+    "started_at": "2026-10-06T06:10:02.303477Z",
+    "ended_at": null,
+    "approved_by_id": 9271,
+    "approved_at": "2026-10-06T06:10:02.303477Z",
+    "full_name": "Максим Карпов",
+    "position": "Маляр"
+  },
+  {
+    "id": 6946,
+    "user_id": 9279,
+    "status": "active",
+    "started_at": "2026-10-06T06:10:02.303477Z",
+    "ended_at": null,
+    "approved_by_id": 9271,
+    "approved_at": "2026-10-06T06:10:02.303477Z",
+    "full_name": "Руслан Хасанов",
+    "position": "Мойщик автомобилей"
+  }
+]

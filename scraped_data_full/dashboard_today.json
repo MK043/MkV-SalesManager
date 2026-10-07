@@ -1,0 +1,238 @@
+{
+  "date": "2026-10-06",
+  "generated_at": "2026-10-06T08:10:04.148947Z",
+  "money": {
+    "today_amount": 103830.0,
+    "today_count": 12,
+    "yesterday_amount": 7440.0,
+    "yesterday_count": 3,
+    "delta_amount": 96390.0,
+    "week": [
+      {
+        "date": "2026-09-30",
+        "amount": 6840.0,
+        "count": 1
+      },
+      {
+        "date": "2026-10-01",
+        "amount": 3120.0,
+        "count": 1
+      },
+      {
+        "date": "2026-10-02",
+        "amount": 6000.0,
+        "count": 1
+      },
+      {
+        "date": "2026-10-03",
+        "amount": 3600.0,
+        "count": 1
+      },
+      {
+        "date": "2026-10-04",
+        "amount": 4800.0,
+        "count": 1
+      },
+      {
+        "date": "2026-10-05",
+        "amount": 7440.0,
+        "count": 3
+      },
+      {
+        "date": "2026-10-06",
+        "amount": 103830.0,
+        "count": 12
+      }
+    ]
+  },
+  "debts": {
+    "total": 278910.0,
+    "orders_count": 26,
+    "top": [
+      {
+        "id": 27560,
+        "plate": "Р707РА777",
+        "brand": "Toyota",
+        "model": "Land Cruiser Prado",
+        "customer_name": "Абрамов Игорь Николаевич",
+        "status": "in_progress",
+        "stage_name": "Ремонт",
+        "grand_total": 113000.0,
+        "paid_total": 56500.0,
+        "balance": 56500.0
+      },
+      {
+        "id": 27561,
+        "plate": "А636АМ750",
+        "brand": "Kia",
+        "model": "Ceed",
+        "customer_name": "Тихонова Мария Андреевна",
+        "status": "in_progress",
+        "stage_name": "Ремонт",
+        "grand_total": 27500.0,
+        "paid_total": 0.0,
+        "balance": 27500.0
+      },
+      {
+        "id": 27535,
+        "plate": "О338ЕВ750",
+        "brand": "Lada",
+        "model": "Vesta",
+        "customer_name": "Абрамов Игорь Николаевич",
+        "status": "in_progress",
+        "stage_name": "Заказ запчастей",
+        "grand_total": 21600.0,
+        "paid_total": 0.0,
+        "balance": 21600.0
+      },
+      {
+        "id": 27534,
+        "plate": "Н777УК197",
+        "brand": "BMW",
+        "model": "X5",
+        "customer_name": "Зуева Екатерина Витальевна",
+        "status": "in_progress",
+        "stage_name": "Заказ запчастей",
+        "grand_total": 21220.0,
+        "paid_total": 0.0,
+        "balance": 21220.0
+      },
+      {
+        "id": 27529,
+        "plate": "В581ОТ750",
+        "brand": "Hyundai",
+        "model": "Solaris",
+        "customer_name": "Смирнова Анна Павловна",
+        "status": "in_progress",
+        "stage_name": "Ремонт",
+        "grand_total": 15520.0,
+        "paid_total": 0.0,
+        "balance": 15520.0
+      }
+    ]
+  },
+  "cars": {
+    "in_work": 21,
+    "by_stage": [
+      {
+        "stage_id": 6795,
+        "name": "Диагностика",
+        "color": "#3B82F6",
+        "count": 3
+      },
+      {
+        "stage_id": 6796,
+        "name": "Согласование работ",
+        "color": "#06B6D4",
+        "count": 1
+      },
+      {
+        "stage_id": 6797,
+        "name": "Заказ запчастей",
+        "color": "#A855F7",
+        "count": 2
+      },
+      {
+        "stage_id": 6798,
+        "name": "Ремонт",
+        "color": "#F97316",
+        "count": 11
+      },
+      {
+        "stage_id": 6799,
+        "name": "Контроль качества",
+        "color": "#22C55E",
+        "count": 1
+      },
+      {
+        "stage_id": 6800,
+        "name": "Мойка",
+        "color": "#0EA5E9",
+        "count": 2
+      },
+      {
+        "stage_id": 6801,
+        "name": "Выдача",
+        "color": "#16A34A",
+        "count": 1
+      }
+    ],
+    "awaiting_assignment": 6,
+    "awaiting_review": 1
+  },
+  "overdue": {
+    "count": 1,
+    "items": [
+      {
+        "id": 27535,
+        "plate": "О338ЕВ750",
+        "brand": "Lada",
+        "model": "Vesta",
+        "stage_id": 6797,
+        "stage_name": "Заказ запчастей",
+        "deadline_at": "2026-10-04T08:10:02.303477Z",
+        "days_overdue": 2
+      }
+    ]
+  },
+  "handed_over_today": 3,
+  "accepted_today": 5,
+  "staff": [
+    {
+      "user_id": 9272,
+      "full_name": "Денис Кравцов",
+      "position": "Мастер приёмщик",
+      "cars": 7,
+      "hours": 2.0
+    },
+    {
+      "user_id": 9274,
+      "full_name": "Сергей Маслов",
+      "position": "Механик",
+      "cars": 4,
+      "hours": 38.8
+    },
+    {
+      "user_id": 9275,
+      "full_name": "Артур Галиев",
+      "position": "Механик",
+      "cars": 2,
+      "hours": 6.8
+    },
+    {
+      "user_id": 9276,
+      "full_name": "Никита Ершов",
+      "position": "Автоэлектрик",
+      "cars": 2,
+      "hours": 1.9
+    },
+    {
+      "user_id": 9273,
+      "full_name": "Светлана Орлова",
+      "position": "Менеджер по запчастям",
+      "cars": 2,
+      "hours": 0.6
+    },
+    {
+      "user_id": 9277,
+      "full_name": "Павел Юдин",
+      "position": "Кузовщик",
+      "cars": 1,
+      "hours": 5.5
+    },
+    {
+      "user_id": 9279,
+      "full_name": "Руслан Хасанов",
+      "position": "Мойщик автомобилей",
+      "cars": 1,
+      "hours": 0.5
+    },
+    {
+      "user_id": 9278,
+      "full_name": "Максим Карпов",
+      "position": "Маляр",
+      "cars": 0,
+      "hours": null
+    }
+  ]
+}

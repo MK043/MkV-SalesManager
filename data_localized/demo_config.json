@@ -1,0 +1,97 @@
+{
+  "stand": "avto",
+  "company_name": "MKV Auto Stand",
+  "worker_label": "Механік",
+  "roles": {
+    "owner": {
+      "title": "Власник",
+      "description": "Конвеєр, замовлення, оплати та співробітники на одному екрані"
+    },
+    "worker": {
+      "title": "Механік",
+      "description": "Закріплені автомобілі в ремонті та чек-лісти до кожного"
+    }
+  },
+  "role_picker_title": "Кем зайти в демо автосервиса",
+  "role_picker_text": "Власник бачить увесь автосервіс та фінанси, а у кожного співробітника свої завдання: приймальник веде клієнтів, механік ремонтує, запчастинник замовляє деталі.",
+  "telegram_topic": "про автосервис",
+  "bookings_title": "Запись на ремонт",
+  "object_word": {
+    "one": "автомобіль",
+    "few": "автомобілі",
+    "many": "машин",
+    "gen_one": "автомобілі",
+    "gen_many": "машин",
+    "plural": "автомобілі"
+  },
+  "lead_bot_url": "https://t.me/aivinity_bot?start=avto_lead",
+  "landing_url": "https://avto.demo.aivinity.ru",
+  "icon": "wrench",
+  "labels": {
+    "today_title": "Сервіс сьогодні",
+    "order_prefix": "ЗН",
+    "parts_title": "Запчастини",
+    "parts_back": "До запчастин",
+    "objects_in_work": "Автомобілів у роботі",
+    "no_objects_in_work": "Автомобілів у роботі немає",
+    "all_in_time": "Усі автомобілі вкладаються у визначені терміни",
+    "intake_title": "Прийом та видача на сьогодні",
+    "issued_word": "видано",
+    "pipeline_subtitle": "Автомобілі за виробничими етапами",
+    "object_card_title": "Автомобіль та клієнт",
+    "brand_label": "Марка",
+    "model_label": "Модель",
+    "plate_label": "Госномер",
+    "bookings_subtitle": "Клієнти, узгоджені на візит",
+    "booking_new_title": "Новая запись на ремонт",
+    "booking_object_label": "Автомобіль",
+    "booking_object_placeholder": "Марка, модель, цвет",
+    "booking_object_empty": "Автомобіль не указали"
+  },
+  "staff_roles": [
+    {
+      "key": "receiver",
+      "title": "Приймальник",
+      "description": "Приймає авто, оформляє наряди, оплати та запис клієнтів",
+      "name": "Денис Кравчук"
+    },
+    {
+      "key": "mechanic",
+      "title": "Механік",
+      "description": "Закріплені автомобілі в ремонті та чек-лісти до кожного",
+      "name": "Сергій Масло"
+    },
+    {
+      "key": "parts",
+      "title": "Запчастинининник",
+      "description": "Замовляє запчастини під ремонт та веде складський облік",
+      "name": "Світлана Орленко"
+    },
+    {
+      "key": "chief",
+      "title": "Нач. виробництва",
+      "description": "Розподіляє автомобілі майстрам та перевіряє якість робіт",
+      "name": "Олег Данилюк"
+    },
+    {
+      "key": "electric",
+      "title": "Автоелектрик",
+      "description": "Діагностика та ремонт електрики",
+      "name": "Микита Єршов"
+    },
+    {
+      "key": "body",
+      "title": "Кузовник",
+      "description": "Кузовний ремонт за власними замовленнями",
+      "name": "Павло Юдченко"
+    },
+    {
+      "key": "washer",
+      "title": "Мийник",
+      "description": "Миє автомобілі перед видачею клієнту",
+      "name": "Руслан Гасанов"
+    }
+  ],
+  "shift_approval": true,
+  "work_review": true
+}

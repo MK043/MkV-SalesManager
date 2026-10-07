@@ -1,0 +1,1 @@
+{"rows":[{"type":"in","method":"cash","article":"order_payment","total":"39390.00"},{"type":"in","method":"qr","article":"order_payment","total":"30500.00"},{"type":"in","method":"transfer","article":"order_payment","total":"82780.00"},{"type":"out","method":"cash","article":"other","total":"3200.00"}],"income_total":"152670.00","expense_total":"3200.00","net_total":"149470.00"}

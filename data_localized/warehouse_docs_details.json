@@ -1,0 +1,248 @@
+{
+  "2515": {
+    "id": 2515,
+    "type": "writeoff",
+    "number": "СП-1",
+    "warehouse_id": 838,
+    "warehouse_name": "Головний склад MKV",
+    "order_id": null,
+    "supplier": null,
+    "note": "Витрати в цех на ТО без виставлення клієнту",
+    "posted": true,
+    "occurred_at": "2026-10-05T08:10:03.292982Z",
+    "total": "0",
+    "lines_count": 2,
+    "lines": [
+      {
+        "id": 18439,
+        "stock_item_id": 16760,
+        "item_name": "Рукавички нітрилові",
+        "item_unit": "пара",
+        "qty": "140.000",
+        "price": null,
+        "fact_qty": null
+      },
+      {
+        "id": 18440,
+        "stock_item_id": 16741,
+        "item_name": "Олива моторна 5W-30 синтетическое, розлив",
+        "item_unit": "л",
+        "qty": "22.000",
+        "price": null,
+        "fact_qty": null
+      }
+    ]
+  },
+  "2514": {
+    "id": 2514,
+    "type": "income",
+    "number": "ПН-2",
+    "warehouse_id": 838,
+    "warehouse_name": "Головний склад MKV",
+    "order_id": null,
+    "supplier": "ИП Кузнецов А. С.",
+    "note": "Ходова та гальма під записи тижня",
+    "posted": true,
+    "occurred_at": "2026-10-02T08:10:03.292982Z",
+    "total": "87900.00",
+    "lines_count": 7,
+    "lines": [
+      {
+        "id": 18432,
+        "stock_item_id": 16748,
+        "item_name": "Колодки гальмівні передні, комплект",
+        "item_unit": "компл",
+        "qty": "8.000",
+        "price": "2350.00",
+        "fact_qty": null
+      },
+      {
+        "id": 18433,
+        "stock_item_id": 16749,
+        "item_name": "Колодки гальмівні задні, комплект",
+        "item_unit": "компл",
+        "qty": "5.000",
+        "price": "1890.00",
+        "fact_qty": null
+      },
+      {
+        "id": 18434,
+        "stock_item_id": 16750,
+        "item_name": "Диск гальмівний передній вентильований",
+        "item_unit": "шт",
+        "qty": "6.000",
+        "price": "3400.00",
+        "fact_qty": null
+      },
+      {
+        "id": 18435,
+        "stock_item_id": 16752,
+        "item_name": "Амортизатор передній газомасляний",
+        "item_unit": "шт",
+        "qty": "4.000",
+        "price": "5200.00",
+        "fact_qty": null
+      },
+      {
+        "id": 18436,
+        "stock_item_id": 16753,
+        "item_name": "Амортизатор задній газомасляний",
+        "item_unit": "шт",
+        "qty": "2.000",
+        "price": "4100.00",
+        "fact_qty": null
+      },
+      {
+        "id": 18437,
+        "stock_item_id": 16758,
+        "item_name": "Щітка склоочисника 600 мм",
+        "item_unit": "шт",
+        "qty": "10.000",
+        "price": "590.00",
+        "fact_qty": null
+      },
+      {
+        "id": 18438,
+        "stock_item_id": 16759,
+        "item_name": "Ремінь генератора поліклиновий",
+        "item_unit": "шт",
+        "qty": "3.000",
+        "price": "1450.00",
+        "fact_qty": null
+      }
+    ]
+  },
+  "2513": {
+    "id": 2513,
+    "type": "income",
+    "number": "ПН-1",
+    "warehouse_id": 838,
+    "warehouse_name": "Головний склад MKV",
+    "order_id": null,
+    "supplier": "ТОВ «АвтоЗапчастини Опт»",
+    "note": "Планова закупівля витратних матеріалів на місяць",
+    "posted": true,
+    "occurred_at": "2026-09-24T08:10:03.292982Z",
+    "total": "212860.00",
+    "lines_count": 13,
+    "lines": [
+      {
+        "id": 18419,
+        "stock_item_id": 16741,
+        "item_name": "Олива моторна 5W-30 синтетическое, розлив",
+        "item_unit": "л",
+        "qty": "180.000",
+        "price": "520.00",
+        "fact_qty": null
+      },
+      {
+        "id": 18420,
+        "stock_item_id": 16742,
+        "item_name": "Олива моторна 5W-40, канистра 4 л",
+        "item_unit": "шт",
+        "qty": "10.000",
+        "price": "2650.00",
+        "fact_qty": null
+      },
+      {
+        "id": 18421,
+        "stock_item_id": 16743,
+        "item_name": "Олива трансмісійна 75W-90, 1 л",
+        "item_unit": "шт",
+        "qty": "12.000",
+        "price": "690.00",
+        "fact_qty": null
+      },
+      {
+        "id": 18422,
+        "stock_item_id": 16744,
+        "item_name": "Фільтр масляний для легкових авто",
+        "item_unit": "шт",
+        "qty": "30.000",
+        "price": "310.00",
+        "fact_qty": null
+      },
+      {
+        "id": 18423,
+        "stock_item_id": 16745,
+        "item_name": "Фільтр повітряний",
+        "item_unit": "шт",
+        "qty": "14.000",
+        "price": "540.00",
+        "fact_qty": null
+      },
+      {
+        "id": 18424,
+        "stock_item_id": 16746,
+        "item_name": "Фільтр салонний вугільний",
+        "item_unit": "шт",
+        "qty": "12.000",
+        "price": "620.00",
+        "fact_qty": null
+      },
+      {
+        "id": 18425,
+        "stock_item_id": 16747,
+        "item_name": "Фільтр паливний",
+        "item_unit": "шт",
+        "qty": "8.000",
+        "price": "780.00",
+        "fact_qty": null
+      },
+      {
+        "id": 18426,
+        "stock_item_id": 16751,
+        "item_name": "Свічка запалювання іридієва",
+        "item_unit": "шт",
+        "qty": "32.000",
+        "price": "690.00",
+        "fact_qty": null
+      },
+      {
+        "id": 18427,
+        "stock_item_id": 16754,
+        "item_name": "Лампа H7 12 В 55 Вт",
+        "item_unit": "шт",
+        "qty": "30.000",
+        "price": "240.00",
+        "fact_qty": null
+      },
+      {
+        "id": 18428,
+        "stock_item_id": 16755,
+        "item_name": "Лампа H4 12 В 60/55 Вт",
+        "item_unit": "шт",
+        "qty": "4.000",
+        "price": "260.00",
+        "fact_qty": null
+      },
+      {
+        "id": 18429,
+        "stock_item_id": 16756,
+        "item_name": "Антифриз G12 червоний, 5 л",
+        "item_unit": "шт",
+        "qty": "10.000",
+        "price": "1150.00",
+        "fact_qty": null
+      },
+      {
+        "id": 18430,
+        "stock_item_id": 16757,
+        "item_name": "Рідина гальмівна DOT-4, 1 л",
+        "item_unit": "шт",
+        "qty": "16.000",
+        "price": "420.00",
+        "fact_qty": null
+      },
+      {
+        "id": 18431,
+        "stock_item_id": 16760,
+        "item_name": "Рукавички нітрилові",
+        "item_unit": "пара",
+        "qty": "300.000",
+        "price": "18.00",
+        "fact_qty": null
+      }
+    ]
+  }
+}

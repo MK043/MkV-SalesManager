@@ -1,0 +1,12 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #0c0d11;
+  color-scheme: dark;
+}
+
+html[data-theme='light'],
+html[data-theme='light'] body {
+  background: #faf9f5;
+  color-scheme: light;
+}

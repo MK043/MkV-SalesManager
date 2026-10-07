@@ -1,0 +1,21 @@
+{
+  "manager_percent": 0.0,
+  "rows": [
+    {
+      "user_id": 9272,
+      "user_name": "Денис Кравчук",
+      "position": "Майстер-приймальник",
+      "works_count": 0,
+      "hours": 0.0,
+      "executor_rub": 0,
+      "manager_rub": 0.0,
+      "total_rub": 0.0
+    }
+  ],
+  "totals": {
+    "hours": 0.0,
+    "executor_rub": 0,
+    "manager_rub": 0.0,
+    "total_rub": 0.0
+  }
+}

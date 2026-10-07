@@ -1,0 +1,15 @@
+{
+  "id": 9269,
+  "company_id": 843,
+  "role_id": 6738,
+  "full_name": "Михайло Шевченко",
+  "web_login": null,
+  "telegram_id": null,
+  "position": "Власник",
+  "ui_theme": "dark",
+  "permissions": [
+    "*"
+  ],
+  "is_previewing": false,
+  "preview_as": null
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "id": 2515,
+    "type": "writeoff",
+    "number": "СП-1",
+    "warehouse_id": 838,
+    "warehouse_name": "Головний склад MKV",
+    "order_id": null,
+    "supplier": null,
+    "note": "Витрати в цех на ТО без виставлення клієнту",
+    "posted": true,
+    "occurred_at": "2026-10-05T08:10:03.292982Z",
+    "total": "0.00",
+    "lines_count": 2
+  },
+  {
+    "id": 2514,
+    "type": "income",
+    "number": "ПН-2",
+    "warehouse_id": 838,
+    "warehouse_name": "Головний склад MKV",
+    "order_id": null,
+    "supplier": "ИП Кузнецов А. С.",
+    "note": "Ходова та гальма під записи тижня",
+    "posted": true,
+    "occurred_at": "2026-10-02T08:10:03.292982Z",
+    "total": "87900.00",
+    "lines_count": 7
+  },
+  {
+    "id": 2513,
+    "type": "income",
+    "number": "ПН-1",
+    "warehouse_id": 838,
+    "warehouse_name": "Головний склад MKV",
+    "order_id": null,
+    "supplier": "ТОВ «АвтоЗапчастини Опт»",
+    "note": "Планова закупівля витратних матеріалів на місяць",
+    "posted": true,
+    "occurred_at": "2026-09-24T08:10:03.292982Z",
+    "total": "212860.00",
+    "lines_count": 13
+  }
+]

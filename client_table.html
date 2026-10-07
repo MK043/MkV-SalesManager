@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<title>Калькуляція вартості авто з Кореї під ключ</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap');
+  
+  @page {
+    size: A4 portrait;
+    margin: 10mm 10mm 10mm 10mm;
+  }
+  
+  * {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  
+  body {
+    background: #ffffff;
+    color: #111827;
+    margin: 0;
+    padding: 0;
+    font-size: 11px;
+  }
+
+  .header {
+    text-align: center;
+    border-bottom: 2px solid #ea580c;
+    padding-bottom: 8px;
+    margin-bottom: 14px;
+  }
+
+  .header h1 {
+    font-size: 18px;
+    font-weight: 900;
+    margin: 0;
+    text-transform: uppercase;
+    color: #0f172a;
+    letter-spacing: 0.5px;
+  }
+
+  .header p {
+    margin: 3px 0 0 0;
+    font-size: 11px;
+    font-weight: 700;
+    color: #ea580c;
+  }
+
+  /* Compact Grid for 4 cars */
+  .grid-2x2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .card {
+    border: 1.5px solid #ea580c;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+  }
+
+  .card-top {
+    background: #0f172a;
+    color: #ffffff;
+    padding: 8px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .card-top-title {
+    font-size: 12px;
+    font-weight: 800;
+  }
+
+  .card-top-badge {
+    background: #ea580c;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 800;
+    padding: 2px 6px;
+    border-radius: 4px;
+  }
+
+  .card-meta {
+    background: #f8fafc;
+    padding: 6px 10px;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 10px;
+    display: flex;
+    justify-content: space-between;
+    color: #475569;
+    font-weight: 600;
+  }
+
+  /* Orange table rows like image */
+  .tbl {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .tbl td {
+    padding: 5.5px 10px;
+    font-size: 10.5px;
+    border-bottom: 1px solid #fed7aa;
+  }
+
+  .tbl tr:nth-child(odd) td {
+    background-color: #ffedd5;
+  }
+
+  .tbl tr:nth-child(even) td {
+    background-color: #fed7aa;
+  }
+
+  .tbl td.label {
+    font-weight: 700;
+    color: #1e293b;
+  }
+
+  .tbl td.val {
+    font-weight: 800;
+    text-align: right;
+    color: #000000;
+    white-space: nowrap;
+  }
+
+  .tbl tr.row-total td {
+    background-color: #ea580c !important;
+    color: #ffffff !important;
+    font-size: 13px !important;
+    font-weight: 900 !important;
+    padding: 8px 10px !important;
+    border-bottom: none;
+  }
+
+  .tbl tr.row-total td.val {
+    color: #ffffff !important;
+  }
+
+  .summary-bar {
+    margin-top: 14px;
+    border: 1.5px solid #cbd5e1;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .summary-bar table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 10.5px;
+  }
+
+  .summary-bar th {
+    background: #1e293b;
+    color: #ffffff;
+    padding: 7px 8px;
+    font-size: 10px;
+    text-align: left;
+  }
+
+  .summary-bar td {
+    padding: 6px 8px;
+    border-bottom: 1px solid #e2e8f0;
+  }
+
+  .summary-bar tr:last-child td {
+    border-bottom: none;
+  }
+
+  .summary-bar td.final {
+    font-weight: 900;
+    color: #ea580c;
+    font-size: 12px;
+  }
+
+  .footer-note {
+    text-align: center;
+    color: #64748b;
+    font-size: 9px;
+    margin-top: 8px;
+    font-weight: 600;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Розрахунок вартості «Під Ключ» (Україна)</h1>
+  <p>Kia Carnival 4-го покоління (2.2 Дизель, 9 місць) з Південної Кореї</p>
+</div>
+
+<div class="grid-2x2">
+
+  <div class="card">
+    <div class="card-top">
+      <span class="card-top-title">Варіант 1: Kia Carnival 4 (KA4) 2.2D Prestige</span>
+      <span class="card-top-badge">#42715675</span>
+    </div>
+    <div class="card-meta">
+      <span>Рік: <strong>2021</strong> • Пробіг: <strong>160 тис. км</strong></span>
+      <span>Колір: <strong>Білий</strong></span>
+    </div>
+
+    <table class="tbl">
+      <tr>
+        <td class="label">Вартість автомобіля в Кореї:</td>
+        <td class="val">$12,800.00</td>
+      </tr>
+      <tr>
+        <td class="label">Переказ коштів (2.5%):</td>
+        <td class="val">$320.00</td>
+      </tr>
+      <tr>
+        <td class="label">Страхівка:</td>
+        <td class="val">$256.00</td>
+      </tr>
+      <tr>
+        <td class="label">Комплекс доставки:</td>
+        <td class="val">$4,800.00</td>
+      </tr>
+      <tr>
+        <td class="label">Комісія компанії:</td>
+        <td class="val">$600.00</td>
+      </tr>
+      <tr>
+        <td class="label">Розмитнення + брокерські послуги:</td>
+        <td class="val">$6,350.00</td>
+      </tr>
+      <tr class="row-total">
+        <td>ВСЬОГО СУМА «ПІД КЛЮЧ»:</td>
+        <td class="val">$25,126.00</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="card">
+    <div class="card-top">
+      <span class="card-top-title">Варіант 2: Kia Carnival 4 (KA4) 2.2D Noblesse</span>
+      <span class="card-top-badge">#42599041</span>
+    </div>
+    <div class="card-meta">
+      <span>Рік: <strong>2020</strong> • Пробіг: <strong>166 тис. км</strong></span>
+      <span>Колір: <strong>Чорний</strong></span>
+    </div>
+
+    <table class="tbl">
+      <tr>
+        <td class="label">Вартість автомобіля в Кореї:</td>
+        <td class="val">$12,950.00</td>
+      </tr>
+      <tr>
+        <td class="label">Переказ коштів (2.5%):</td>
+        <td class="val">$324.00</td>
+      </tr>
+      <tr>
+        <td class="label">Страхівка:</td>
+        <td class="val">$259.00</td>
+      </tr>
+      <tr>
+        <td class="label">Комплекс доставки:</td>
+        <td class="val">$4,800.00</td>
+      </tr>
+      <tr>
+        <td class="label">Комісія компанії:</td>
+        <td class="val">$600.00</td>
+      </tr>
+      <tr>
+        <td class="label">Розмитнення + брокерські послуги:</td>
+        <td class="val">$6,500.00</td>
+      </tr>
+      <tr class="row-total">
+        <td>ВСЬОГО СУМА «ПІД КЛЮЧ»:</td>
+        <td class="val">$25,433.00</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="card">
+    <div class="card-top">
+      <span class="card-top-title">Варіант 3: Kia Carnival 4 (KA4) 2.2D Noblesse</span>
+      <span class="card-top-badge">#42827327</span>
+    </div>
+    <div class="card-meta">
+      <span>Рік: <strong>2020</strong> • Пробіг: <strong>129 тис. км</strong></span>
+      <span>Колір: <strong>Чорний</strong></span>
+    </div>
+
+    <table class="tbl">
+      <tr>
+        <td class="label">Вартість автомобіля в Кореї:</td>
+        <td class="val">$13,400.00</td>
+      </tr>
+      <tr>
+        <td class="label">Переказ коштів (2.5%):</td>
+        <td class="val">$335.00</td>
+      </tr>
+      <tr>
+        <td class="label">Страхівка:</td>
+        <td class="val">$268.00</td>
+      </tr>
+      <tr>
+        <td class="label">Комплекс доставки:</td>
+        <td class="val">$4,800.00</td>
+      </tr>
+      <tr>
+        <td class="label">Комісія компанії:</td>
+        <td class="val">$600.00</td>
+      </tr>
+      <tr>
+        <td class="label">Розмитнення + брокерські послуги:</td>
+        <td class="val">$6,650.00</td>
+      </tr>
+      <tr class="row-total">
+        <td>ВСЬОГО СУМА «ПІД КЛЮЧ»:</td>
+        <td class="val">$26,053.00</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="card">
+    <div class="card-top">
+      <span class="card-top-title">Варіант 4: Kia Carnival 4 (KA4) 2.2D Prestige</span>
+      <span class="card-top-badge">#42828060</span>
+    </div>
+    <div class="card-meta">
+      <span>Рік: <strong>2021</strong> • Пробіг: <strong>154 тис. км</strong></span>
+      <span>Колір: <strong>Чорний</strong></span>
+    </div>
+
+    <table class="tbl">
+      <tr>
+        <td class="label">Вартість автомобіля в Кореї:</td>
+        <td class="val">$13,550.00</td>
+      </tr>
+      <tr>
+        <td class="label">Переказ коштів (2.5%):</td>
+        <td class="val">$339.00</td>
+      </tr>
+      <tr>
+        <td class="label">Страхівка:</td>
+        <td class="val">$271.00</td>
+      </tr>
+      <tr>
+        <td class="label">Комплекс доставки:</td>
+        <td class="val">$4,800.00</td>
+      </tr>
+      <tr>
+        <td class="label">Комісія компанії:</td>
+        <td class="val">$600.00</td>
+      </tr>
+      <tr>
+        <td class="label">Розмитнення + брокерські послуги:</td>
+        <td class="val">$6,550.00</td>
+      </tr>
+      <tr class="row-total">
+        <td>ВСЬОГО СУМА «ПІД КЛЮЧ»:</td>
+        <td class="val">$26,110.00</td>
+      </tr>
+    </table>
+  </div>
+
+</div>
+
+<!-- Comparison Summary Strip -->
+<div class="summary-bar">
+  <table>
+    <thead>
+      <tr>
+        <th>Варіант</th>
+        <th>ID Encar</th>
+        <th>Комплектація</th>
+        <th>Рік / Пробіг</th>
+        <th>Колір</th>
+        <th>Ціна в Кореї</th>
+        <th style="text-align: right;">Фінальна ціна під ключ</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <tr>
+        <td><strong>Варіант 1</strong></td>
+        <td><span style="font-family: monospace; font-size: 10px;">#42715675</span></td>
+        <td><strong>2.2D Prestige</strong></td>
+        <td>2021 р. • 160 тис. км</td>
+        <td>Білий</td>
+        <td><strong>$12,800</strong> (15.8 млн ₩)</td>
+        <td style="text-align: right;" class="final">$25,126</td>
+      </tr>
+
+      <tr>
+        <td><strong>Варіант 2</strong></td>
+        <td><span style="font-family: monospace; font-size: 10px;">#42599041</span></td>
+        <td><strong>2.2D Noblesse</strong></td>
+        <td>2020 р. • 166 тис. км</td>
+        <td>Чорний</td>
+        <td><strong>$12,950</strong> (15.99 млн ₩)</td>
+        <td style="text-align: right;" class="final">$25,433</td>
+      </tr>
+
+      <tr>
+        <td><strong>Варіант 3</strong></td>
+        <td><span style="font-family: monospace; font-size: 10px;">#42827327</span></td>
+        <td><strong>2.2D Noblesse</strong></td>
+        <td>2020 р. • 129 тис. км</td>
+        <td>Чорний</td>
+        <td><strong>$13,400</strong> (16.6 млн ₩)</td>
+        <td style="text-align: right;" class="final">$26,053</td>
+      </tr>
+
+      <tr>
+        <td><strong>Варіант 4</strong></td>
+        <td><span style="font-family: monospace; font-size: 10px;">#42828060</span></td>
+        <td><strong>2.2D Prestige</strong></td>
+        <td>2021 р. • 154 тис. км</td>
+        <td>Чорний</td>
+        <td><strong>$13,550</strong> (16.8 млн ₩)</td>
+        <td style="text-align: right;" class="final">$26,110</td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
+
+<div class="footer-note">
+  * У вартість під ключ включено: авто, експортні документи Кореї, доставку морем та автовозом в Україну, повне розмитнення, брокерські послуги, сертифікацію та супровід.
+</div>
+
+</body>
+</html>

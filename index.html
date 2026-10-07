@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="uk" data-theme="dark" data-accent="olive">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>MKV Auto Stand — Система управління автосервісом</title>
+    <meta name="theme-color" content="#0c0d11" />
+    <link rel="icon" type="image/svg+xml" href="/brand/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/theme-boot.css" />
+    <script>
+      (function() {
+        var t = localStorage.getItem('mkv-theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', t);
+        var a = localStorage.getItem('mkv-accent') || 'olive';
+        document.documentElement.setAttribute('data-accent', a);
+      })();
+    </script>
+  </head>
+  <body class="bg-brand-bg text-brand-text font-sans antialiased selection:bg-brand-olive selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

@@ -1,0 +1,1168 @@
+{
+  "13502": {
+    "id": 13502,
+    "type": "physical",
+    "full_name": "Абрамов Игорь Николаевич",
+    "phone": "+79000000108",
+    "inn": null,
+    "referral_source": null,
+    "notes": null,
+    "created_at": "2026-10-06T08:10:02.281530+00:00",
+    "cars": [
+      {
+        "car_id": 26685,
+        "plate": "О338ЕВ750",
+        "brand": "Lada",
+        "model": "Vesta",
+        "year": 2021,
+        "from_date": "2025-09-01",
+        "to_date": null,
+        "is_current": true
+      },
+      {
+        "car_id": 26709,
+        "plate": "Р707РА777",
+        "brand": "Toyota",
+        "model": "Land Cruiser Prado",
+        "year": 2014,
+        "from_date": "2025-09-01",
+        "to_date": null,
+        "is_current": true
+      }
+    ],
+    "orders": [
+      {
+        "id": 27535,
+        "display_number": "ЗН-27535",
+        "plate": "О338ЕВ750",
+        "brand": "Lada",
+        "model": "Vesta",
+        "status": "in_progress",
+        "created_at": "2026-10-01T08:10:02.303477+00:00",
+        "completed_at": null,
+        "grand_total": "21600.00",
+        "paid_total": "0",
+        "payment_status": "unpaid"
+      },
+      {
+        "id": 27560,
+        "display_number": "ЗН-27560",
+        "plate": "Р707РА777",
+        "brand": "Toyota",
+        "model": "Land Cruiser Prado",
+        "status": "in_progress",
+        "created_at": "2026-09-30T08:10:02.303477+00:00",
+        "completed_at": null,
+        "grand_total": "113000.00",
+        "paid_total": "56500.00",
+        "payment_status": "partial"
+      }
+    ],
+    "orders_count": 2,
+    "paid_total": "56500.0"
+  },
+  "13507": {
+    "id": 13507,
+    "type": "physical",
+    "full_name": "Беляков Станислав Юрьевич",
+    "phone": "+79000000113",
+    "inn": null,
+    "referral_source": null,
+    "notes": null,
+    "created_at": "2026-10-06T08:10:02.281530+00:00",
+    "cars": [
+      {
+        "car_id": 26691,
+        "plate": "Е050МА197",
+        "brand": "Ford",
+        "model": "Focus",
+        "year": 2016,
+        "from_date": "2025-09-01",
+        "to_date": null,
+        "is_current": true
+      },
+      {
+        "car_id": 26711,
+        "plate": "Е919ЕХ190",
+        "brand": "Lada",
+        "model": "XRAY",
+        "year": 2020,
+        "from_date": "2025-09-01",
+        "to_date": null,
+        "is_current": true
+      }
+    ],
+    "orders": [
+      {
+        "id": 27562,
+        "display_number": "ЗН-27562",
+        "plate": "Е919ЕХ190",
+        "brand": "Lada",
+        "model": "XRAY",
+        "status": "in_progress",
+        "created_at": "2026-10-05T08:10:02.303477+00:00",
+        "completed_at": null,
+        "grand_total": "2400",
+        "paid_total": "0",
+        "payment_status": "unpaid"
+      },
+      {
+        "id": 27541,
+        "display_number": "ЗН-27541",
+        "plate": "Е050МА197",
+        "brand": "Ford",
+        "model": "Focus",
+        "status": "in_progress",
+        "created_at": "2026-10-04T08:10:02.303477+00:00",
+        "completed_at": null,
+        "grand_total": "10800",
+        "paid_total": "0",
+        "payment_status": "unpaid"
+      }
+    ],
+    "orders_count": 2,
+    "paid_total": "0.0"
+  },
+  "13509": {
+    "id": 13509,
+    "type": "physical",
+    "full_name": "Власов Григорий Петрович",
+    "phone": "+79000000115",
+    "inn": null,
+    "referral_source": null,
+    "notes": null,
+    "created_at": "2026-10-06T08:10:02.281530+00:00",
+    "cars": [
+      {
+        "car_id": 26697,
+        "plate": "М321ВО777",
+        "brand": "Hyundai",
+        "model": "Tucson",
+        "year": 2020,
+        "from_date": "2025-09-01",
+        "to_date": null,
+        "is_current": true
+      },
+      {
+        "car_id": 26704,
+        "plate": "С909СМ777",
+        "brand": "Ford",
+        "model": "Kuga",
+        "year": 2018,
+        "from_date": "2025-09-01",
+        "to_date": null,
+        "is_current": true
+      },
+      {
+        "car_id": 26713,
+        "plate": "С242КС777",
+        "brand": "Kia",
+        "model": "K5",
+        "year": 2022,
+        "from_date": "2025-09-01",
+        "to_date": null,
+        "is_current": true
+      }
+    ],
+    "orders": [
+      {
+        "id": 27564,
+        "display_number": "ЗН-27564",
+        "plate": "С242КС777",
+        "brand": "Kia",
+        "model": "K5",
+        "status": "in_progress",
+        "created_at": "2026-10-05T22:34:02.303477+00:00",
+        "completed_at": null,
+        "grand_total": "3120",
+        "paid_total": "0",
+        "payment_status": "unpaid"
+      },
+      {
+        "id": 27555,
+        "display_number": "ЗН-27555",
+        "plate": "С909СМ777",
+        "brand": "Ford",
+        "model": "Kuga",
+        "status": "completed",
+        "created_at": "2026-10-02T08:10:02.303477+00:00",
+        "completed_at": "2026-10-05T08:10:02.303477+00:00",
+        "grand_total": "1920",
+        "paid_total": "1920.00",
+        "payment_status": "paid"
+      },
+      {
+        "id": 27547,
+        "display_number": "ЗН-27547",
+        "plate": "М321ВО777",
+        "brand": "Hyundai",
+        "model": "Tucson",
+        "status": "completed",
+        "created_at": "2026-09-25T08:10:02.303477+00:00",
+        "completed_at": "2026-09-28T08:10:02.303477+00:00",
+        "grand_total": "4320",
+        "paid_total": "4320.00",
+        "payment_status": "paid"
+      }
+    ],
+    "orders_count": 3,
+    "paid_total": "6240.0"
+  },
+  "13497": {
+    "id": 13497,
+    "type": "physical",
+    "full_name": "Григорьев Роман Сергеевич",
+    "phone": "+79000000103",
+    "inn": null,
+    "referral_source": null,
+    "notes": null,
+    "created_at": "2026-10-06T08:10:02.281530+00:00",
+    "cars": [
+      {
+        "car_id": 26680,
+        "plate": "А903КС799",
+        "brand": "Toyota",
+        "model": "Camry",
+        "year": 2021,
+        "from_date": "2025-09-01",
+        "to_date": null,
+        "is_current": true
+      },
+      {
+        "car_id": 26699,
+        "plate": "А111АА799",
+        "brand": "Lexus",
+        "model": "RX 350",
+        "year": 2019,
+        "from_date": "2025-09-01",
+        "to_date": null,
+        "is_current": true
+      }
+    ],
+    "orders": [
+      {
+        "id": 27530,
+        "display_number": "ЗН-27530",
+        "plate": "А903КС799",
+        "brand": "Toyota",
+        "model": "Camry",
+        "status": "in_progress",
+        "created_at": "2026-09-30T08:10:02.303477+00:00",
+        "completed_at": null,
+        "grand_total": "21400.00",
+        "paid_total": "10700.00",
+        "payment_status": "partial"
+      },
+      {
+        "id": 27550,
+        "display_number": "ЗН-27550",
+        "plate": "А111АА799",
+        "brand": "Lexus",
+        "model": "RX 350",
+        "status": "completed",
+        "created_at": "2026-09-28T08:10:02.303477+00:00",
+        "completed_at": "2026-10-01T08:10:02.303477+00:00",
+        "grand_total": "3120",
+        "paid_total": "3120.00",
+        "payment_status": "paid"
+      }
+    ],
+    "orders_count": 2,
+    "paid_total": "13820.0"
+  },
+  "13501": {
+    "id": 13501,
+    "type": "physical",
+    "full_name": "Зуева Екатерина Витальевна",
+    "phone": "+79000000107",
+    "inn": null,
+    "referral_source": null,
+    "notes": null,
+    "created_at": "2026-10-06T08:10:02.281530+00:00",
+    "cars": [
+      {
+        "car_id": 26684,
+        "plate": "Н777УК197",
+        "brand": "BMW",
+        "model": "X5",
+        "year": 2019,
+        "from_date": "2025-09-01",
+        "to_date": null,
+        "is_current": true
+      },
+      {
+        "car_id": 26700,
+        "plate": "Р515РР777",
+        "brand": "BMW",
+        "model": "3 Series",
+        "year": 2018,
+        "from_date": "2025-09-01",
+        "to_date": null,
+        "is_current": true
+      }
+    ],
+    "orders": [
+      {
+        "id": 27534,
+        "display_number": "ЗН-27534",
+        "plate": "Н777УК197",
+        "brand": "BMW",
+        "model": "X5",
+        "status": "in_progress",
+        "created_at": "2026-10-03T08:10:02.303477+00:00",
+        "completed_at": null,
+        "grand_total": "21220.00",
+        "paid_total": "0",
+        "payment_status": "unpaid"
+      },
+      {
+        "id": 27551,
+        "display_number": "ЗН-27551",
+        "plate": "Р515РР777",
+        "brand": "BMW",
+        "model": "3 Series",
+        "status": "completed",
+        "created_at": "2026-09-30T08:10:02.303477+00:00",
+        "completed_at": "2026-10-03T08:10:02.303477+00:00",
+        "grand_total": "3600",
+        "paid_total": "3600.00",
+        "payment_status": "paid"
+      }
+    ],
+    "orders_count": 2,
+    "paid_total": "3600.0"
+  },
+  "13510": {
+    "id": 13510,
+    "type": "physical",
+    "full_name": "Козлова Юлия Максимовна",
+    "phone": "+79000000116",
+    "inn": null,
+    "referral_source": null,
+    "notes": null,
+    "created_at": "2026-10-06T08:10:02.281530+00:00",
+    "cars": [
+      {
+        "car_id": 26698,
+        "plate": "Н404ТУ190",
+        "brand": "Chevrolet",
+        "model": "Cruze",
+        "year": 2015,
+        "from_date": "2025-09-01",
+        "to_date": null,
+        "is_current": true
+      },
+      {
+        "car_id": 26705,
+        "plate": "М606МК799",
+        "brand": "Toyota",
+        "model": "Corolla",
+        "year": 2020,
+        "from_date": "2025-09-01",
+        "to_date": null,
+        "is_current": true
+      },
+      {
+        "car_id": 26714,
+        "plate": "О717ОА799",
+        "brand": "Chery",
+        "model": "Tiggo 7 Pro",
+        "year": 2023,
+        "from_date": "2025-09-01",
+        "to_date": null,
+        "is_current": true
+      }
+    ],
+    "orders": [
+      {
+        "id": 27565,
+        "display_number": "ЗН-27565",
+        "plate": "О717ОА799",
+        "brand": "Chery",
+        "model": "Tiggo 7 Pro",
+        "status": "in_progress",
+        "created_at": "2026-10-06T03:22:02.303477+00:00",
+        "completed_at": null,
+        "grand_total": "1680",
+        "paid_total": "0",
+        "payment_status": "unpaid"
+      },
+      {
+        "id": 27556,
+        "display_number": "ЗН-27556",
+        "plate": "М606МК799",
+        "brand": "Toyota",
+        "model": "Corolla",
+        "status": "completed",
+        "created_at": "2026-10-03T08:10:02.303477+00:00",
+        "completed_at": "2026-10-05T08:10:02.303477+00:00",
+        "grand_total": "3600",
+        "paid_total": "3600.00",
+        "payment_status": "paid"
+      },
+      {
+        "id": 27548,
+        "display_number": "ЗН-27548",
+        "plate": "Н404ТУ190",
+        "brand": "Chevrolet",
+        "model": "Cruze",
+        "status": "completed",
+        "created_at": "2026-09-26T08:10:02.303477+00:00",
+        "completed_at": "2026-09-29T08:10:02.303477+00:00",
+        "grand_total": "10800.00",
+        "paid_total": "10800.00",
+        "payment_status": "paid"
+      }
+    ],
+    "orders_count": 3,
+    "paid_total": "14400.0"
+  },
+  "13495": {
+    "id": 13495,
+    "type": "physical",
+    "full_name": "Кузнецов Алексей Игоревич",
+    "phone": "+79000000101",
+    "inn": null,
+    "referral_source": null,
+    "notes": null,
+    "created_at": "2026-10-06T08:10:02.281530+00:00",
+    "cars": [
+      {
+        "car_id": 26678,
+        "plate": "К214МР777",
+        "brand": "Kia",
+        "model": "Rio",
+        "year": 2019,
+        "from_date": "2025-09-01",
+        "to_date": null,
+        "is_current": true
+      }
+    ],
+    "orders": [
+      {
+        "id": 27528,
+        "display_number": "ЗН-27528",
+        "plate": "К214МР777",
+        "brand": "Kia",
+        "model": "Rio",
+        "status": "in_progress",
+        "created_at": "2026-10-02T08:10:02.303477+00:00",
+        "completed_at": null,
+        "grand_total": "17300.00",
+        "paid_total": "5190.00",
+        "payment_status": "partial"
+      },
+      {
+        "id": 27549,
+        "display_number": "ЗН-27549",
+        "plate": "К214МР777",
+        "brand": "Kia",
+        "model": "Rio",
+        "status": "completed",
+        "created_at": "2026-09-24T08:10:02.303477+00:00",
+        "completed_at": "2026-09-27T08:10:02.303477+00:00",
+        "grand_total": "1920",
+        "paid_total": "1920.00",
+        "payment_status": "paid"
+      }
+    ],
+    "orders_count": 2,
+    "paid_total": "7110.0"
+  },
+  "13503": {
+    "id": 13503,
+    "type": "physical",
+    "full_name": "Лаврова Ольга Денисовна",
+    "phone": "+79000000109",
+    "inn": null,
+    "referral_source": null,
+    "notes": null,
+    "created_at": "2026-10-06T08:10:02.281530+00:00",
+    "cars": [
+      {
+        "car_id": 26686,
+        "plate": "Р120АМ777",
+        "brand": "Nissan",
+        "model": "Qashqai",
+        "year": 2017,
+        "from_date": "2025-09-01",
+        "to_date": null,
+        "is_current": true
+      },
+      {
+        "car_id": 26692,
+        "plate": "О555ОО777",
+        "brand": "Toyota",
+        "model": "Land Cruiser",
+        "year": 2019,
+        "from_date": "2025-09-01",
+        "to_date": null,
+        "is_current": true
+      },
+      {
+        "car_id": 26708,
+        "plate": "Х321ХВ197",
+        "brand": "Mazda",
+        "model": "3",
+        "year": 2018,
+        "from_date": "2025-09-01",
+        "to_date": null,
+        "is_current": true
+      }
+    ],
+    "orders": [
+      {
+        "id": 27542,
+        "display_number": "ЗН-27542",
+        "plate": "О555ОО777",
+        "brand": "Toyota",
+        "model": "Land Cruiser",
+        "status": "in_progress",
+        "created_at": "2026-10-04T08:10:02.303477+00:00",
+        "completed_at": null,
+        "grand_total": "14400",
+        "paid_total": "0",
+        "payment_status": "unpaid"
+      },
+      {
+        "id": 27559,
+        "display_number": "ЗН-27559",
+        "plate": "Х321ХВ197",
+        "brand": "Mazda",
+        "model": "3",
+        "status": "completed",
+        "created_at": "2026-10-03T08:10:02.303477+00:00",
+        "completed_at": "2026-10-05T22:34:02.303477+00:00",
+        "grand_total": "3120",
+        "paid_total": "3120.00",
+        "payment_status": "paid"
+      },
+      {
+        "id": 27536,
+        "display_number": "ЗН-27536",
+        "plate": "Р120АМ777",
+        "brand": "Nissan",
+        "model": "Qashqai",
+        "status": "in_progress",
+        "created_at": "2026-09-30T08:10:02.303477+00:00",
+        "completed_at": null,
+        "grand_total": "13200",
+        "paid_total": "0",
+        "payment_status": "unpaid"
+      }
+    ],
+    "orders_count": 3,
+    "paid_total": "3120.0"
+  },
+  "13505": {
+    "id": 13505,
+    "type": "physical",
+    "full_name": "Медведев Артём Ильич",
+    "phone": "+79000000111",
+    "inn": null,
+    "referral_source": null,
+    "notes": null,
+    "created_at": "2026-10-06T08:10:02.281530+00:00",
+    "cars": [
+      {
+        "car_id": 26688,
+        "plate": "У808РС190",
+        "brand": "Audi",
+        "model": "A6",
+        "year": 2018,
+        "from_date": "2025-09-01",
+        "to_date": null,
+        "is_current": true
+      },
+      {
+        "car_id": 26703,
+        "plate": "Н212НМ190",
+        "brand": "Mitsubishi",
+        "model": "Outlander",
+        "year": 2017,
+        "from_date": "2025-09-01",
+        "to_date": null,
+        "is_current": true
+      },
+      {
+        "car_id": 26716,
+        "plate": "Н373НХ750",
+        "brand": "Haval",
+        "model": "Jolion",
+        "year": 2023,
+        "from_date": "2025-09-01",
+        "to_date": null,
+        "is_current": true
+      }
+    ],
+    "orders": [
+      {
+        "id": 27567,
+        "display_number": "ЗН-27567",
+        "plate": "Н373НХ750",
+        "brand": "Haval",
+        "model": "Jolion",
+        "status": "in_progress",
+        "created_at": "2026-10-06T03:22:02.303477+00:00",
+        "completed_at": null,
+        "grand_total": "1200",
+        "paid_total": "0",
+        "payment_status": "unpaid"
+      },
+      {
+        "id": 27538,
+        "display_number": "ЗН-27538",
+        "plate": "У808РС190",
+        "brand": "Audi",
+        "model": "A6",
+        "status": "in_progress",
+        "created_at": "2026-10-05T08:10:02.303477+00:00",
+        "completed_at": null,
+        "grand_total": "2640",
+        "paid_total": "0",
+        "payment_status": "unpaid"
+      },
+      {
+        "id": 27554,
+        "display_number": "ЗН-27554",
+        "plate": "Н212НМ190",
+        "brand": "Mitsubishi",
+        "model": "Outlander",
+        "status": "completed",
+        "created_at": "2026-09-27T08:10:02.303477+00:00",
+        "completed_at": "2026-10-02T08:10:02.303477+00:00",
+        "grand_total": "6000",
+        "paid_total": "6000.00",
+        "payment_status": "paid"
+      }
+    ],
+    "orders_count": 3,
+    "paid_total": "6000.0"
+  },
+  "13499": {
+    "id": 13499,
+    "type": "legal",
+    "full_name": "ООО «Логистика Плюс»",
+    "phone": "+79000000105",
+    "inn": "0000000001",
+    "referral_source": null,
+    "notes": null,
+    "created_at": "2026-10-06T08:10:02.281530+00:00",
+    "cars": [
+      {
+        "car_id": 26682,
+        "plate": "М615ХА777",
+        "brand": "Skoda",
+        "model": "Octavia",
+        "year": 2022,
+        "from_date": "2025-09-01",
+        "to_date": null,
+        "is_current": true
+      },
+      {
+        "car_id": 26690,
+        "plate": "В900ЕЕ777",
+        "brand": "Toyota",
+        "model": "RAV4",
+        "year": 2023,
+        "from_date": "2025-09-01",
+        "to_date": null,
+        "is_current": true
+      },
+      {
+        "car_id": 26694,
+        "plate": "К888КК750",
+        "brand": "Lada",
+        "model": "Granta",
+        "year": 2020,
+        "from_date": "2025-09-01",
+        "to_date": null,
+        "is_current": true
+      }
+    ],
+    "orders": [
+      {
+        "id": 27532,
+        "display_number": "ЗН-27532",
+        "plate": "М615ХА777",
+        "brand": "Skoda",
+        "model": "Octavia",
+        "status": "in_progress",
+        "created_at": "2026-10-05T08:10:02.303477+00:00",
+        "completed_at": null,
+        "grand_total": "3600",
+        "paid_total": "0",
+        "payment_status": "unpaid"
+      },
+      {
+        "id": 27544,
+        "display_number": "ЗН-27544",
+        "plate": "К888КК750",
+        "brand": "Lada",
+        "model": "Granta",
+        "status": "in_progress",
+        "created_at": "2026-10-05T08:10:02.303477+00:00",
+        "completed_at": null,
+        "grand_total": "6000",
+        "paid_total": "0",
+        "payment_status": "unpaid"
+      },
+      {
+        "id": 27540,
+        "display_number": "ЗН-27540",
+        "plate": "В900ЕЕ777",
+        "brand": "Toyota",
+        "model": "RAV4",
+        "status": "in_progress",
+        "created_at": "2026-10-04T08:10:02.303477+00:00",
+        "completed_at": null,
+        "grand_total": "7200",
+        "paid_total": "4320.00",
+        "payment_status": "partial"
+      }
+    ],
+    "orders_count": 3,
+    "paid_total": "4320.0"
+  },
+  "13506": {
+    "id": 13506,
+    "type": "physical",
+    "full_name": "Полякова Дарья Романовна",
+    "phone": "+79000000112",
+    "inn": null,
+    "referral_source": null,
+    "notes": null,
+    "created_at": "2026-10-06T08:10:02.281530+00:00",
+    "cars": [
+      {
+        "car_id": 26689,
+        "plate": "Х246КО750",
+        "brand": "Renault",
+        "model": "Duster",
+        "year": 2020,
+        "from_date": "2025-09-01",
+        "to_date": null,
+        "is_current": true
+      },
+      {
+        "car_id": 26693,
+        "plate": "У121УУ190",
+        "brand": "Volkswagen",
+        "model": "Tiguan",
+        "year": 2021,
+        "from_date": "2025-09-01",
+        "to_date": null,
+        "is_current": true
+      },
+      {
+        "car_id": 26707,
+        "plate": "Т555ТВ750",
+        "brand": "Volkswagen",
+        "model": "Passat",
+        "year": 2019,
+        "from_date": "2025-09-01",
+        "to_date": null,
+        "is_current": true
+      }
+    ],
+    "orders": [
+      {
+        "id": 27558,
+        "display_number": "ЗН-27558",
+        "plate": "Т555ТВ750",
+        "brand": "Volkswagen",
+        "model": "Passat",
+        "status": "completed",
+        "created_at": "2026-10-04T08:10:02.303477+00:00",
+        "completed_at": "2026-10-06T04:34:02.303477+00:00",
+        "grand_total": "1920",
+        "paid_total": "1920.00",
+        "payment_status": "paid"
+      },
+      {
+        "id": 27543,
+        "display_number": "ЗН-27543",
+        "plate": "У121УУ190",
+        "brand": "Volkswagen",
+        "model": "Tiguan",
+        "status": "in_progress",
+        "created_at": "2026-10-03T08:10:02.303477+00:00",
+        "completed_at": null,
+        "grand_total": "12000",
+        "paid_total": "0",
+        "payment_status": "unpaid"
+      },
+      {
+        "id": 27539,
+        "display_number": "ЗН-27539",
+        "plate": "Х246КО750",
+        "brand": "Renault",
+        "model": "Duster",
+        "status": "in_progress",
+        "created_at": "2026-10-01T08:10:02.303477+00:00",
+        "completed_at": null,
+        "grand_total": "3600",
+        "paid_total": "1080.00",
+        "payment_status": "partial"
+      }
+    ],
+    "orders_count": 3,
+    "paid_total": "3000.0"
+  },
+  "13508": {
+    "id": 13508,
+    "type": "physical",
+    "full_name": "Рогова Наталья Евгеньевна",
+    "phone": "+79000000114",
+    "inn": null,
+    "referral_source": null,
+    "notes": null,
+    "created_at": "2026-10-06T08:10:02.281530+00:00",
+    "cars": [
+      {
+        "car_id": 26696,
+        "plate": "К700АА750",
+        "brand": "Kia",
+        "model": "Sportage",
+        "year": 2021,
+        "from_date": "2025-09-01",
+        "to_date": null,
+        "is_current": true
+      },
+      {
+        "car_id": 26712,
+        "plate": "А515МО750",
+        "brand": "Hyundai",
+        "model": "Creta",
+        "year": 2021,
+        "from_date": "2025-09-01",
+        "to_date": null,
+        "is_current": true
+      }
+    ],
+    "orders": [
+      {
+        "id": 27563,
+        "display_number": "ЗН-27563",
+        "plate": "А515МО750",
+        "brand": "Hyundai",
+        "model": "Creta",
+        "status": "in_progress",
+        "created_at": "2026-10-06T00:58:02.303477+00:00",
+        "completed_at": null,
+        "grand_total": "2400",
+        "paid_total": "720.00",
+        "payment_status": "partial"
+      },
+      {
+        "id": 27546,
+        "display_number": "ЗН-27546",
+        "plate": "К700АА750",
+        "brand": "Kia",
+        "model": "Sportage",
+        "status": "completed",
+        "created_at": "2026-10-03T04:34:02.303477+00:00",
+        "completed_at": "2026-10-06T04:34:02.303477+00:00",
+        "grand_total": "8400",
+        "paid_total": "8400.00",
+        "payment_status": "paid"
+      }
+    ],
+    "orders_count": 2,
+    "paid_total": "9120.0"
+  },
+  "13504": {
+    "id": 13504,
+    "type": "physical",
+    "full_name": "Сафин Руслан Маратович",
+    "phone": "+79000000110",
+    "inn": null,
+    "referral_source": null,
+    "notes": null,
+    "created_at": "2026-10-06T08:10:02.281530+00:00",
+    "cars": [
+      {
+        "car_id": 26687,
+        "plate": "С455НО799",
+        "brand": "Mazda",
+        "model": "CX-5",
+        "year": 2022,
+        "from_date": "2025-09-01",
+        "to_date": null,
+        "is_current": true
+      },
+      {
+        "car_id": 26701,
+        "plate": "В303ВВ750",
+        "brand": "Skoda",
+        "model": "Rapid",
+        "year": 2019,
+        "from_date": "2025-09-01",
+        "to_date": null,
+        "is_current": true
+      },
+      {
+        "car_id": 26715,
+        "plate": "В828ВК197",
+        "brand": "Geely",
+        "model": "Coolray",
+        "year": 2022,
+        "from_date": "2025-09-01",
+        "to_date": null,
+        "is_current": true
+      }
+    ],
+    "orders": [
+      {
+        "id": 27566,
+        "display_number": "ЗН-27566",
+        "plate": "В828ВК197",
+        "brand": "Geely",
+        "model": "Coolray",
+        "status": "in_progress",
+        "created_at": "2026-10-04T08:10:02.303477+00:00",
+        "completed_at": null,
+        "grand_total": "12000",
+        "paid_total": "6000.00",
+        "payment_status": "partial"
+      },
+      {
+        "id": 27537,
+        "display_number": "ЗН-27537",
+        "plate": "С455НО799",
+        "brand": "Mazda",
+        "model": "CX-5",
+        "status": "in_progress",
+        "created_at": "2026-10-03T08:10:02.303477+00:00",
+        "completed_at": null,
+        "grand_total": "3120",
+        "paid_total": "1560.00",
+        "payment_status": "partial"
+      },
+      {
+        "id": 27552,
+        "display_number": "ЗН-27552",
+        "plate": "В303ВВ750",
+        "brand": "Skoda",
+        "model": "Rapid",
+        "status": "completed",
+        "created_at": "2026-10-01T08:10:02.303477+00:00",
+        "completed_at": "2026-10-05T08:10:02.303477+00:00",
+        "grand_total": "1920",
+        "paid_total": "1920.00",
+        "payment_status": "paid"
+      }
+    ],
+    "orders_count": 3,
+    "paid_total": "9480.0"
+  },
+  "13496": {
+    "id": 13496,
+    "type": "physical",
+    "full_name": "Смирнова Анна Павловна",
+    "phone": "+79000000102",
+    "inn": null,
+    "referral_source": null,
+    "notes": null,
+    "created_at": "2026-10-06T08:10:02.281530+00:00",
+    "cars": [
+      {
+        "car_id": 26679,
+        "plate": "В581ОТ750",
+        "brand": "Hyundai",
+        "model": "Solaris",
+        "year": 2020,
+        "from_date": "2025-09-01",
+        "to_date": null,
+        "is_current": true
+      },
+      {
+        "car_id": 26706,
+        "plate": "А404АВ750",
+        "brand": "Renault",
+        "model": "Logan",
+        "year": 2016,
+        "from_date": "2025-09-01",
+        "to_date": null,
+        "is_current": true
+      }
+    ],
+    "orders": [
+      {
+        "id": 27529,
+        "display_number": "ЗН-27529",
+        "plate": "В581ОТ750",
+        "brand": "Hyundai",
+        "model": "Solaris",
+        "status": "in_progress",
+        "created_at": "2026-10-05T08:10:02.303477+00:00",
+        "completed_at": null,
+        "grand_total": "15520.00",
+        "paid_total": "0",
+        "payment_status": "unpaid"
+      },
+      {
+        "id": 27557,
+        "display_number": "ЗН-27557",
+        "plate": "А404АВ750",
+        "brand": "Renault",
+        "model": "Logan",
+        "status": "completed",
+        "created_at": "2026-09-23T08:10:02.303477+00:00",
+        "completed_at": "2026-09-30T08:10:02.303477+00:00",
+        "grand_total": "6840.00",
+        "paid_total": "6840.00",
+        "payment_status": "paid"
+      }
+    ],
+    "orders_count": 2,
+    "paid_total": "6840.0"
+  },
+  "13498": {
+    "id": 13498,
+    "type": "physical",
+    "full_name": "Тихонова Мария Андреевна",
+    "phone": "+79000000104",
+    "inn": null,
+    "referral_source": null,
+    "notes": null,
+    "created_at": "2026-10-06T08:10:02.281530+00:00",
+    "cars": [
+      {
+        "car_id": 26681,
+        "plate": "Е472ВН190",
+        "brand": "Volkswagen",
+        "model": "Polo",
+        "year": 2018,
+        "from_date": "2025-09-01",
+        "to_date": null,
+        "is_current": true
+      },
+      {
+        "car_id": 26702,
+        "plate": "Е707ЕК197",
+        "brand": "Hyundai",
+        "model": "Creta",
+        "year": 2022,
+        "from_date": "2025-09-01",
+        "to_date": null,
+        "is_current": true
+      },
+      {
+        "car_id": 26710,
+        "plate": "А636АМ750",
+        "brand": "Kia",
+        "model": "Ceed",
+        "year": 2019,
+        "from_date": "2025-09-01",
+        "to_date": null,
+        "is_current": true
+      }
+    ],
+    "orders": [
+      {
+        "id": 27531,
+        "display_number": "ЗН-27531",
+        "plate": "Е472ВН190",
+        "brand": "Volkswagen",
+        "model": "Polo",
+        "status": "in_progress",
+        "created_at": "2026-10-06T05:46:02.303477+00:00",
+        "completed_at": null,
+        "grand_total": "6000",
+        "paid_total": "0",
+        "payment_status": "unpaid"
+      },
+      {
+        "id": 27561,
+        "display_number": "ЗН-27561",
+        "plate": "А636АМ750",
+        "brand": "Kia",
+        "model": "Ceed",
+        "status": "in_progress",
+        "created_at": "2026-10-03T08:10:02.303477+00:00",
+        "completed_at": null,
+        "grand_total": "27500.00",
+        "paid_total": "0",
+        "payment_status": "unpaid"
+      },
+      {
+        "id": 27553,
+        "display_number": "ЗН-27553",
+        "plate": "Е707ЕК197",
+        "brand": "Hyundai",
+        "model": "Creta",
+        "status": "completed",
+        "created_at": "2026-09-29T08:10:02.303477+00:00",
+        "completed_at": "2026-10-04T08:10:02.303477+00:00",
+        "grand_total": "4800",
+        "paid_total": "4800.00",
+        "payment_status": "paid"
+      }
+    ],
+    "orders_count": 3,
+    "paid_total": "4800.0"
+  },
+  "13500": {
+    "id": 13500,
+    "type": "physical",
+    "full_name": "Фомин Кирилл Олегович",
+    "phone": "+79000000106",
+    "inn": null,
+    "referral_source": null,
+    "notes": null,
+    "created_at": "2026-10-06T08:10:02.281530+00:00",
+    "cars": [
+      {
+        "car_id": 26683,
+        "plate": "Т001ТТ777",
+        "brand": "Mercedes-Benz",
+        "model": "E-Class",
+        "year": 2020,
+        "from_date": "2025-09-01",
+        "to_date": null,
+        "is_current": true
+      },
+      {
+        "car_id": 26695,
+        "plate": "Т432ТН197",
+        "brand": "Nissan",
+        "model": "X-Trail",
+        "year": 2018,
+        "from_date": "2025-09-01",
+        "to_date": null,
+        "is_current": true
+      }
+    ],
+    "orders": [
+      {
+        "id": 27533,
+        "display_number": "ЗН-27533",
+        "plate": "Т001ТТ777",
+        "brand": "Mercedes-Benz",
+        "model": "E-Class",
+        "status": "in_progress",
+        "created_at": "2026-10-04T08:10:02.303477+00:00",
+        "completed_at": null,
+        "grand_total": "14400",
+        "paid_total": "4320.00",
+        "payment_status": "partial"
+      },
+      {
+        "id": 27545,
+        "display_number": "ЗН-27545",
+        "plate": "Т432ТН197",
+        "brand": "Nissan",
+        "model": "X-Trail",
+        "status": "in_progress",
+        "created_at": "2026-10-02T08:10:02.303477+00:00",
+        "completed_at": null,
+        "grand_total": "12000",
+        "paid_total": "0",
+        "payment_status": "unpaid"
+      }
+    ],
+    "orders_count": 2,
+    "paid_total": "4320.0"
+  }
+}

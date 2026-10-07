@@ -1,0 +1,22 @@
+{
+  "manager_percent": 0.0,
+  "rows": [
+    {
+      "user_id": 9239,
+      "user_name": "Денис Кравцов",
+      "orders_count": 40,
+      "works_total": 324240.0,
+      "works_unpriced": 0,
+      "parts_total": 108900.0,
+      "grand_total": 431580.0,
+      "earnings": 0.0
+    }
+  ],
+  "totals": {
+    "orders_count": 40,
+    "works_total": 324240.0,
+    "parts_total": 108900.0,
+    "grand_total": 431580.0,
+    "earnings": 0.0
+  }
+}

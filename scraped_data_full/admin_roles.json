@@ -1,0 +1,130 @@
+[
+  {
+    "id": 6737,
+    "name": "Суперадмин",
+    "permissions": [
+      "*"
+    ]
+  },
+  {
+    "id": 6738,
+    "name": "Владелец",
+    "permissions": [
+      "*"
+    ]
+  },
+  {
+    "id": 6739,
+    "name": "Исполнительный директор",
+    "permissions": [
+      "orders.*",
+      "users.*",
+      "users.preview_as",
+      "invites.*",
+      "shifts.*",
+      "shifts.approve",
+      "pipeline.*",
+      "tv.*",
+      "parts.*",
+      "payments.*",
+      "warehouse.*",
+      "cash.*",
+      "bookings.*",
+      "reports.read",
+      "company.admin",
+      "audit.read",
+      "tasks.*"
+    ]
+  },
+  {
+    "id": 6740,
+    "name": "Начальник производства",
+    "permissions": [
+      "orders.read",
+      "orders.transition",
+      "orders.assign",
+      "warehouse.read",
+      "users.read",
+      "users.preview_as",
+      "shifts.read",
+      "shifts.approve",
+      "checklist.update",
+      "audit.read",
+      "tasks.create",
+      "tasks.assign",
+      "tasks.read",
+      "tasks.read_all",
+      "tasks.update",
+      "tasks.manage",
+      "tasks.delete"
+    ]
+  },
+  {
+    "id": 6741,
+    "name": "Мастер приёмщик",
+    "permissions": [
+      "orders.create",
+      "orders.read",
+      "orders.transition",
+      "checklist.update",
+      "shifts.self",
+      "parts.read",
+      "payments.read",
+      "payments.create",
+      "warehouse.read",
+      "cash.read",
+      "cash.create",
+      "bookings.*",
+      "reports.read",
+      "tasks.create",
+      "tasks.assign",
+      "tasks.read",
+      "tasks.read_all",
+      "tasks.update",
+      "tasks.manage"
+    ]
+  },
+  {
+    "id": 6742,
+    "name": "Менеджер по запчастям",
+    "permissions": [
+      "orders.read",
+      "orders.create",
+      "parts.*",
+      "checklist.update",
+      "payments.read",
+      "payments.create",
+      "warehouse.*",
+      "cash.read",
+      "cash.create",
+      "bookings.read",
+      "reports.read",
+      "shifts.self",
+      "tasks.create",
+      "tasks.assign",
+      "tasks.read",
+      "tasks.read_all",
+      "tasks.update",
+      "tasks.manage"
+    ]
+  },
+  {
+    "id": 6743,
+    "name": "Цеховой специалист",
+    "permissions": [
+      "orders.read",
+      "checklist.update",
+      "shifts.self",
+      "tasks.read",
+      "tasks.update"
+    ]
+  },
+  {
+    "id": 6744,
+    "name": "Наблюдатель",
+    "permissions": [
+      "*.read",
+      "observer.readonly"
+    ]
+  }
+]

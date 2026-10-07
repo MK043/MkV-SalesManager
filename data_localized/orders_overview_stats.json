@@ -1,0 +1,37 @@
+{
+  "total": 40,
+  "active": 21,
+  "parking": 4,
+  "overdue": 1,
+  "awaiting_review": 1,
+  "by_stage": [
+    {
+      "stage_id": 6795,
+      "count": 3
+    },
+    {
+      "stage_id": 6796,
+      "count": 1
+    },
+    {
+      "stage_id": 6797,
+      "count": 2
+    },
+    {
+      "stage_id": 6798,
+      "count": 11
+    },
+    {
+      "stage_id": 6799,
+      "count": 1
+    },
+    {
+      "stage_id": 6800,
+      "count": 2
+    },
+    {
+      "stage_id": 6801,
+      "count": 1
+    }
+  ]
+}

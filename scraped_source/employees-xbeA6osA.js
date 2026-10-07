@@ -1,0 +1,1 @@
+const n="company.admin",r=new Set(["agent@demo.local","claude@demo.local"]);function a(e){if(!e)return!1;const t=e.trim().toLowerCase();return!!(r.has(t)||t.startsWith("agent@")||t.startsWith("claude@"))}function o(e){return e.filter(t=>!a(t.web_login))}function i(e){return e(n)}export{i as c,o as f};

@@ -1,0 +1,1 @@
+import{j as d}from"./query-CwiaLd8H.js";function n({tone:a="neutral",children:t,title:e,"data-testid":s}){return d.jsx("span",{className:`badge badge-${a}`,title:e,"data-testid":s,children:t})}export{n as B};
