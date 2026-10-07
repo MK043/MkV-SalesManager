@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 760" width="1440" height="760">
+<defs>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap");
+    text { font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    .mono { font-family: "JetBrains Mono", monospace; }
+  </style>
+</defs>
+
+<rect width="1440" height="760" fill="#0D1117"/>
+
+<rect x="0" y="0" width="1440" height="62" fill="#161B22"/>
+<line x1="0" y1="62" x2="1440" y2="62" stroke="#30363D" stroke-width="1"/>
+
+<g transform="translate(32, 16)">
+  <circle cx="15" cy="15" r="15" fill="#FFFFFF"/>
+  <path d="M15 3 C8.37 3 3 8.37 3 15 C3 20.31 6.44 24.81 11.22 26.4 C11.82 26.51 12.04 26.14 12.04 25.82 C12.04 25.53 12.03 24.58 12.03 23.47 C8.69 24.2 7.99 21.86 7.99 21.86 C7.44 20.47 6.66 20.1 6.66 20.1 C5.57 19.36 6.74 19.37 6.74 19.37 C7.95 19.46 8.58 20.61 8.58 20.61 C9.65 22.45 11.39 21.92 12.07 21.61 C12.18 20.83 12.49 20.3 12.83 20 C10.17 19.7 7.37 18.67 7.37 14.08 C7.37 12.77 7.84 11.7 8.6 10.87 C8.48 10.57 8.07 9.35 8.71 7.7 C8.71 7.7 9.72 7.38 12.01 8.93 C12.97 8.66 13.99 8.53 15 8.52 C16.01 8.53 17.03 8.66 17.99 8.93 C20.28 7.38 21.29 7.7 21.29 7.7 C21.93 9.35 21.52 10.57 21.4 10.87 C22.17 11.7 22.63 12.77 22.63 14.08 C22.63 18.69 19.82 19.69 17.15 19.99 C17.58 20.36 17.96 21.09 17.96 22.21 C17.96 23.82 17.95 25.11 17.95 25.82 C17.95 26.14 18.17 26.52 18.78 26.4 C23.56 24.8 27 20.3 27 15 C27 8.37 21.63 3 15 3 Z" fill="#161B22"/>
+  <text font-family="Inter, sans-serif" x="44" y="21" fill="#FFFFFF" font-size="14" font-weight="600">GitHub</text>
+  <rect x="110" y="0" width="340" height="30" rx="6" fill="#0D1117" stroke="#30363D" stroke-width="1"/>
+  <text font-family="Inter, sans-serif" x="125" y="19" fill="#8B949E" font-size="12.5">Type / to search or jump to...</text>
+  <text font-family="Inter, sans-serif" x="480" y="20" fill="#C9D1D9" font-size="13" font-weight="500">Pull requests</text>
+  <text font-family="Inter, sans-serif" x="585" y="20" fill="#C9D1D9" font-size="13" font-weight="500">Issues</text>
+  <circle cx="1350" cy="15" r="14" fill="#5865F2"/>
+  <text font-family="Inter, sans-serif" x="1350" y="20" fill="#FFFFFF" font-size="11" font-weight="700" text-anchor="middle">MK</text>
+</g>
+
+<!-- Repo Header -->
+<g transform="translate(48, 86)">
+  <text font-family="Inter, sans-serif" x="0" y="22" fill="#58A6FF" font-size="19" font-weight="600">MK043</text>
+  <text font-family="Inter, sans-serif" x="76" y="22" fill="#8B949E" font-size="19">/</text>
+  <text font-family="Inter, sans-serif" x="92" y="22" fill="#58A6FF" font-size="19" font-weight="700">MkV-SalesManager</text>
+  <rect x="310" y="4" width="54" height="20" rx="10" fill="none" stroke="#30363D" stroke-width="1"/>
+  <text font-family="Inter, sans-serif" x="337" y="18" fill="#8B949E" font-size="11" font-weight="600" text-anchor="middle">Public</text>
+</g>
+
+<!-- PR Title Area -->
+<g transform="translate(48, 140)">
+  <text font-family="Inter, sans-serif" x="0" y="32" fill="#F0F6FC" font-size="25" font-weight="700">feat(design): MkV Sales Manager CRM Complete UI/UX Design System &amp; Mockups</text>
+  <text font-family="Inter, sans-serif" x="1100" y="32" fill="#8B949E" font-size="25" font-weight="400">#1</text>
+
+  <g transform="translate(0, 52)">
+    <rect x="0" y="0" width="70" height="28" rx="14" fill="#238636"/>
+    <text font-family="Inter, sans-serif" x="12" y="19" fill="#FFFFFF" font-size="13" font-weight="700">⊙ Open</text>
+    <text font-family="Inter, sans-serif" x="82" y="19" fill="#C9D1D9" font-size="13.5"><tspan font-weight="600">MK043</tspan> wants to merge 4 commits into <tspan fill="#58A6FF" class="mono">main</tspan> from <tspan fill="#58A6FF" class="mono">feature/ui-ux-design</tspan></text>
+  </g>
+</g>
+<line x1="48" y1="240" x2="1392" y2="240" stroke="#21262D" stroke-width="1"/>
+
+<!-- PR Body Grid -->
+<g transform="translate(48, 260)">
+  <circle cx="20" cy="20" r="16" fill="#5865F2"/>
+  <text font-family="Inter, sans-serif" x="20" y="25" fill="#FFFFFF" font-size="11" font-weight="700" text-anchor="middle">MK</text>
+  
+  <g transform="translate(50, 0)">
+    <rect x="0" y="0" width="940" height="460" rx="6" fill="#0D1117" stroke="#30363D" stroke-width="1"/>
+    
+    <rect x="0" y="0" width="940" height="38" rx="6" fill="#161B22"/>
+    <line x1="0" y1="38" x2="940" y2="38" stroke="#30363D" stroke-width="1"/>
+    <text font-family="Inter, sans-serif" x="16" y="24" fill="#C9D1D9" font-size="13" font-weight="600">MK043</text>
+    <text font-family="Inter, sans-serif" x="75" y="24" fill="#8B949E" font-size="13">commented 15 minutes ago</text>
+
+    <g transform="translate(24, 60)">
+      <text font-family="Inter, sans-serif" x="0" y="15" fill="#F0F6FC" font-size="14.5" font-weight="700">### 🚀 Laboratory Work #2 Deliverables Summary</text>
+      
+      <text font-family="Inter, sans-serif" x="0" y="45" fill="#C9D1D9" font-size="13.5">• Completed high-fidelity UI/UX design in dark aesthetic for MkV Sales Manager CRM platform.</text>
+      <text font-family="Inter, sans-serif" x="0" y="70" fill="#C9D1D9" font-size="13.5">• Created 8 core application views: Master Hub, Analytics Dashboard, AI Creative Studio, Campaigns &amp; Rules,</text>
+      <text font-family="Inter, sans-serif" x="14" y="92" fill="#C9D1D9" font-size="13.5">Ad Fatigue Detector, Knowledge Base CAPI, Audiences &amp; Attribution, Official API Integrations.</text>
+      <text font-family="Inter, sans-serif" x="0" y="120" fill="#C9D1D9" font-size="13.5">• Implemented Media Buyer Authentication modal view (OAuth 2.0 SSO &amp; internal token auth).</text>
+      <text font-family="Inter, sans-serif" x="0" y="145" fill="#C9D1D9" font-size="13.5">• Fully prepared component architecture &amp; design tokens for end-of-term React implementation.</text>
+
+      <text font-family="Inter, sans-serif" x="0" y="190" fill="#F0F6FC" font-size="14.5" font-weight="700">### 👥 Assigned Reviewers:</text>
+      <text font-family="Inter, sans-serif" x="0" y="220" fill="#58A6FF" font-size="13.5" font-weight="500">• @romanbuchuk <tspan fill="#8B949E">(Lead Reviewer)</tspan></text>
+      <text font-family="Inter, sans-serif" x="0" y="245" fill="#58A6FF" font-size="13.5" font-weight="500">• @course-examiner <tspan fill="#8B949E">(Academic Evaluation)</tspan></text>
+
+      <text font-family="Inter, sans-serif" x="0" y="295" fill="#8B949E" font-size="13">All mockups and specifications attached in /mockups and /docs.</text>
+    </g>
+  </g>
+</g>
+
+<!-- Right Sidebar -->
+<g transform="translate(1060, 260)">
+  <text font-family="Inter, sans-serif" x="0" y="15" fill="#C9D1D9" font-size="13" font-weight="600">Reviewers</text>
+  <g transform="translate(0, 30)">
+    <circle cx="10" cy="10" r="10" fill="#58A6FF"/>
+    <text font-family="Inter, sans-serif" x="28" y="14" fill="#58A6FF" font-size="13.5" font-weight="600">romanbuchuk</text>
+    <text font-family="Inter, sans-serif" x="140" y="14" fill="#D29922" font-size="12">⏳ Awaiting review</text>
+  </g>
+  <line x1="0" y1="65" x2="330" y2="65" stroke="#21262D" stroke-width="1"/>
+
+  <g transform="translate(0, 85)">
+    <text font-family="Inter, sans-serif" x="0" y="0" fill="#C9D1D9" font-size="13" font-weight="600">Assignees</text>
+    <g transform="translate(0, 15)">
+      <circle cx="10" cy="10" r="10" fill="#5865F2"/>
+      <text font-family="Inter, sans-serif" x="10" y="14" fill="#FFFFFF" font-size="8" font-weight="700" text-anchor="middle">MK</text>
+      <text font-family="Inter, sans-serif" x="28" y="14" fill="#C9D1D9" font-size="13.5">MK043 (You)</text>
+    </g>
+  </g>
+  <line x1="0" y1="130" x2="330" y2="130" stroke="#21262D" stroke-width="1"/>
+
+  <g transform="translate(0, 150)">
+    <text font-family="Inter, sans-serif" x="0" y="0" fill="#C9D1D9" font-size="13" font-weight="600">Labels</text>
+    <g transform="translate(0, 15)">
+      <rect x="0" y="0" width="62" height="20" rx="10" fill="#1D4ED8"/>
+      <text font-family="Inter, sans-serif" x="31" y="14" fill="#FFFFFF" font-size="11" font-weight="600" text-anchor="middle">design</text>
+      
+      <rect x="70" y="0" width="85" height="20" rx="10" fill="#6D28D9"/>
+      <text font-family="Inter, sans-serif" x="112" y="14" fill="#FFFFFF" font-size="11" font-weight="600" text-anchor="middle">lab-work-2</text>
+    </g>
+  </g>
+</g>
+</svg>
