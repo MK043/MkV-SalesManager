@@ -13,16 +13,17 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Validate Core HTML and Asset Structure
+      - name: Validate Core Lab Assets and Mockups Structure
         run: |
           echo "Validating project assets and structure..."
-          test -f index.html
-          test -f 01_analytics_dashboard.html
-          test -f 02_ai_creative_studio.html
-          test -f 03_campaigns_management.html
-          test -f 04_ad_fatigue_detector.html
-          test -f 05_knowledge_base_capi.html
-          test -f 06_audiences_attribution.html
-          test -f 07_integrations_settings.html
+          test -f docs/Laboratorna_Robota_2_Bahyn_MkV_Sales_Manager.docx
+          test -d mockups
+          test -f mockups/01_Головний_огляд_платформи.svg
+          test -f mockups/02_Дашборд_аналітики.svg
+          test -f mockups/03_ШІ_Студія_креативів.svg
+          test -f mockups/04_Кампанії_та_медіабаїнг.svg
+          test -f mockups/05_Детектор_вигорання_та_хуки.svg
+          test -f mockups/06_Модальне_вікно_авторизації.svg
           test -f package.json
+          test -f README.md
           echo "All core files validated successfully!"
