@@ -11,7 +11,7 @@
 * **Факультет:** Факультет інформаційних технологій (ФІТ)
 * **Кафедра:** Кафедра інженерії програмного забезпечення (ІПЗ)
 * **Група:** ІПЗ-1 (2 курс, 2026 рік)
-* **Викладач / Рецензент:** Бучук Роман Олександрович ([@romanbuchuk](https://github.com/romanbuchuk))
+* **Викладач / Рецензент:** Бучук Роман Юрійович ([@romanbuchuk](https://github.com/romanbuchuk))
 * **Звіт у форматі DOCX:** [`docs/Laboratorna_Robota_2_Bahyn_MkV_Sales_Manager.docx`](docs/Laboratorna_Robota_2_Bahyn_MkV_Sales_Manager.docx)
 
 ---
