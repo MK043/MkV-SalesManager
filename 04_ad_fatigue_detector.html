@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MkV Sales Manager CRM — Детектор вигорання реклами (Ad Fatigue Detector)</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  
+    <div class="mockup-switcher-bar">
+      <div class="page-tabs"><a href="01_analytics_dashboard.html" class="page-tab-btn ">1. Дашборд аналітики (Рис. 3.1)</a><a href="02_ai_creative_studio.html" class="page-tab-btn ">2. ШІ-Студія креативів (Рис. 3.2)</a><a href="03_campaigns_management.html" class="page-tab-btn ">3. Кампанії та медіабаїнг</a><a href="04_ad_fatigue_detector.html" class="page-tab-btn active">4. Детектор вигорання реклами</a><a href="05_knowledge_base_capi.html" class="page-tab-btn ">5. База знань & CAPI чеклисти</a><a href="06_audiences_attribution.html" class="page-tab-btn ">6. Аудиторії та атрибуція</a><a href="07_integrations_settings.html" class="page-tab-btn ">7. Інтеграції API та права</a><a href="index.html" class="page-tab-btn ">⚡ Інтерактивний Master Hub</a></div>
+      <div style="font-size:11px; color:var(--text-muted); display:flex; align-items:center; gap:8px;">
+        <span style="display:inline-block; width:6px; height:6px; border-radius:50%; background:#10b981;"></span>
+        <span>Лабораторна робота №1 | УжНУ 2026</span>
+      </div>
+    </div>
+    
+  <div class="app-container">
+    
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="logo-badge">MkV</div>
+        <div class="brand-info">
+          <span class="brand-title">MkV Sales Manager <span style="font-size:10px; color:var(--accent-indigo); font-weight:800; border:1px solid rgba(99,102,241,0.4); border-radius:4px; padding:1px 4px;">CRM</span></span>
+          <span class="brand-subtitle">Media Buying OS</span>
+        </div>
+      </div>
+      <nav class="sidebar-nav">
+        <div class="nav-section-title">Основні модулі</div>
+        
+        <a href="01_analytics_dashboard.html" class="nav-item " data-target="dashboard">
+          <div class="nav-item-content">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="3" width="7" height="9"/><rect x="14" y="3" width="7" height="5"/><rect x="14" y="12" width="7" height="9"/><rect x="3" y="16" width="7" height="5"/></svg>
+            <span>Аналітика (Dashboard)</span>
+          </div>
+          
+        </a>
+        
+        <a href="02_ai_creative_studio.html" class="nav-item " data-target="studio">
+          <div class="nav-item-content">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <span>ШІ-Студія креативів</span>
+          </div>
+          <span class="nav-badge" style="background:rgba(99,102,241,0.25); color:#a5b4fc;">AI 2.0</span>
+        </a>
+        
+        <a href="03_campaigns_management.html" class="nav-item " data-target="campaigns">
+          <div class="nav-item-content">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            <span>Кампанії та правила</span>
+          </div>
+          <span class="nav-badge counter">5</span>
+        </a>
+        
+        <a href="04_ad_fatigue_detector.html" class="nav-item active" data-target="fatigue">
+          <div class="nav-item-content">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            <span>Вигорання реклами</span>
+          </div>
+          <span class="nav-badge alert">Alert</span>
+        </a>
+        
+        <a href="05_knowledge_base_capi.html" class="nav-item " data-target="knowledge">
+          <div class="nav-item-content">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            <span>База знань & CAPI</span>
+          </div>
+          <span class="nav-badge counter">3</span>
+        </a>
+        
+        <a href="06_audiences_attribution.html" class="nav-item " data-target="audiences">
+          <div class="nav-item-content">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <span>Аудиторії та ліди</span>
+          </div>
+          
+        </a>
+        
+        <a href="07_integrations_settings.html" class="nav-item " data-target="integrations">
+          <div class="nav-item-content">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+            <span>Інтеграції та API</span>
+          </div>
+          <span class="nav-badge" style="background:rgba(16,185,129,0.2); color:#34d399;">v19+</span>
+        </a>
+        
+      </nav>
+      <div class="sidebar-footer">
+        <div class="user-snippet">
+          <div class="user-avatar">МБ</div>
+          <div class="user-info">
+            <span class="user-name">Багин Михайло</span>
+            <span class="user-role">Таргетолог / ФІТ УжНУ</span>
+          </div>
+        </div>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+      </div>
+    </aside>
+    
+    <main class="main-wrapper">
+      
+    <header class="top-header">
+      <div class="header-left">
+        <div class="project-select-wrapper">
+          <button class="project-select-btn">
+            <span style="display:inline-block; width:8px; height:8px; border-radius:50%; background:#10b981;"></span>
+            <strong>EcoCosmetics EU</strong>
+            <span style="font-size:11px; color:var(--text-muted); font-weight:normal;">(ID: #MKV-8942)</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+        </div>
+        <div class="search-bar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" placeholder="Пошук кампаній, хуків, правил (Ctrl+K)..." />
+        </div>
+      </div>
+      <div class="header-right">
+        <div class="date-pill" onclick="showToast('Фільтр дат: 1 Лист 2026 - 30 Лист 2026', 'info')">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <span>1 Лист 2026 – 30 Лист 2026</span>
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+        <div class="btn-icon" title="Сповіщення" onclick="showToast('Ви маєте 2 критичні сповіщення: висока частота показів та оновлення CAPI токена', 'warning')">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+          <span class="alert-dot"></span>
+        </div>
+        <button class="btn-primary" onclick="showToast('Відкрито майстер швидкого запуску нової кампанії', 'success')">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          Нова кампанія
+        </button>
+      </div>
+    </header>
+    
+      
+      <div class="content-body">
+        <div class="page-header-row">
+          <div>
+            <div style="font-size:11.5px; color:var(--accent-amber); font-weight:600; margin-bottom:4px; text-transform:uppercase; letter-spacing:0.5px;">
+              Інтелектуальний моніторинг &bull; Розділ 2.2 роботи
+            </div>
+            <h1 class="page-title">Ad Fatigue Detector & Creative Health Matrix</h1>
+            <p class="page-description">Автоматичне виявлення зростання Frequency (&gt;2.8) та падіння CTR (&gt;20%). Ротація перших 3 секунд хуків.</p>
+          </div>
+          <div style="display:flex; gap:10px;">
+            <button class="btn-secondary" onclick="showToast('Запущено повний скан всіх 48 креативів на вигорання аудиторії...', 'info')">
+              Скан креативів
+            </button>
+            <a href="02_ai_creative_studio.html" class="btn-primary" style="background:linear-gradient(135deg,#f59e0b,#ea580c);">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              Згенерувати 3 свіжі хуки
+            </a>
+          </div>
+        </div>
+
+        <!-- Metric overview -->
+        <div class="kpi-grid" style="grid-template-columns:repeat(4, 1fr); margin-bottom:24px;">
+          <div class="kpi-card" style="--card-accent: #f59e0b;">
+            <div class="kpi-top">
+              <span class="kpi-label">Середня частота (Avg Frequency)</span>
+              <div class="kpi-icon-wrap" style="color:#f59e0b;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/></svg>
+              </div>
+            </div>
+            <div class="kpi-value">2.42x</div>
+            <div class="kpi-footer">
+              <span class="trend-badge negative">+18% за тиждень</span>
+              <span class="trend-context">Поріг тривоги: 2.80x</span>
+            </div>
+          </div>
+
+          <div class="kpi-card" style="--card-accent: #f43f5e;">
+            <div class="kpi-top">
+              <span class="kpi-label">Креативів у зоні ризику</span>
+              <div class="kpi-icon-wrap" style="color:#f43f5e;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/></svg>
+              </div>
+            </div>
+            <div class="kpi-value" style="color:#fb7185;">3 з 18</div>
+            <div class="kpi-footer">
+              <span class="trend-badge negative">CTR впав &gt; 20%</span>
+              <span class="trend-context">Потребують ротації</span>
+            </div>
+          </div>
+
+          <div class="kpi-card" style="--card-accent: #10b981;">
+            <div class="kpi-top">
+              <span class="kpi-label">Збережено бюджету</span>
+              <div class="kpi-icon-wrap" style="color:#10b981;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+              </div>
+            </div>
+            <div class="kpi-value" style="color:#34d399;">$1,840</div>
+            <div class="kpi-footer">
+              <span class="trend-badge positive">Завдяки авто-паузі</span>
+              <span class="trend-context">За листопад 2026</span>
+            </div>
+          </div>
+
+          <div class="kpi-card" style="--card-accent: #6366f1;">
+            <div class="kpi-top">
+              <span class="kpi-label">Середній 3s Hook Retention</span>
+              <div class="kpi-icon-wrap" style="color:#6366f1;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              </div>
+            </div>
+            <div class="kpi-value">64.8%</div>
+            <div class="kpi-footer">
+              <span class="trend-badge positive">+4.2% після AI хука</span>
+              <span class="trend-context">Ціль &gt; 60%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Frequency vs CTR Divergence Chart -->
+        <div class="chart-layout-2col" style="margin-bottom:24px;">
+          <div class="panel-card">
+            <div class="panel-header">
+              <div class="panel-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent-amber)" stroke-width="2"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>
+                Динаміка вигорання аудиторії: Frequency vs CTR (Дні 1–30)
+              </div>
+              <div class="legend-group">
+                <div class="legend-item"><span class="legend-dot" style="background:#f59e0b;"></span> Частота (Frequency)</div>
+                <div class="legend-item"><span class="legend-dot" style="background:#f43f5e;"></span> Клікабельність (CTR %)</div>
+                <div class="legend-item"><span class="legend-dot" style="background:#ef4444; border:1px dashed #fff;"></span> Поріг вигорання (2.8x)</div>
+              </div>
+            </div>
+
+            <!-- SVG Divergence Chart -->
+            <div class="svg-chart-wrap">
+              <svg class="svg-chart" viewBox="0 0 700 220" preserveAspectRatio="none">
+                <!-- Grid Lines -->
+                <line x1="30" y1="30" x2="680" y2="30" stroke="#1c263b" stroke-width="1" stroke-dasharray="4"/>
+                <line x1="30" y1="75" x2="680" y2="75" stroke="#1c263b" stroke-width="1" stroke-dasharray="4"/>
+                <line x1="30" y1="120" x2="680" y2="120" stroke="#1c263b" stroke-width="1" stroke-dasharray="4"/>
+                <line x1="30" y1="165" x2="680" y2="165" stroke="#1c263b" stroke-width="1" stroke-dasharray="4"/>
+                <line x1="30" y1="195" x2="680" y2="195" stroke="#2a3955" stroke-width="1"/>
+
+                <!-- Critical Threshold Line (Frequency 2.8) -->
+                <line x1="30" y1="65" x2="680" y2="65" stroke="#ef4444" stroke-width="2" stroke-dasharray="6"/>
+                <text x="540" y="58" fill="#ef4444" font-size="10.5" font-weight="bold">КРИТИЧНИЙ ПОРІГ: 2.80x FREQUENCY</text>
+
+                <!-- Frequency Line (Rising from 1.1x to 3.2x) -->
+                <path d="M 40,170 Q 180,160 300,135 T 500,80 T 670,45" fill="none" stroke="#f59e0b" stroke-width="3"/>
+
+                <!-- CTR Line (Dropping from 4.8% to 1.4%) -->
+                <path d="M 40,45 Q 180,55 300,90 T 500,145 T 670,180" fill="none" stroke="#f43f5e" stroke-width="3"/>
+
+                <!-- Cross Point Marker -->
+                <circle cx="480" cy="85" r="5" fill="#f59e0b" stroke="#fff" stroke-width="2"/>
+                <circle cx="480" cy="140" r="5" fill="#f43f5e" stroke="#fff" stroke-width="2"/>
+
+                <!-- Anomaly Pin Tag -->
+                <rect x="495" y="90" width="160" height="42" rx="6" fill="#1b1322" stroke="#f43f5e" stroke-width="1"/>
+                <text x="505" y="106" fill="#fda4af" font-size="10" font-weight="bold">День 22: Момент вигорання</text>
+                <text x="505" y="122" fill="#94a3b8" font-size="9.5">Частота &gt; 2.8 | CTR падіння -26%</text>
+
+                <!-- Dates -->
+                <text x="35" y="212" fill="#64748b" font-size="9.5">День 1</text>
+                <text x="140" y="212" fill="#64748b" font-size="9.5">День 6</text>
+                <text x="250" y="212" fill="#64748b" font-size="9.5">День 12</text>
+                <text x="360" y="212" fill="#64748b" font-size="9.5">День 18</text>
+                <text x="470" y="212" fill="#64748b" font-size="9.5">День 24</text>
+                <text x="630" y="212" fill="#64748b" font-size="9.5">День 30</text>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Creative Health Distribution -->
+          <div class="panel-card">
+            <div class="panel-header">
+              <div class="panel-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 14 14"/></svg>
+                Стан креативної бази
+              </div>
+            </div>
+            
+            <div style="display:flex; flex-direction:column; gap:14px; margin-top:6px;">
+              <div>
+                <div style="display:flex; justify-content:space-between; font-size:12px; margin-bottom:4px;">
+                  <span style="color:#10b981; font-weight:600;">🟢 Свіжі креативи (Freq &lt; 2.0)</span>
+                  <strong style="color:var(--text-primary);">11 оголошень (61%)</strong>
+                </div>
+                <div class="progress-bar-bg"><div class="progress-bar-fill" style="width:61%; background:#10b981;"></div></div>
+              </div>
+
+              <div>
+                <div style="display:flex; justify-content:space-between; font-size:12px; margin-bottom:4px;">
+                  <span style="color:#f59e0b; font-weight:600;">🟡 Помірне виснаження (Freq 2.0–2.8)</span>
+                  <strong style="color:var(--text-primary);">4 оголошення (22%)</strong>
+                </div>
+                <div class="progress-bar-bg"><div class="progress-bar-fill" style="width:22%; background:#f59e0b;"></div></div>
+              </div>
+
+              <div>
+                <div style="display:flex; justify-content:space-between; font-size:12px; margin-bottom:4px;">
+                  <span style="color:#f43f5e; font-weight:600;">🔴 Критичне вигорання (Freq &gt; 2.8)</span>
+                  <strong style="color:#fb7185;">3 оголошення (17%)</strong>
+                </div>
+                <div class="progress-bar-bg"><div class="progress-bar-fill" style="width:17%; background:#f43f5e;"></div></div>
+              </div>
+
+              <div style="background:rgba(255,255,255,0.03); border:1px solid var(--border-color); border-radius:var(--radius-md); padding:12px; margin-top:8px;">
+                <div style="font-size:11.5px; font-weight:700; color:var(--accent-cyan); margin-bottom:3px;">
+                  ШІ-Порада (AI Fatigue Assistant):
+                </div>
+                <p style="font-size:11.5px; color:var(--text-secondary); line-height:1.4;">
+                  Для 3 вигорілих креативів достатньо згенерувати <strong>нові перші 3 секунди (хук)</strong> без перезйомки всього відео. Це повертає CTR до вихідного рівня з мінімальними витратами.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Detailed Creative Fatigue Roster Table -->
+        <div class="panel-card">
+          <div class="panel-header">
+            <div class="panel-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent-rose)" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              Реєстр відеокреативів та статус вигорання
+            </div>
+          </div>
+
+          <div class="table-responsive">
+            <table class="crm-table">
+              <thead>
+                <tr>
+                  <th>Креатив</th>
+                  <th>Платформа</th>
+                  <th>Днів у показі</th>
+                  <th>Частота (Frequency)</th>
+                  <th>Динаміка CTR</th>
+                  <th>3s Hook VTR</th>
+                  <th>Fatigue Risk</th>
+                  <th>Рекомендована ШІ-дія</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr style="background:rgba(244,63,94,0.03);">
+                  <td>
+                    <div style="font-weight:700; color:var(--text-primary);">Summer_Retarget_Hook1.mp4</div>
+                    <div style="font-size:10.5px; color:var(--text-muted);">Хук: «Витрачаєте гроші даремно?»</div>
+                  </td>
+                  <td><span class="platform-pill insta">Instagram</span></td>
+                  <td>28 днів</td>
+                  <td style="color:#fb7185; font-weight:bold;">3.14x ⚠️</td>
+                  <td><span style="color:#fb7185; font-weight:bold;">2.10% (-26.2%)</span></td>
+                  <td>42.1%</td>
+                  <td><span class="status-pill danger">94% Критично</span></td>
+                  <td>
+                    <a href="02_ai_creative_studio.html" class="btn-primary" style="padding:4px 10px; font-size:11px; background:linear-gradient(135deg,#e11d48,#f43f5e);">
+                      Замінити хук в AI Studio
+                    </a>
+                  </td>
+                </tr>
+
+                <tr style="background:rgba(245,158,11,0.03);">
+                  <td>
+                    <div style="font-weight:700; color:var(--text-primary);">TikTok_Spark_Review_v3.mp4</div>
+                    <div style="font-size:10.5px; color:var(--text-muted);">Хук: «Чесний відгук про крем...»</div>
+                  </td>
+                  <td><span class="platform-pill tiktok">TikTok</span></td>
+                  <td>19 днів</td>
+                  <td style="color:#fbbf24; font-weight:bold;">2.48x</td>
+                  <td><span style="color:#fbbf24;">2.85% (-12.4%)</span></td>
+                  <td>58.4%</td>
+                  <td><span class="status-pill warning">58% Помірне</span></td>
+                  <td>
+                    <button class="btn-secondary" style="padding:4px 10px; font-size:11px;" onclick="showToast('Розширено аудиторію адсету до 3% Lookalike', 'info')">
+                      Розширити Lookalike
+                    </button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div style="font-weight:700; color:var(--text-primary);">Meta_CAPI_Launch_UGC4.mp4</div>
+                    <div style="font-size:10.5px; color:var(--text-muted);">Хук: «STOP SCROLLING! Твій CAPI...»</div>
+                  </td>
+                  <td><span class="platform-pill meta">Meta Ads</span></td>
+                  <td>6 днів</td>
+                  <td style="color:#10b981; font-weight:bold;">1.32x</td>
+                  <td><span style="color:#34d399; font-weight:bold;">3.84% (+14.0%)</span></td>
+                  <td>71.2%</td>
+                  <td><span class="status-pill active">12% Свіжий</span></td>
+                  <td>
+                    <button class="btn-secondary" style="padding:4px 10px; font-size:11px; color:#34d399; border-color:rgba(16,185,129,0.3);" onclick="showToast('Масштабовано бюджет успішного креативу', 'success')">
+                      Масштабувати (+20%)
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

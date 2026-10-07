@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 960" width="1440" height="960">
+<defs>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap");
+    text { font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  </style>
+  <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#6366F1"/>
+    <stop offset="100%" stop-color="#8B5CF6"/>
+  </linearGradient>
+  <linearGradient id="ctaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#4F46E5"/>
+    <stop offset="100%" stop-color="#6366F1"/>
+  </linearGradient>
+</defs>
+<rect width="1440" height="960" fill="#0A0F1D"/>
+<g id="TopTabBar">
+  <rect x="0" y="0" width="1440" height="46" fill="#060913"/>
+  <line x1="0" y1="46" x2="1440" y2="46" stroke="#172033" stroke-width="1"/>
+  <g id="Tab-0">
+    <text x="152.25" y="27" fill="#8899A6" font-size="11.5" font-weight="500" text-anchor="middle">1. Дашборд аналітики (Рис. 3.1)</text>
+  </g>
+  <g id="Tab-1">
+    <text x="426.25" y="27" fill="#8899A6" font-size="11.5" font-weight="500" text-anchor="middle">2. ШІ-Студія креативів (Рис. 3.2)</text>
+  </g>
+  <g id="Tab-2">
+    <text x="677.75" y="27" fill="#8899A6" font-size="11.5" font-weight="500" text-anchor="middle">3. Кампанії та медіабайнг</text>
+  </g>
+  <g id="Tab-3">
+    <text x="914.25" y="27" fill="#8899A6" font-size="11.5" font-weight="500" text-anchor="middle">4. Детектор вигорання реклами</text>
+  </g>
+  <g id="Tab-4">
+    <text x="1165.75" y="27" fill="#8899A6" font-size="11.5" font-weight="500" text-anchor="middle">5. База знань &amp; CAPI чеклисти</text>
+  </g>
+  <g id="Tab-5">
+    <text x="1402.25" y="27" fill="#8899A6" font-size="11.5" font-weight="500" text-anchor="middle">6. Аудиторії та атрибуція</text>
+  </g>
+  <g id="Tab-6-Active">
+    <rect x="1518.0" y="8" width="219.0" height="30" rx="6" fill="#17223B" stroke="#38BDF8" stroke-width="1.2"/>
+    <text x="1627.5" y="27" fill="#FFFFFF" font-size="11.5" font-weight="600" text-anchor="middle">7. Інтеграції API та права</text>
+  </g>
+  <g id="Tab-7">
+    <text x="1796.5" y="27" fill="#8899A6" font-size="11.5" font-weight="500" text-anchor="middle">⚡ Інтер...</text>
+  </g>
+</g>
+<g id="Sidebar">
+  <rect x="0" y="46" width="246" height="914" fill="#0D1322"/>
+  <line x1="246" y1="46" x2="246" y2="960" stroke="#172033" stroke-width="1"/>
+  <g id="BrandHeader">
+    <rect x="18" y="66" width="34" height="34" rx="8" fill="url(#brandGrad)"/>
+    <text x="35" y="88" fill="#FFFFFF" font-size="14" font-weight="800" text-anchor="middle">MkV</text>
+    <text x="60" y="80" fill="#FFFFFF" font-size="13" font-weight="700">MkV Sales Manager</text>
+    <rect x="186" y="70" width="30" height="14" rx="3" fill="#1E1B4B" stroke="#4338CA" stroke-width="0.8"/>
+    <text x="201" y="80.5" fill="#818CF8" font-size="8.5" font-weight="800" text-anchor="middle">CRM</text>
+    <text x="60" y="94" fill="#06B6D4" font-size="9" font-weight="700" letter-spacing="0.5">MEDIA BUYING OS</text>
+  </g>
+  <text x="20" y="142" fill="#526079" font-size="10" font-weight="700" letter-spacing="1">ОСНОВНІ МОДУЛІ</text>
+  <g id="Nav-0">
+    <circle cx="30" cy="173" r="3" fill="#334155"/>
+    <text x="44" y="178" fill="#8A99AD" font-size="12" font-weight="500">Аналітика (Dashboard)</text>
+  </g>
+  <g id="Nav-1">
+    <circle cx="30" cy="219" r="3" fill="#334155"/>
+    <text x="44" y="224" fill="#8A99AD" font-size="12" font-weight="500">ШІ-Студія креативів</text>
+    <rect x="166" y="210" width="54" height="18" rx="5" fill="#312E81"/>
+    <text x="193.0" y="222.5" fill="#A5B4FC" font-size="9.5" font-weight="700" text-anchor="middle">AI 2.0</text>
+  </g>
+  <g id="Nav-2">
+    <circle cx="30" cy="265" r="3" fill="#334155"/>
+    <text x="44" y="270" fill="#8A99AD" font-size="12" font-weight="500">Кампанії та правила</text>
+    <rect x="201" y="256" width="19" height="18" rx="5" fill="#1E293B"/>
+    <text x="210.5" y="268.5" fill="#94A3B8" font-size="9.5" font-weight="700" text-anchor="middle">5</text>
+  </g>
+  <g id="Nav-3">
+    <circle cx="30" cy="311" r="3" fill="#334155"/>
+    <text x="44" y="316" fill="#8A99AD" font-size="12" font-weight="500">Вигорання реклами</text>
+    <rect x="173" y="302" width="47" height="18" rx="5" fill="#7F1D1D"/>
+    <text x="196.5" y="314.5" fill="#F87171" font-size="9.5" font-weight="700" text-anchor="middle">Alert</text>
+  </g>
+  <g id="Nav-4">
+    <circle cx="30" cy="357" r="3" fill="#334155"/>
+    <text x="44" y="362" fill="#8A99AD" font-size="12" font-weight="500">База знань &amp; CAPI</text>
+    <rect x="201" y="348" width="19" height="18" rx="5" fill="#1E293B"/>
+    <text x="210.5" y="360.5" fill="#94A3B8" font-size="9.5" font-weight="700" text-anchor="middle">3</text>
+  </g>
+  <g id="Nav-5">
+    <circle cx="30" cy="403" r="3" fill="#334155"/>
+    <text x="44" y="408" fill="#8A99AD" font-size="12" font-weight="500">Аудиторії та ліди</text>
+  </g>
+  <g id="Nav-6-Active">
+    <rect x="12" y="430" width="222" height="38" rx="8" fill="#18233C" stroke="#4F46E5" stroke-width="1.2"/>
+    <circle cx="30" cy="449" r="4" fill="#6366F1"/>
+    <text x="44" y="454" fill="#FFFFFF" font-size="12" font-weight="600">Інтеграції та API</text>
+    <rect x="180" y="440" width="40" height="18" rx="5" fill="#064E3B"/>
+    <text x="200.0" y="452.5" fill="#34D399" font-size="9.5" font-weight="700" text-anchor="middle">v19+</text>
+  </g>
+</g>
+<g id="SubHeader">
+  <rect x="246" y="46" width="1194" height="64" fill="#0A0F1D"/>
+  <line x1="246" y1="110" x2="1440" y2="110" stroke="#172033" stroke-width="1"/>
+  <g id="WorkspaceSelector">
+    <rect x="270" y="58" width="230" height="40" rx="8" fill="#111827" stroke="#1F2937" stroke-width="1"/>
+    <circle cx="286" cy="78" r="4" fill="#10B981"/>
+    <text x="298" y="82" fill="#FFFFFF" font-size="12" font-weight="600">EcoCosmetics EU</text>
+    <text x="410" y="82" fill="#64748B" font-size="10.5">(ID: #MKV-8942) ⌄</text>
+  </g>
+  <g id="SearchBar">
+    <rect x="512" y="58" width="280" height="40" rx="8" fill="#111827" stroke="#1F2937" stroke-width="1"/>
+    <text x="528" y="82" fill="#64748B" font-size="12">🔍 Пошук кампаній, хуків, правил (Ctrl+K)</text>
+  </g>
+  <g id="DatePicker">
+    <rect x="910" y="58" width="180" height="40" rx="8" fill="#111827" stroke="#1F2937" stroke-width="1"/>
+    <rect x="922" y="66" width="24" height="24" rx="4" fill="#1F2937"/>
+    <text x="956" y="74" fill="#E2E8F0" font-size="10" font-weight="600">1 Лист 2026</text>
+    <text x="956" y="87" fill="#64748B" font-size="9.5">– 30 Лист 2026</text>
+  </g>
+  <g id="Notifications">
+    <rect x="1102" y="58" width="40" height="40" rx="8" fill="#111827" stroke="#1F2937" stroke-width="1"/>
+    <text x="1122" y="82" fill="#94A3B8" font-size="14" text-anchor="middle">🔔</text>
+    <circle cx="1128" cy="68" r="3" fill="#EF4444"/>
+  </g>
+  <g id="CreateCampaignBtn">
+    <rect x="1152" y="58" width="150" height="40" rx="8" fill="url(#ctaGrad)"/>
+    <text x="1227" y="82.5" fill="#FFFFFF" font-size="12" font-weight="700" text-anchor="middle">+ Нова кампанія</text>
+  </g>
+</g>
+<g id="MainContent">
+  <text x="270" y="132" fill="#10B981" font-size="11" font-weight="700">ТЕХНІЧНІ МЕТОДИ ІНТЕГРАЦІЇ • ТАБЛИЦЯ 1.1 З РОБОТИ</text>
+  <text x="270" y="160" fill="#FFFFFF" font-size="22" font-weight="800">Official API Integrations &amp; Team Access Hub</text>
+  <text x="270" y="180" fill="#94A3B8" font-size="11.5">Підключення офіційних API: Meta Marketing API v19+, TikTok Commercial API v1.3, Google Ads REST API v16+.</text>
+  <rect x="1170" y="142" width="230" height="36" rx="7" fill="#4F46E5"/>
+  <text x="1285" y="165" fill="#FFFFFF" font-size="11.5" font-weight="700" text-anchor="middle">✓ Статус API: Всі системи в нормі</text>
+  <g id="Integration-Facebook___Instagram_Ads__Meta_">
+    <rect x="270" y="205" width="555" height="235" rx="10" fill="#111827" stroke="#1F2937" stroke-width="1.2"/>
+    <rect x="288" y="223" width="36" height="36" rx="8" fill="#1877F2"/>
+    <text x="306" y="246" fill="#FFFFFF" font-size="13" font-weight="800" text-anchor="middle">FB</text>
+    <text x="334" y="239" fill="#FFFFFF" font-size="13.5" font-weight="700">Facebook &amp; Instagram Ads (Meta)</text>
+    <rect x="649" y="227" width="158" height="20" rx="4" fill="#064E3B"/>
+    <text x="728.0" y="240.5" fill="#34D399" font-size="9" font-weight="700" text-anchor="middle">Connected • Live Webhook</text>
+    <text x="334" y="257" fill="#64748B" font-size="10.5">Метод інтеграції: Meta Graph / Marketing API v19+</text>
+    <text x="288" y="290" fill="#94A3B8" font-size="10.5">Ключові метрики: Spend, ROAS, Frequency, CAPI Match Rate, CPM, CTR.</text>
+    <text x="288" y="310" fill="#94A3B8" font-size="10.5">Автоматизовані дії: Авто-пауза при перевищенні CPA, розширення бюджету при високому ROAS.</text>
+    <line x1="288" y1="385" x2="807" y2="385" stroke="#1E293B" stroke-width="1"/>
+    <text x="288" y="411" fill="#64748B" font-size="10.5">Токен валідний ще: 54 дні</text>
+    <rect x="709.0" y="397" width="98.0" height="26" rx="5" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+    <text x="758.0" y="414" fill="#818CF8" font-size="10.5" font-weight="600" text-anchor="middle">Тест зв&#x27;язку</text>
+  </g>
+  <g id="Integration-TikTok_Ads_for_Business">
+    <rect x="845" y="205" width="555" height="235" rx="10" fill="#111827" stroke="#1F2937" stroke-width="1.2"/>
+    <rect x="863" y="223" width="36" height="36" rx="8" fill="#010101"/>
+    <text x="881" y="246" fill="#00F2FE" font-size="13" font-weight="800" text-anchor="middle">TT</text>
+    <text x="909" y="239" fill="#FFFFFF" font-size="13.5" font-weight="700">TikTok Ads for Business</text>
+    <rect x="1218" y="227" width="164" height="20" rx="4" fill="#064E3B"/>
+    <text x="1300.0" y="240.5" fill="#34D399" font-size="9" font-weight="700" text-anchor="middle">Connected • Spark Auth OK</text>
+    <text x="909" y="257" fill="#64748B" font-size="10.5">Метод інтеграції: TikTok Commercial API v1.3</text>
+    <text x="863" y="290" fill="#94A3B8" font-size="10.5">Ключові метрики: VTR (Video Completion Rate), Cost per Follower, Spark Ad Auth Code.</text>
+    <text x="863" y="310" fill="#94A3B8" font-size="10.5">Автоматизовані дії: Синхронізація органічних постів кріейторів у Spark Ads без втрати лайків.</text>
+    <line x1="863" y1="385" x2="1382" y2="385" stroke="#1E293B" stroke-width="1"/>
+    <text x="863" y="411" fill="#64748B" font-size="10.5">Авторизовано кріейторів: 6 авторів</text>
+    <rect x="1284.0" y="397" width="98.0" height="26" rx="5" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+    <text x="1333.0" y="414" fill="#818CF8" font-size="10.5" font-weight="600" text-anchor="middle">Тест зв&#x27;язку</text>
+  </g>
+  <g id="Integration-Google_Ads__Search___Performance_Max_">
+    <rect x="270" y="455" width="555" height="235" rx="10" fill="#111827" stroke="#1F2937" stroke-width="1.2"/>
+    <rect x="288" y="473" width="36" height="36" rx="8" fill="#4285F4"/>
+    <text x="306" y="496" fill="#FFFFFF" font-size="13" font-weight="800" text-anchor="middle">G</text>
+    <text x="334" y="489" fill="#FFFFFF" font-size="13.5" font-weight="700">Google Ads (Search &amp; Performance Max)</text>
+    <rect x="667" y="477" width="140" height="20" rx="4" fill="#064E3B"/>
+    <text x="737.0" y="490.5" fill="#34D399" font-size="9" font-weight="700" text-anchor="middle">Connected • OAuth 2.0</text>
+    <text x="334" y="507" fill="#64748B" font-size="10.5">Метод інтеграції: Google Ads REST API v16+</text>
+    <text x="288" y="540" fill="#94A3B8" font-size="10.5">Ключові метрики: Search Impression Share, PMax Asset Performance, CPC, Conv. Value.</text>
+    <text x="288" y="560" fill="#94A3B8" font-size="10.5">Автоматизовані дії: Перерозподіл бюджету між ключовими словами й активами Performance Max.</text>
+    <line x1="288" y1="635" x2="807" y2="635" stroke="#1E293B" stroke-width="1"/>
+    <text x="288" y="661" fill="#64748B" font-size="10.5">Customer ID: #892-491-0021</text>
+    <rect x="709.0" y="647" width="98.0" height="26" rx="5" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+    <text x="758.0" y="664" fill="#818CF8" font-size="10.5" font-weight="600" text-anchor="middle">Тест зв&#x27;язку</text>
+  </g>
+  <g id="Integration-E-commerce_CRM___Store_Bridge">
+    <rect x="845" y="455" width="555" height="235" rx="10" fill="#111827" stroke="#1F2937" stroke-width="1.2"/>
+    <rect x="863" y="473" width="36" height="36" rx="8" fill="#0D9488"/>
+    <text x="881" y="496" fill="#FFFFFF" font-size="13" font-weight="800" text-anchor="middle">CRM</text>
+    <text x="909" y="489" fill="#FFFFFF" font-size="13.5" font-weight="700">E-commerce CRM &amp; Store Bridge</text>
+    <rect x="1236" y="477" width="146" height="20" rx="4" fill="#064E3B"/>
+    <text x="1309.0" y="490.5" fill="#34D399" font-size="9" font-weight="700" text-anchor="middle">Syncing Live • 0 Delay</text>
+    <text x="909" y="507" fill="#64748B" font-size="10.5">Shopify / WooCommerce / CRM Webhooks</text>
+    <text x="863" y="540" fill="#94A3B8" font-size="10.5">Ключові події: Real Purchase, Lead Submitted, Add To Cart, Checkout Started, LTV Growth.</text>
+    <text x="863" y="560" fill="#94A3B8" font-size="10.5">Автоматизовані дії: Миттєва передача подій у Meta CAPI та Google Enhanced Conversions.</text>
+    <line x1="863" y1="635" x2="1382" y2="635" stroke="#1E293B" stroke-width="1"/>
+    <text x="863" y="661" fill="#64748B" font-size="10.5">Оброблено подій сьогодні: 1,298 подій</text>
+    <rect x="1284.0" y="647" width="98.0" height="26" rx="5" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+    <text x="1333.0" y="664" fill="#818CF8" font-size="10.5" font-weight="600" text-anchor="middle">Лог вебхуків</text>
+  </g>
+  <g id="TeamRolesTable">
+    <rect x="270" y="705" width="1130" height="235" rx="10" fill="#111827" stroke="#1F2937" stroke-width="1.2"/>
+    <text x="290" y="733" fill="#FFFFFF" font-size="13" font-weight="700">👥 Команда проекту та рівні доступу (Team Roles &amp; RBAC)</text>
+    <rect x="1245" y="718" width="140" height="26" rx="5" fill="#18233C" stroke="#2D3E5D" stroke-width="1"/>
+    <text x="1315" y="734.5" fill="#E2E8F0" font-size="10.5" font-weight="600" text-anchor="middle">+ Запросити спеціаліста</text>
+    <line x1="270" y1="750" x2="1400" y2="750" stroke="#1F2937" stroke-width="1"/>
+    <text x="290" y="770" fill="#526079" font-size="9.5" font-weight="700">КОРИСТУВАЧ</text>
+    <text x="480" y="770" fill="#526079" font-size="9.5" font-weight="700">РОЛЬ</text>
+    <text x="660" y="770" fill="#526079" font-size="9.5" font-weight="700">ДОЗВОЛЕНІ МОДУЛІ</text>
+    <text x="960" y="770" fill="#526079" font-size="9.5" font-weight="700">РІВЕНЬ ДОСТУПУ ДО БЮДЖЕТІВ</text>
+    <text x="1260" y="770" fill="#526079" font-size="9.5" font-weight="700">СТАТУС</text>
+    <line x1="270" y1="780" x2="1400" y2="780" stroke="#1F2937" stroke-width="1"/>
+    <text x="290" y="808" fill="#FFFFFF" font-size="12" font-weight="700">Багин Михайло Михайлович</text>
+    <text x="290" y="824" fill="#64748B" font-size="10">Студент 2 курсу ФІТ УжНУ (ІПЗ-1)</text>
+    <rect x="480" y="795" width="196.0" height="20" rx="4" fill="#064E3B"/>
+    <text x="578.0" y="809" fill="#34D399" font-size="9.5" font-weight="700" text-anchor="middle">Admin / Head of Media Buying</text>
+    <text x="660" y="808" fill="#E2E8F0" font-size="11">Всі модулі (Analytics, AI Studio, Campaigns, Rules, CAPI)</text>
+    <text x="960" y="808" fill="#10B981" font-size="11" font-weight="700">Повний доступ (Необмежений)</text>
+    <rect x="1260" y="795" width="53.0" height="20" rx="4" fill="#064E3B"/>
+    <text x="1286.5" y="809" fill="#34D399" font-size="9.5" font-weight="700" text-anchor="middle">Active</text>
+    <line x1="270" y1="838" x2="1400" y2="838" stroke="#161F30" stroke-width="1"/>
+    <text x="290" y="868" fill="#FFFFFF" font-size="12" font-weight="700">Анна Ковальчук</text>
+    <text x="290" y="884" fill="#64748B" font-size="10">SMM &amp; UGC Creator Lead</text>
+    <rect x="480" y="855" width="170.0" height="20" rx="4" fill="#164E63"/>
+    <text x="565.0" y="869" fill="#22D3EE" font-size="9.5" font-weight="700" text-anchor="middle">SMM &amp; AI Creative Editor</text>
+    <text x="660" y="868" fill="#E2E8F0" font-size="11">AI Creative Studio, Storyboard, Spark Ads Creator Sync</text>
+    <text x="960" y="868" fill="#94A3B8" font-size="11" font-weight="700">Тільки редагування креативів</text>
+    <rect x="1260" y="855" width="53.0" height="20" rx="4" fill="#064E3B"/>
+    <text x="1286.5" y="869" fill="#34D399" font-size="9.5" font-weight="700" text-anchor="middle">Active</text>
+    <line x1="270" y1="898" x2="1400" y2="898" stroke="#161F30" stroke-width="1"/>
+  </g>
+</g>
+</svg>

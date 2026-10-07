@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MkV Sales Manager CRM — Інтеграції API та налаштування</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  
+    <div class="mockup-switcher-bar">
+      <div class="page-tabs"><a href="01_analytics_dashboard.html" class="page-tab-btn ">1. Дашборд аналітики (Рис. 3.1)</a><a href="02_ai_creative_studio.html" class="page-tab-btn ">2. ШІ-Студія креативів (Рис. 3.2)</a><a href="03_campaigns_management.html" class="page-tab-btn ">3. Кампанії та медіабаїнг</a><a href="04_ad_fatigue_detector.html" class="page-tab-btn ">4. Детектор вигорання реклами</a><a href="05_knowledge_base_capi.html" class="page-tab-btn ">5. База знань & CAPI чеклисти</a><a href="06_audiences_attribution.html" class="page-tab-btn ">6. Аудиторії та атрибуція</a><a href="07_integrations_settings.html" class="page-tab-btn active">7. Інтеграції API та права</a><a href="index.html" class="page-tab-btn ">⚡ Інтерактивний Master Hub</a></div>
+      <div style="font-size:11px; color:var(--text-muted); display:flex; align-items:center; gap:8px;">
+        <span style="display:inline-block; width:6px; height:6px; border-radius:50%; background:#10b981;"></span>
+        <span>Лабораторна робота №1 | УжНУ 2026</span>
+      </div>
+    </div>
+    
+  <div class="app-container">
+    
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="logo-badge">MkV</div>
+        <div class="brand-info">
+          <span class="brand-title">MkV Sales Manager <span style="font-size:10px; color:var(--accent-indigo); font-weight:800; border:1px solid rgba(99,102,241,0.4); border-radius:4px; padding:1px 4px;">CRM</span></span>
+          <span class="brand-subtitle">Media Buying OS</span>
+        </div>
+      </div>
+      <nav class="sidebar-nav">
+        <div class="nav-section-title">Основні модулі</div>
+        
+        <a href="01_analytics_dashboard.html" class="nav-item " data-target="dashboard">
+          <div class="nav-item-content">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="3" width="7" height="9"/><rect x="14" y="3" width="7" height="5"/><rect x="14" y="12" width="7" height="9"/><rect x="3" y="16" width="7" height="5"/></svg>
+            <span>Аналітика (Dashboard)</span>
+          </div>
+          
+        </a>
+        
+        <a href="02_ai_creative_studio.html" class="nav-item " data-target="studio">
+          <div class="nav-item-content">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <span>ШІ-Студія креативів</span>
+          </div>
+          <span class="nav-badge" style="background:rgba(99,102,241,0.25); color:#a5b4fc;">AI 2.0</span>
+        </a>
+        
+        <a href="03_campaigns_management.html" class="nav-item " data-target="campaigns">
+          <div class="nav-item-content">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            <span>Кампанії та правила</span>
+          </div>
+          <span class="nav-badge counter">5</span>
+        </a>
+        
+        <a href="04_ad_fatigue_detector.html" class="nav-item " data-target="fatigue">
+          <div class="nav-item-content">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            <span>Вигорання реклами</span>
+          </div>
+          <span class="nav-badge alert">Alert</span>
+        </a>
+        
+        <a href="05_knowledge_base_capi.html" class="nav-item " data-target="knowledge">
+          <div class="nav-item-content">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            <span>База знань & CAPI</span>
+          </div>
+          <span class="nav-badge counter">3</span>
+        </a>
+        
+        <a href="06_audiences_attribution.html" class="nav-item " data-target="audiences">
+          <div class="nav-item-content">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <span>Аудиторії та ліди</span>
+          </div>
+          
+        </a>
+        
+        <a href="07_integrations_settings.html" class="nav-item active" data-target="integrations">
+          <div class="nav-item-content">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+            <span>Інтеграції та API</span>
+          </div>
+          <span class="nav-badge" style="background:rgba(16,185,129,0.2); color:#34d399;">v19+</span>
+        </a>
+        
+      </nav>
+      <div class="sidebar-footer">
+        <div class="user-snippet">
+          <div class="user-avatar">МБ</div>
+          <div class="user-info">
+            <span class="user-name">Багин Михайло</span>
+            <span class="user-role">Таргетолог / ФІТ УжНУ</span>
+          </div>
+        </div>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+      </div>
+    </aside>
+    
+    <main class="main-wrapper">
+      
+    <header class="top-header">
+      <div class="header-left">
+        <div class="project-select-wrapper">
+          <button class="project-select-btn">
+            <span style="display:inline-block; width:8px; height:8px; border-radius:50%; background:#10b981;"></span>
+            <strong>EcoCosmetics EU</strong>
+            <span style="font-size:11px; color:var(--text-muted); font-weight:normal;">(ID: #MKV-8942)</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+        </div>
+        <div class="search-bar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" placeholder="Пошук кампаній, хуків, правил (Ctrl+K)..." />
+        </div>
+      </div>
+      <div class="header-right">
+        <div class="date-pill" onclick="showToast('Фільтр дат: 1 Лист 2026 - 30 Лист 2026', 'info')">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <span>1 Лист 2026 – 30 Лист 2026</span>
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+        <div class="btn-icon" title="Сповіщення" onclick="showToast('Ви маєте 2 критичні сповіщення: висока частота показів та оновлення CAPI токена', 'warning')">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+          <span class="alert-dot"></span>
+        </div>
+        <button class="btn-primary" onclick="showToast('Відкрито майстер швидкого запуску нової кампанії', 'success')">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          Нова кампанія
+        </button>
+      </div>
+    </header>
+    
+      
+      <div class="content-body">
+        <div class="page-header-row">
+          <div>
+            <div style="font-size:11.5px; color:var(--accent-emerald); font-weight:600; margin-bottom:4px; text-transform:uppercase; letter-spacing:0.5px;">
+              Технічні методи інтеграції &bull; Таблиця 1.1 з роботи
+            </div>
+            <h1 class="page-title">Official API Integrations & Team Access Hub</h1>
+            <p class="page-description">Підключення офіційних API: Meta Marketing API v19+, TikTok Commercial API v1.3, Google Ads REST API v16+.</p>
+          </div>
+          <div style="display:flex; gap:10px;">
+            <button class="btn-primary" onclick="showToast('Всі API токени активні, затримок у передачі подій немає', 'success')">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              Статус API: Всі системи в нормі
+            </button>
+          </div>
+        </div>
+
+        <!-- 4 API Integration Cards (Exact match to Section 1.1 Table) -->
+        <div style="display:grid; grid-template-columns:repeat(2, 1fr); gap:20px; margin-bottom:24px;">
+          
+          <!-- Card 1: Meta Ads -->
+          <div class="panel-card" style="border-top:3px solid #1877f2;">
+            <div class="panel-header">
+              <div style="display:flex; align-items:center; gap:10px;">
+                <div style="width:36px; height:36px; border-radius:8px; background:rgba(24,119,242,0.15); display:flex; align-items:center; justify-content:center; color:#1877f2; font-weight:bold;">
+                  FB
+                </div>
+                <div>
+                  <div style="font-size:14px; font-weight:700; color:var(--text-primary);">Facebook & Instagram Ads (Meta)</div>
+                  <div style="font-size:11px; color:var(--text-muted);">Метод інтеграції: Meta Graph / Marketing API v19+</div>
+                </div>
+              </div>
+              <span class="status-pill active">Connected &bull; Live Webhook</span>
+            </div>
+
+            <div style="font-size:12px; color:var(--text-secondary); line-height:1.5; margin-bottom:12px;">
+              <strong>Ключові метрики, що аналізуються:</strong> Spend, ROAS, Frequency, CAPI Match Rate, CPM, CTR.<br>
+              <strong>Автоматизовані дії:</strong> Авто-пауза при перевищенні CPA, розширення бюджету при високому ROAS.
+            </div>
+
+            <div style="display:flex; justify-content:space-between; align-items:center; font-size:11px; color:var(--text-muted); border-top:1px solid var(--border-color); padding-top:10px;">
+              <span>Токен валідний ще: <strong>54 дні</strong></span>
+              <button class="btn-secondary" style="padding:3px 8px; font-size:11px;" onclick="showToast('Meta API з'єднання перевірено успішно', 'success')">Тест зв'язку</button>
+            </div>
+          </div>
+
+          <!-- Card 2: TikTok Ads -->
+          <div class="panel-card" style="border-top:3px solid #00f2fe;">
+            <div class="panel-header">
+              <div style="display:flex; align-items:center; gap:10px;">
+                <div style="width:36px; height:36px; border-radius:8px; background:rgba(0,242,254,0.15); display:flex; align-items:center; justify-content:center; color:#00f2fe; font-weight:bold;">
+                  TT
+                </div>
+                <div>
+                  <div style="font-size:14px; font-weight:700; color:var(--text-primary);">TikTok Ads for Business</div>
+                  <div style="font-size:11px; color:var(--text-muted);">Метод інтеграції: TikTok Commercial API v1.3</div>
+                </div>
+              </div>
+              <span class="status-pill active">Connected &bull; Spark Auth OK</span>
+            </div>
+
+            <div style="font-size:12px; color:var(--text-secondary); line-height:1.5; margin-bottom:12px;">
+              <strong>Ключові метрики, що аналізуються:</strong> VTR (Video Completion Rate), Cost per Follower, Spark Ad Auth Code.<br>
+              <strong>Автоматизовані дії:</strong> Синхронізація органічних постів кріейторів у Spark Ads без втрати лайків.
+            </div>
+
+            <div style="display:flex; justify-content:space-between; align-items:center; font-size:11px; color:var(--text-muted); border-top:1px solid var(--border-color); padding-top:10px;">
+              <span>Авторизовано кріейторів: <strong>6 авторів</strong></span>
+              <button class="btn-secondary" style="padding:3px 8px; font-size:11px;" onclick="showToast('TikTok Commercial API активний', 'success')">Тест зв'язку</button>
+            </div>
+          </div>
+
+          <!-- Card 3: Google Ads -->
+          <div class="panel-card" style="border-top:3px solid #4285f4;">
+            <div class="panel-header">
+              <div style="display:flex; align-items:center; gap:10px;">
+                <div style="width:36px; height:36px; border-radius:8px; background:rgba(66,133,244,0.15); display:flex; align-items:center; justify-content:center; color:#4285f4; font-weight:bold;">
+                  G
+                </div>
+                <div>
+                  <div style="font-size:14px; font-weight:700; color:var(--text-primary);">Google Ads (Search & Performance Max)</div>
+                  <div style="font-size:11px; color:var(--text-muted);">Метод інтеграції: Google Ads REST API v16+</div>
+                </div>
+              </div>
+              <span class="status-pill active">Connected &bull; OAuth 2.0</span>
+            </div>
+
+            <div style="font-size:12px; color:var(--text-secondary); line-height:1.5; margin-bottom:12px;">
+              <strong>Ключові метрики, що аналізуються:</strong> Search Impression Share, PMax Asset Performance, CPC, Conv. Value.<br>
+              <strong>Автоматизовані дії:</strong> Перерозподіл бюджету між ключовими словами й активами Performance Max.
+            </div>
+
+            <div style="display:flex; justify-content:space-between; align-items:center; font-size:11px; color:var(--text-muted); border-top:1px solid var(--border-color); padding-top:10px;">
+              <span>Customer ID: <strong>#892-491-0021</strong></span>
+              <button class="btn-secondary" style="padding:3px 8px; font-size:11px;" onclick="showToast('Google Ads зв'язок активний', 'success')">Тест зв'язку</button>
+            </div>
+          </div>
+
+          <!-- Card 4: Shopify & E-commerce CRM Webhook -->
+          <div class="panel-card" style="border-top:3px solid #10b981;">
+            <div class="panel-header">
+              <div style="display:flex; align-items:center; gap:10px;">
+                <div style="width:36px; height:36px; border-radius:8px; background:rgba(16,185,129,0.15); display:flex; align-items:center; justify-content:center; color:#10b981; font-weight:bold;">
+                  CRM
+                </div>
+                <div>
+                  <div style="font-size:14px; font-weight:700; color:var(--text-primary);">E-commerce CRM & Store Bridge</div>
+                  <div style="font-size:11px; color:var(--text-muted);">Shopify / WooCommerce / CRM Webhooks</div>
+                </div>
+              </div>
+              <span class="status-pill active">Syncing Live &bull; 0 Delay</span>
+            </div>
+
+            <div style="font-size:12px; color:var(--text-secondary); line-height:1.5; margin-bottom:12px;">
+              <strong>Ключові події:</strong> Real Purchase, Lead Submitted, Add To Cart, Checkout Started, LTV Growth.<br>
+              <strong>Автоматизовані дії:</strong> Миттєва передача подій у Meta CAPI та Google Enhanced Conversions.
+            </div>
+
+            <div style="display:flex; justify-content:space-between; align-items:center; font-size:11px; color:var(--text-muted); border-top:1px solid var(--border-color); padding-top:10px;">
+              <span>Оброблено подій сьогодні: <strong>1,298 подій</strong></span>
+              <button class="btn-secondary" style="padding:3px 8px; font-size:11px;" onclick="showToast('Webhooks активні без затримок', 'success')">Лог вебхуків</button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Team & Roles Section -->
+        <div class="panel-card">
+          <div class="panel-header">
+            <div class="panel-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent-indigo)" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+              Команда проєкту та рівні доступу (Team Roles & RBAC)
+            </div>
+            <button class="btn-secondary" style="font-size:11.5px; padding:4px 10px;" onclick="showToast('Надіслано запрошення новому учаснику', 'info')">+ Запросити спеціаліста</button>
+          </div>
+
+          <div class="table-responsive">
+            <table class="crm-table">
+              <thead>
+                <tr>
+                  <th>Користувач</th>
+                  <th>Роль</th>
+                  <th>Дозволені модулі</th>
+                  <th>Рівень доступу до бюджетів</th>
+                  <th>Статус</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div style="font-weight:700; color:var(--text-primary);">Багин Михайло Михайлович</div>
+                    <div style="font-size:10.5px; color:var(--text-muted);">Студент 2 курсу ФІТ УжНУ (ІПЗ-1)</div>
+                  </td>
+                  <td><span class="status-pill active">Admin / Head of Media Buying</span></td>
+                  <td>Всі модулі (Analytics, AI Studio, Campaigns, Rules, CAPI)</td>
+                  <td style="color:#34d399; font-weight:bold;">Повний доступ (Необмежений)</td>
+                  <td><span class="status-pill active">Active</span></td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div style="font-weight:700; color:var(--text-primary);">Анна Ковальчук</div>
+                    <div style="font-size:10.5px; color:var(--text-muted);">SMM & UGC Creator Lead</div>
+                  </td>
+                  <td><span class="status-pill learning">SMM & AI Creative Editor</span></td>
+                  <td>AI Creative Studio, Storyboard, Spark Ads Creator Sync</td>
+                  <td>Тільки редагування креативів</td>
+                  <td><span class="status-pill active">Active</span></td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div style="font-weight:700; color:var(--text-primary);">EcoCosmetics Клієнтський Кабінет</div>
+                    <div style="font-size:10.5px; color:var(--text-muted);">Замовник реклами (Client Portal)</div>
+                  </td>
+                  <td><span class="status-pill paused">Client Viewer (Read-Only)</span></td>
+                  <td>Головний дашборд аналітики та звітність</td>
+                  <td>Тільки перегляд метрик та ROAS</td>
+                  <td><span class="status-pill active">Active</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

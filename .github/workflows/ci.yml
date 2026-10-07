@@ -1,0 +1,28 @@
+name: CI / Static Validation
+
+on:
+  push:
+    branches: [ "main", "feature/ui-ux-design" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Validate Core HTML and Asset Structure
+        run: |
+          echo "Validating project assets and structure..."
+          test -f index.html
+          test -f 01_analytics_dashboard.html
+          test -f 02_ai_creative_studio.html
+          test -f 03_campaigns_management.html
+          test -f 04_ad_fatigue_detector.html
+          test -f 05_knowledge_base_capi.html
+          test -f 06_audiences_attribution.html
+          test -f 07_integrations_settings.html
+          test -f package.json
+          echo "All core files validated successfully!"

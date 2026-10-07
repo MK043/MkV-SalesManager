@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MkV Sales Manager CRM — Головна панель аналітики (Dashboard)</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  
+    <div class="mockup-switcher-bar">
+      <div class="page-tabs"><a href="01_analytics_dashboard.html" class="page-tab-btn active">1. Дашборд аналітики (Рис. 3.1)</a><a href="02_ai_creative_studio.html" class="page-tab-btn ">2. ШІ-Студія креативів (Рис. 3.2)</a><a href="03_campaigns_management.html" class="page-tab-btn ">3. Кампанії та медіабаїнг</a><a href="04_ad_fatigue_detector.html" class="page-tab-btn ">4. Детектор вигорання реклами</a><a href="05_knowledge_base_capi.html" class="page-tab-btn ">5. База знань & CAPI чеклисти</a><a href="06_audiences_attribution.html" class="page-tab-btn ">6. Аудиторії та атрибуція</a><a href="07_integrations_settings.html" class="page-tab-btn ">7. Інтеграції API та права</a><a href="index.html" class="page-tab-btn ">⚡ Інтерактивний Master Hub</a></div>
+      <div style="font-size:11px; color:var(--text-muted); display:flex; align-items:center; gap:8px;">
+        <span style="display:inline-block; width:6px; height:6px; border-radius:50%; background:#10b981;"></span>
+        <span>Лабораторна робота №1 | УжНУ 2026</span>
+      </div>
+    </div>
+    
+  <div class="app-container">
+    
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="logo-badge">MkV</div>
+        <div class="brand-info">
+          <span class="brand-title">MkV Sales Manager <span style="font-size:10px; color:var(--accent-indigo); font-weight:800; border:1px solid rgba(99,102,241,0.4); border-radius:4px; padding:1px 4px;">CRM</span></span>
+          <span class="brand-subtitle">Media Buying OS</span>
+        </div>
+      </div>
+      <nav class="sidebar-nav">
+        <div class="nav-section-title">Основні модулі</div>
+        
+        <a href="01_analytics_dashboard.html" class="nav-item active" data-target="dashboard">
+          <div class="nav-item-content">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="3" width="7" height="9"/><rect x="14" y="3" width="7" height="5"/><rect x="14" y="12" width="7" height="9"/><rect x="3" y="16" width="7" height="5"/></svg>
+            <span>Аналітика (Dashboard)</span>
+          </div>
+          
+        </a>
+        
+        <a href="02_ai_creative_studio.html" class="nav-item " data-target="studio">
+          <div class="nav-item-content">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <span>ШІ-Студія креативів</span>
+          </div>
+          <span class="nav-badge" style="background:rgba(99,102,241,0.25); color:#a5b4fc;">AI 2.0</span>
+        </a>
+        
+        <a href="03_campaigns_management.html" class="nav-item " data-target="campaigns">
+          <div class="nav-item-content">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            <span>Кампанії та правила</span>
+          </div>
+          <span class="nav-badge counter">5</span>
+        </a>
+        
+        <a href="04_ad_fatigue_detector.html" class="nav-item " data-target="fatigue">
+          <div class="nav-item-content">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            <span>Вигорання реклами</span>
+          </div>
+          <span class="nav-badge alert">Alert</span>
+        </a>
+        
+        <a href="05_knowledge_base_capi.html" class="nav-item " data-target="knowledge">
+          <div class="nav-item-content">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            <span>База знань & CAPI</span>
+          </div>
+          <span class="nav-badge counter">3</span>
+        </a>
+        
+        <a href="06_audiences_attribution.html" class="nav-item " data-target="audiences">
+          <div class="nav-item-content">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <span>Аудиторії та ліди</span>
+          </div>
+          
+        </a>
+        
+        <a href="07_integrations_settings.html" class="nav-item " data-target="integrations">
+          <div class="nav-item-content">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+            <span>Інтеграції та API</span>
+          </div>
+          <span class="nav-badge" style="background:rgba(16,185,129,0.2); color:#34d399;">v19+</span>
+        </a>
+        
+      </nav>
+      <div class="sidebar-footer">
+        <div class="user-snippet">
+          <div class="user-avatar">МБ</div>
+          <div class="user-info">
+            <span class="user-name">Багин Михайло</span>
+            <span class="user-role">Таргетолог / ФІТ УжНУ</span>
+          </div>
+        </div>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+      </div>
+    </aside>
+    
+    <main class="main-wrapper">
+      
+    <header class="top-header">
+      <div class="header-left">
+        <div class="project-select-wrapper">
+          <button class="project-select-btn">
+            <span style="display:inline-block; width:8px; height:8px; border-radius:50%; background:#10b981;"></span>
+            <strong>EcoCosmetics EU</strong>
+            <span style="font-size:11px; color:var(--text-muted); font-weight:normal;">(ID: #MKV-8942)</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+        </div>
+        <div class="search-bar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" placeholder="Пошук кампаній, хуків, правил (Ctrl+K)..." />
+        </div>
+      </div>
+      <div class="header-right">
+        <div class="date-pill" onclick="showToast('Фільтр дат: 1 Лист 2026 - 30 Лист 2026', 'info')">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <span>1 Лист 2026 – 30 Лист 2026</span>
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+        <div class="btn-icon" title="Сповіщення" onclick="showToast('Ви маєте 2 критичні сповіщення: висока частота показів та оновлення CAPI токена', 'warning')">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+          <span class="alert-dot"></span>
+        </div>
+        <button class="btn-primary" onclick="showToast('Відкрито майстер швидкого запуску нової кампанії', 'success')">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          Нова кампанія
+        </button>
+      </div>
+    </header>
+    
+      
+      <div class="content-body">
+        <div class="page-header-row">
+          <div>
+            <div style="font-size:11.5px; color:var(--accent-cyan); font-weight:600; margin-bottom:4px; text-transform:uppercase; letter-spacing:0.5px;">
+              Крос-платформний аналітичний хаб &bull; Рис. 3.1 з лабораторної роботи
+            </div>
+            <h1 class="page-title">Multi-Channel Ad Analytics Dashboard</h1>
+            <p class="page-description">Синхронізація Meta API (v19+), TikTok Commercial API (v1.3) та Google Ads REST API (v16+). Єдиний Blended ROAS.</p>
+          </div>
+          <div style="display:flex; gap:10px;">
+            <button class="btn-secondary" onclick="showToast('Експортовано звіт у CSV / PDF для клієнта', 'success')">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Експорт звіту
+            </button>
+            <button class="btn-primary" onclick="showToast('Запущено повну синхронізацію даних з рекламними кабінетами...', 'info')">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
+              Оновити дані API
+            </button>
+          </div>
+        </div>
+
+        <!-- Anomaly Banner -->
+        <div class="anomaly-banner">
+          <div class="anomaly-left">
+            <div class="anomaly-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            </div>
+            <div class="anomaly-text">
+              <h4>Ad Fatigue Alert: Виявлено вигорання в кампанії «Summer Sale Retargeting (Insta)»</h4>
+              <p>Частота показів: 3.1x (поріг 2.8), падіння CTR: -21.4%. Рекомендовано ротацію візуалів або заміну хука через Storyboard AI.</p>
+            </div>
+          </div>
+          <div style="display:flex; gap:8px;">
+            <a href="04_ad_fatigue_detector.html" class="btn-secondary" style="font-size:11.5px; padding:6px 12px;">Аудит вигорання</a>
+            <a href="02_ai_creative_studio.html" class="btn-primary" style="font-size:11.5px; padding:6px 12px; background:linear-gradient(135deg,#e11d48,#f43f5e);">Згенерувати новий хук</a>
+          </div>
+        </div>
+
+        <!-- 4 KPI Cards (Exact Values from Lab 1 Section 3.1 & Fig 3.1) -->
+        <div class="kpi-grid">
+          <div class="kpi-card" style="--card-accent: #6366f1;">
+            <div class="kpi-top">
+              <span class="kpi-label">Total Ad Spend</span>
+              <div class="kpi-icon-wrap" title="Сумарні витрати за 4 мережами">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              </div>
+            </div>
+            <div class="kpi-value">$18,420</div>
+            <div class="kpi-footer">
+              <span class="trend-badge positive"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg> +8.2%</span>
+              <span class="trend-context">vs. Last Month</span>
+            </div>
+          </div>
+
+          <div class="kpi-card" style="--card-accent: #10b981;">
+            <div class="kpi-top">
+              <span class="kpi-label">Blended ROAS</span>
+              <div class="kpi-icon-wrap" title="Загальна окупність рекламних інвестицій">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+              </div>
+            </div>
+            <div class="kpi-value" style="color:#34d399;">3.84x</div>
+            <div class="kpi-footer">
+              <span class="trend-badge positive"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg> +3.5%</span>
+              <span class="trend-context">vs. Last Month</span>
+            </div>
+          </div>
+
+          <div class="kpi-card" style="--card-accent: #06b6d4;">
+            <div class="kpi-top">
+              <span class="kpi-label">CPA (Cost per Action)</span>
+              <div class="kpi-icon-wrap" title="Вартість цільової дії">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M16 8l-8 8"/><path d="M12 12v.01"/></svg>
+              </div>
+            </div>
+            <div class="kpi-value">$14.20</div>
+            <div class="kpi-footer">
+              <span class="trend-badge positive"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg> -4.1%</span>
+              <span class="trend-context">vs. Last Month</span>
+            </div>
+          </div>
+
+          <div class="kpi-card" style="--card-accent: #a855f7;">
+            <div class="kpi-top">
+              <span class="kpi-label">Conversions</span>
+              <div class="kpi-icon-wrap" title="Кількість підтверджених покупок">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+              </div>
+            </div>
+            <div class="kpi-value">1,298</div>
+            <div class="kpi-footer">
+              <span class="trend-badge positive"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg> +8.2%</span>
+              <span class="trend-context">vs. Last Month</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Central Visual Charts Block (Fig 3.1) -->
+        <div class="chart-layout-2col">
+          <div class="panel-card">
+            <div class="panel-header">
+              <div class="panel-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent-indigo)" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                Multi-Channel Performance Overview
+              </div>
+              <div style="display:flex; align-items:center; gap:16px;">
+                <div class="legend-group">
+                  <div class="legend-item"><span class="legend-dot" style="background:#1877f2;"></span> Facebook</div>
+                  <div class="legend-item"><span class="legend-dot" style="background:#e1306c;"></span> Instagram</div>
+                  <div class="legend-item"><span class="legend-dot" style="background:#00f2fe;"></span> TikTok</div>
+                  <div class="legend-item"><span class="legend-dot" style="background:#34a853;"></span> Google</div>
+                </div>
+                <span style="font-size:11px; background:rgba(255,255,255,0.05); padding:3px 8px; border-radius:4px; border:1px solid var(--border-color); color:var(--text-secondary);">Last 30 Days</span>
+              </div>
+            </div>
+
+            <div class="svg-chart-wrap">
+              <svg class="svg-chart" viewBox="0 0 700 220" preserveAspectRatio="none">
+                <defs>
+                  <linearGradient id="gradFB" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="#1877f2" stop-opacity="0.25"/>
+                    <stop offset="100%" stop-color="#1877f2" stop-opacity="0.0"/>
+                  </linearGradient>
+                </defs>
+                <line x1="30" y1="20" x2="680" y2="20" stroke="#1c263b" stroke-width="1" stroke-dasharray="4"/>
+                <line x1="30" y1="65" x2="680" y2="65" stroke="#1c263b" stroke-width="1" stroke-dasharray="4"/>
+                <line x1="30" y1="110" x2="680" y2="110" stroke="#1c263b" stroke-width="1" stroke-dasharray="4"/>
+                <line x1="30" y1="155" x2="680" y2="155" stroke="#1c263b" stroke-width="1" stroke-dasharray="4"/>
+                <line x1="30" y1="195" x2="680" y2="195" stroke="#2a3955" stroke-width="1"/>
+
+                <text x="10" y="24" fill="#64748b" font-size="10">80</text>
+                <text x="10" y="69" fill="#64748b" font-size="10">60</text>
+                <text x="10" y="114" fill="#64748b" font-size="10">40</text>
+                <text x="10" y="159" fill="#64748b" font-size="10">20</text>
+                <text x="15" y="198" fill="#64748b" font-size="10">0</text>
+
+                <path d="M 40,140 Q 120,120 200,90 T 360,70 T 520,60 T 670,50 L 670,195 L 40,195 Z" fill="url(#gradFB)"/>
+                <path d="M 40,140 Q 120,120 200,90 T 360,70 T 520,60 T 670,50" fill="none" stroke="#1877f2" stroke-width="2.5"/>
+                <path d="M 40,165 Q 120,135 200,105 T 360,95 T 520,75 T 670,68" fill="none" stroke="#e1306c" stroke-width="2.5"/>
+                <path d="M 40,175 Q 120,160 200,130 T 360,110 T 520,90 T 670,80" fill="none" stroke="#00f2fe" stroke-width="2.5"/>
+                <path d="M 40,150 Q 120,140 200,120 T 360,100 T 520,110 T 670,95" fill="none" stroke="#34a853" stroke-width="2.5"/>
+
+                <circle cx="280" cy="80" r="4" fill="#1877f2" stroke="#fff" stroke-width="1.5"/>
+                <circle cx="280" cy="105" r="4" fill="#34a853" stroke="#fff" stroke-width="1.5"/>
+
+                <rect x="295" y="65" width="105" height="46" rx="6" fill="#0b1120" stroke="#334155" stroke-width="1"/>
+                <text x="303" y="80" fill="#94a3b8" font-size="9.5" font-weight="bold">Nov 12</text>
+                <text x="303" y="94" fill="#60a5fa" font-size="9.5">&bull; Facebook: 64</text>
+                <text x="303" y="105" fill="#4ade80" font-size="9.5">&bull; Google: 52</text>
+
+                <text x="35" y="212" fill="#64748b" font-size="9.5">Nov 1</text>
+                <text x="135" y="212" fill="#64748b" font-size="9.5">Nov 6</text>
+                <text x="240" y="212" fill="#64748b" font-size="9.5">Nov 11</text>
+                <text x="350" y="212" fill="#64748b" font-size="9.5">Nov 16</text>
+                <text x="455" y="212" fill="#64748b" font-size="9.5">Nov 21</text>
+                <text x="560" y="212" fill="#64748b" font-size="9.5">Nov 26</text>
+                <text x="650" y="212" fill="#64748b" font-size="9.5">Nov 30</text>
+              </svg>
+            </div>
+          </div>
+
+          <div class="panel-card">
+            <div class="panel-header">
+              <div class="panel-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                Breakdown / Metrics
+              </div>
+              <div class="legend-group">
+                <div class="legend-item"><span class="legend-dot" style="background:#6366f1;"></span> CPA</div>
+                <div class="legend-item"><span class="legend-dot" style="background:#10b981;"></span> CTR</div>
+                <div class="legend-item"><span class="legend-dot" style="background:#f43f5e;"></span> Conv. %</div>
+              </div>
+            </div>
+
+            <div class="svg-chart-wrap">
+              <svg class="svg-chart" viewBox="0 0 320 220" preserveAspectRatio="none">
+                <line x1="20" y1="30" x2="310" y2="30" stroke="#1c263b" stroke-width="1" stroke-dasharray="3"/>
+                <line x1="20" y1="80" x2="310" y2="80" stroke="#1c263b" stroke-width="1" stroke-dasharray="3"/>
+                <line x1="20" y1="130" x2="310" y2="130" stroke="#1c263b" stroke-width="1" stroke-dasharray="3"/>
+                <line x1="20" y1="180" x2="310" y2="180" stroke="#2a3955" stroke-width="1"/>
+
+                <text x="5" y="34" fill="#64748b" font-size="9">60k</text>
+                <text x="5" y="84" fill="#64748b" font-size="9">40k</text>
+                <text x="5" y="134" fill="#64748b" font-size="9">20k</text>
+                <text x="12" y="184" fill="#64748b" font-size="9">0</text>
+
+                <rect x="40" y="40" width="12" height="140" fill="#6366f1" rx="2"/>
+                <rect x="54" y="90" width="12" height="90" fill="#10b981" rx="2"/>
+                <rect x="68" y="145" width="12" height="35" fill="#f43f5e" rx="2"/>
+                <text x="52" y="198" fill="#94a3b8" font-size="10" font-weight="bold">FB</text>
+
+                <rect x="110" y="65" width="12" height="115" fill="#6366f1" rx="2"/>
+                <rect x="124" y="110" width="12" height="70" fill="#10b981" rx="2"/>
+                <rect x="138" y="155" width="12" height="25" fill="#f43f5e" rx="2"/>
+                <text x="120" y="198" fill="#94a3b8" font-size="10" font-weight="bold">Insta</text>
+
+                <rect x="180" y="85" width="12" height="95" fill="#6366f1" rx="2"/>
+                <rect x="194" y="125" width="12" height="55" fill="#10b981" rx="2"/>
+                <rect x="208" y="160" width="12" height="20" fill="#f43f5e" rx="2"/>
+                <text x="188" y="198" fill="#94a3b8" font-size="10" font-weight="bold">TikTok</text>
+
+                <rect x="250" y="50" width="12" height="130" fill="#6366f1" rx="2"/>
+                <rect x="264" y="130" width="12" height="50" fill="#10b981" rx="2"/>
+                <rect x="278" y="150" width="12" height="30" fill="#f43f5e" rx="2"/>
+                <text x="256" y="198" fill="#94a3b8" font-size="10" font-weight="bold">Google</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel-card">
+          <div class="panel-header">
+            <div class="panel-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent-emerald)" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+              Active Ad Campaigns & Anomaly Alerts
+            </div>
+            <div>
+              <span style="font-size:12px; color:var(--text-muted);">Синхронізовано з кабінетами через API</span>
+            </div>
+          </div>
+
+          <div class="table-responsive">
+            <table class="crm-table">
+              <thead>
+                <tr>
+                  <th>Статус</th>
+                  <th>Назва кампанії</th>
+                  <th>Платформа</th>
+                  <th>Стан</th>
+                  <th>Денний бюджет</th>
+                  <th>Витрати (Spend)</th>
+                  <th>Конверсії</th>
+                  <th>CTR</th>
+                  <th>Індикатори аномалій (Anomaly Alerts)</th>
+                  <th>Дії</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><label class="switch"><input type="checkbox" class="campaign-toggle" checked><span class="slider"></span></label></td>
+                  <td>
+                    <div style="font-weight:700; color:var(--text-primary);" class="campaign-name">Q4 Apparel Launch (FB)</div>
+                    <div style="font-size:10.5px; color:var(--text-muted);">CAPI Server Match: 8.9/10 &bull; Pixel ID: #9042</div>
+                  </td>
+                  <td><span class="platform-pill meta">Meta Ads</span></td>
+                  <td><span class="status-pill active">Active</span></td>
+                  <td style="font-weight:600; color:var(--text-primary);">$50.00</td>
+                  <td style="font-weight:700; color:var(--text-primary);">$1,420.00</td>
+                  <td style="font-weight:700; color:#34d399;">122</td>
+                  <td style="font-weight:600;">3.42%</td>
+                  <td>
+                    <div style="display:flex; align-items:center; gap:6px; color:#10b981; font-size:12px;">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                      Стабільно (Normal)
+                    </div>
+                  </td>
+                  <td><button class="btn-secondary" style="padding:4px 8px; font-size:11px;" onclick="showToast('Відкрито деталі кампанії', 'info')">Огляд</button></td>
+                </tr>
+
+                <tr>
+                  <td><label class="switch"><input type="checkbox" class="campaign-toggle"><span class="slider"></span></label></td>
+                  <td>
+                    <div style="font-weight:700; color:var(--text-primary);" class="campaign-name">Summer Sale Retargeting (Insta)</div>
+                    <div style="font-size:10.5px; color:var(--text-muted);">Reels 9:16 Video &bull; Stories Placement</div>
+                  </td>
+                  <td><span class="platform-pill insta">Instagram Ads</span></td>
+                  <td><span class="status-pill paused">Paused</span></td>
+                  <td style="font-weight:600; color:var(--text-primary);">$50.00</td>
+                  <td style="font-weight:700; color:var(--text-primary);">$1,390.00</td>
+                  <td style="font-weight:700; color:#94a3b8;">103</td>
+                  <td style="font-weight:600;">3.42%</td>
+                  <td>
+                    <div style="display:flex; align-items:center; gap:6px; color:#f59e0b; font-size:12px; font-weight:600;">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                      ⚠️ Ad Fatigue (Freq: 3.1x)
+                    </div>
+                  </td>
+                  <td><a href="02_ai_creative_studio.html" class="btn-secondary" style="padding:4px 8px; font-size:11px; color:#fbbf24; border-color:rgba(245,158,11,0.4);">ШІ-Хук</a></td>
+                </tr>
+
+                <tr>
+                  <td><label class="switch"><input type="checkbox" class="campaign-toggle" checked><span class="slider"></span></label></td>
+                  <td>
+                    <div style="font-weight:700; color:var(--text-primary);" class="campaign-name">TikTok Traffic Campaign</div>
+                    <div style="font-size:10.5px; color:var(--text-muted);">Spark Ads Creator Auth &bull; Bid: Lowest Cost</div>
+                  </td>
+                  <td><span class="platform-pill tiktok">TikTok Ads</span></td>
+                  <td><span class="status-pill active">Active</span></td>
+                  <td style="font-weight:600; color:var(--text-primary);">$50.00</td>
+                  <td style="font-weight:700; color:var(--text-primary);">$1,830.00</td>
+                  <td style="font-weight:700; color:#34d399;">86</td>
+                  <td style="font-weight:600;">3.33%</td>
+                  <td>
+                    <div style="display:flex; align-items:center; gap:6px; color:#f43f5e; font-size:12px; font-weight:600;">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                      ⚠️ High CPA Surge ($21.28)
+                    </div>
+                  </td>
+                  <td><button class="btn-secondary" style="padding:4px 8px; font-size:11px;" onclick="showToast('Застосовано ліміт ставки', 'warning')">Ліміт</button></td>
+                </tr>
+
+                <tr>
+                  <td><label class="switch"><input type="checkbox" class="campaign-toggle" checked><span class="slider"></span></label></td>
+                  <td>
+                    <div style="font-weight:700; color:var(--text-primary);" class="campaign-name">Google Search Brand (Q4A)</div>
+                    <div style="font-size:10.5px; color:var(--text-muted);">Exact Match Keywords &bull; PMax Asset Group #1</div>
+                  </td>
+                  <td><span class="platform-pill google">Google Ads</span></td>
+                  <td><span class="status-pill active">Active</span></td>
+                  <td style="font-weight:600; color:var(--text-primary);">$50.00</td>
+                  <td style="font-weight:700; color:var(--text-primary);">$1,420.00</td>
+                  <td style="font-weight:700; color:#34d399;">42</td>
+                  <td style="font-weight:600;">3.42%</td>
+                  <td>
+                    <div style="display:flex; align-items:center; gap:6px; color:#10b981; font-size:12px;">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                      Стабільно (Normal)
+                    </div>
+                  </td>
+                  <td><button class="btn-secondary" style="padding:4px 8px; font-size:11px;" onclick="showToast('Відкрито Google Search', 'info')">Огляд</button></td>
+                </tr>
+
+                <tr>
+                  <td><label class="switch"><input type="checkbox" class="campaign-toggle" checked><span class="slider"></span></label></td>
+                  <td>
+                    <div style="font-weight:700; color:var(--text-primary);" class="campaign-name">TikTok Spark Ads UGC Hook #2</div>
+                    <div style="font-size:10.5px; color:var(--text-muted);">Creator: @ann_marketing &bull; Smart Video Pacing</div>
+                  </td>
+                  <td><span class="platform-pill tiktok">TikTok Ads</span></td>
+                  <td><span class="status-pill learning">Learning</span></td>
+                  <td style="font-weight:600; color:var(--text-primary);">$75.00</td>
+                  <td style="font-weight:700; color:var(--text-primary);">$890.00</td>
+                  <td style="font-weight:700; color:#34d399;">94</td>
+                  <td style="font-weight:600; color:#34d399;">4.15%</td>
+                  <td>
+                    <div style="display:flex; align-items:center; gap:6px; color:#06b6d4; font-size:12px; font-weight:600;">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+                      🚀 Scale Opportunity (ROAS 4.8x)
+                    </div>
+                  </td>
+                  <td><button class="btn-secondary" style="padding:4px 8px; font-size:11px; color:#34d399; border-color:rgba(16,185,129,0.4);" onclick="showToast('Збільшено денний бюджет на +20%', 'success')">+20% Бюджет</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
