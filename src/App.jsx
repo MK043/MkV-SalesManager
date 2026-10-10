@@ -1,11 +1,13 @@
 import React from 'react';
 import { useRouter } from './router/Router';
+import { useApp } from './context/AppContext';
 import { AppLayout } from './components/layout/AppLayout';
 
 import { TodayScreen } from './screens/TodayScreen';
 import { BoardScreen } from './screens/BoardScreen';
 import { OrdersScreen } from './screens/OrdersScreen';
 import { OrderDetailScreen } from './screens/OrderDetailScreen';
+import { CustomersScreen } from './screens/CustomersScreen';
 import { BookingsScreen } from './screens/BookingsScreen';
 import { ParkingScreen } from './screens/ParkingScreen';
 import { WarehouseScreen } from './screens/WarehouseScreen';
@@ -21,7 +23,17 @@ import { AuditScreen } from './screens/AuditScreen';
 import { ProfileScreen } from './screens/ProfileScreen';
 
 export function App() {
-  const { currentPath } = useRouter();
+  const { currentPath, navigate } = useRouter();
+  const { user } = useApp();
+
+  const currentPos = (user?.position || '').toLowerCase();
+  const isTechnician = [
+    'механік', 
+    'автоелектрик', 
+    'кузовник', 
+    'маляр', 
+    'мийник'
+  ].some(r => currentPos.includes(r));
 
   // Route matching logic
   const renderScreen = () => {
@@ -31,14 +43,22 @@ export function App() {
       return <OrderDetailScreen orderId={orderDetailMatch[1]} />;
     }
 
+    // Role protection: prevent workers from seeing financial dashboards
+    const forbiddenForWorker = ['/today', '/cash', '/reports', '/settings', '/warehouse', '/shifts', '/audit'];
+    if (isTechnician && forbiddenForWorker.includes(currentPath)) {
+      return <MyTasksScreen />;
+    }
+
     switch (currentPath) {
       case '/today':
       case '/':
-        return <TodayScreen />;
+        return isTechnician ? <MyTasksScreen /> : <TodayScreen />;
       case '/board':
         return <BoardScreen />;
       case '/orders':
         return <OrdersScreen />;
+      case '/customers':
+        return <CustomersScreen />;
       case '/bookings':
         return <BookingsScreen />;
       case '/parking':
@@ -66,7 +86,7 @@ export function App() {
       case '/profile':
         return <ProfileScreen />;
       default:
-        return <TodayScreen />;
+        return isTechnician ? <MyTasksScreen /> : <TodayScreen />;
     }
   };
 
@@ -76,4 +96,5 @@ export function App() {
     </AppLayout>
   );
 }
+
 export default App;

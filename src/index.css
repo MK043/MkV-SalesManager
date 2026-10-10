@@ -314,13 +314,14 @@ body {
 .modal-backdrop {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.78);
+  backdrop-filter: blur(6px);
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 100;
-  padding: 1rem;
+  padding: 0.75rem;
+  padding-bottom: max(1rem, env(safe-area-inset-bottom));
   animation: fadeIn 0.15s ease-out;
 }
 .modal-card {
@@ -330,11 +331,29 @@ body {
   box-shadow: var(--shadow-lg);
   max-width: 680px;
   width: 100%;
-  max-height: 90vh;
+  max-height: 92vh;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   animation: zoomIn 0.2s ease-out;
+}
+
+@media (max-width: 640px) {
+  .modal-backdrop {
+    padding: 0.5rem;
+    align-items: flex-end;
+  }
+  .modal-card {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    max-height: 94vh;
+  }
+  /* Prevent iOS Safari 16px zoom bug */
+  .input, .select, .textarea {
+    font-size: 16px !important;
+    min-height: 44px;
+  }
 }
 
 @keyframes fadeIn {

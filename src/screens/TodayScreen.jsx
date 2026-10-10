@@ -85,25 +85,25 @@ export function TodayScreen() {
         </div>
 
         {/* Quick Actions Row */}
-        <div className="flex items-center gap-2">
+        <div className="flex flex-wrap sm:flex-nowrap items-center gap-2 w-full sm:w-auto">
           <button
             type="button"
             onClick={() => setIsNewOrderModalOpen(true)}
-            className="btn btn-primary btn-sm shadow-md shadow-brand-olive/20"
+            className="btn btn-primary btn-sm shadow-md shadow-brand-olive/20 flex-1 sm:flex-initial justify-center py-2 min-h-[38px]"
           >
             <Plus size={15} /> {t.today.createOrderBtn}
           </button>
           <button
             type="button"
             onClick={() => navigate('/bookings')}
-            className="btn btn-secondary btn-sm"
+            className="btn btn-secondary btn-sm flex-1 sm:flex-initial justify-center py-2 min-h-[38px]"
           >
             <Calendar size={15} /> {t.today.createBookingBtn}
           </button>
           <button
             type="button"
             onClick={() => navigate('/cash')}
-            className="btn btn-secondary btn-sm"
+            className="btn btn-secondary btn-sm flex-1 sm:flex-initial justify-center py-2 min-h-[38px]"
           >
             <Wallet size={15} /> {t.today.openCashBtn}
           </button>

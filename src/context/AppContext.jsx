@@ -123,6 +123,63 @@ export function AppProvider({ children }) {
     });
   };
 
+  const [customers, setCustomers] = useState([]);
+
+  const fetchCustomers = useCallback(async () => {
+    try {
+      const data = await api.get('/customers/registry');
+      setCustomers(data || []);
+    } catch (e) {
+      console.warn('Could not fetch customers registry', e);
+    }
+  }, []);
+
+  const addUser = async (userData) => {
+    try {
+      const newUser = await api.post('/admin/users', userData);
+      await fetchUsersAndRoles();
+      return newUser;
+    } catch (err) {
+      console.error('Failed to add user:', err);
+      throw err;
+    }
+  };
+
+  const deleteUser = async (userId) => {
+    try {
+      await api.delete(`/admin/users/${userId}`);
+      await fetchUsersAndRoles();
+    } catch (err) {
+      console.error('Failed to delete user:', err);
+      throw err;
+    }
+  };
+
+  const addCustomer = async (custData) => {
+    try {
+      const newCust = await api.post('/customers', custData);
+      await fetchCustomers();
+      return newCust;
+    } catch (err) {
+      console.error('Failed to add customer:', err);
+      throw err;
+    }
+  };
+
+  const deleteCustomer = async (custId) => {
+    try {
+      await api.delete(`/customers/${custId}`);
+      await fetchCustomers();
+    } catch (err) {
+      console.error('Failed to delete customer:', err);
+      throw err;
+    }
+  };
+
+  useEffect(() => {
+    fetchCustomers();
+  }, [fetchCustomers]);
+
   const isImpersonating = Boolean(user && user.position !== 'Власник');
 
   return (
@@ -133,6 +190,12 @@ export function AppProvider({ children }) {
       switchUser,
       switchRole,
       resetToOwner,
+      addUser,
+      deleteUser,
+      customers,
+      fetchCustomers,
+      addCustomer,
+      deleteCustomer,
       isImpersonating,
       currency,
       changeCurrency,

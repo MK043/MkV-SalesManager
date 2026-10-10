@@ -133,8 +133,83 @@ export function OrdersScreen() {
         </div>
       </div>
 
-      {/* Orders Table */}
-      <div className="card overflow-hidden">
+      {/* Mobile Card List */}
+      <div className="block md:hidden space-y-3">
+        {loading ? (
+          <div className="card p-8 text-center text-xs text-brand-muted">
+            {t.common.loading}
+          </div>
+        ) : filteredOrders.length === 0 ? (
+          <div className="card p-8 text-center text-xs text-brand-muted">
+            {t.common.noData}
+          </div>
+        ) : (
+          filteredOrders.map((o) => {
+            const stage = stages.find(s => s.id === o.current_stage_id) || o.stage;
+            const total = Number(o.grand_total) || 20000;
+            const paid = Number(o.paid_total) || 0;
+            const balance = Math.max(0, total - paid);
+
+            return (
+              <div
+                key={o.id}
+                onClick={() => navigate(`/orders/${o.id}`)}
+                className="card p-4 space-y-2.5 active:scale-[0.99] transition-all cursor-pointer border border-brand-border hover:border-brand-olive/50"
+              >
+                <div className="flex items-center justify-between">
+                  <span className="font-mono text-xs font-bold text-brand-muted">
+                    #{o.id}
+                  </span>
+                  <span
+                    className="badge text-[11px] font-semibold"
+                    style={{
+                      backgroundColor: `${stage?.color || '#4A5E38'}20`,
+                      color: stage?.color || '#4A5E38',
+                      borderColor: `${stage?.color || '#4A5E38'}40`
+                    }}
+                  >
+                    {stage?.name || 'Прийомка'}
+                  </span>
+                </div>
+
+                <div className="flex items-start justify-between">
+                  <div>
+                    <h3 className="text-base font-bold text-brand-text">
+                      {o.brand} {o.model}
+                    </h3>
+                    <div className="text-xs text-brand-muted mt-0.5">
+                      Клієнт: <strong className="text-brand-text">{o.customer_name}</strong>
+                    </div>
+                  </div>
+                  <span className="font-mono text-xs font-black px-2 py-0.5 rounded bg-brand-surface2 text-brand-sand border border-brand-border">
+                    {o.plate}
+                  </span>
+                </div>
+
+                <div className="pt-2 border-t border-brand-border flex items-center justify-between text-xs">
+                  <div>
+                    <span className="text-brand-muted text-[11px] block">Сума наряду:</span>
+                    <strong className="text-brand-text font-mono">{formatMoney(total, currency)}</strong>
+                  </div>
+                  <div className="text-right">
+                    <span className="text-brand-muted text-[11px] block">Оплачено:</span>
+                    <span className="text-brand-green font-mono font-bold">{formatMoney(paid, currency)}</span>
+                  </div>
+                  {balance > 0 && (
+                    <div className="text-right">
+                      <span className="text-brand-muted text-[11px] block">Залишок:</span>
+                      <span className="text-brand-orange font-mono font-bold">{formatMoney(balance, currency)}</span>
+                    </div>
+                  )}
+                </div>
+              </div>
+            );
+          })
+        )}
+      </div>
+
+      {/* Desktop Table */}
+      <div className="hidden md:block card overflow-hidden">
         <div className="table-wrap">
           <table className="table">
             <thead>

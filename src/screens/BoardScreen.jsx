@@ -147,8 +147,27 @@ export function BoardScreen() {
         </div>
       </div>
 
-      {/* Kanban Board Container */}
-      <div className="flex-1 overflow-x-auto overflow-y-hidden pb-4">
+      {/* Mobile stage selector strip */}
+      <div className="flex md:hidden items-center gap-1.5 overflow-x-auto pb-1.5 shrink-0">
+        {pipeline.map(s => (
+          <button
+            key={s.id}
+            type="button"
+            onClick={() => {
+              const el = document.getElementById(`kanban-stage-${s.id}`);
+              if (el) el.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+            }}
+            className="px-2.5 py-1.5 rounded-lg text-xs font-bold whitespace-nowrap bg-brand-surface2 border border-brand-border text-brand-muted active:text-white flex items-center gap-1.5 shrink-0 active:scale-95 transition-transform"
+          >
+            <span className="w-2 h-2 rounded-full" style={{ backgroundColor: s.color || '#4A5E38' }} />
+            <span>{s.name}</span>
+            <span className="text-[10px] font-mono px-1 rounded bg-brand-surface text-brand-sand font-extrabold">{s.orders?.length || 0}</span>
+          </button>
+        ))}
+      </div>
+
+      {/* Kanban Board Container with Touch Snap on Mobile */}
+      <div className="flex-1 overflow-x-auto overflow-y-hidden pb-4 snap-x snap-mandatory">
         {loading && pipeline.length === 0 ? (
           <div className="flex items-center justify-center h-64 text-brand-muted text-sm">
             {t.common.loading}
@@ -173,8 +192,9 @@ export function BoardScreen() {
 
               return (
                 <div
+                  id={`kanban-stage-${stage.id}`}
                   key={stage.id}
-                  className="w-72 sm:w-80 flex flex-col bg-brand-surface/70 border border-brand-border rounded-xl shadow-sm overflow-hidden shrink-0"
+                  className="w-[85vw] sm:w-80 flex flex-col bg-brand-surface/70 border border-brand-border rounded-xl shadow-sm overflow-hidden shrink-0 snap-start"
                 >
                   {/* Stage Column Header */}
                   <div className="p-3 border-b border-brand-border bg-brand-surface2 flex items-center justify-between">

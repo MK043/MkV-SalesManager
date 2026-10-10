@@ -7,7 +7,7 @@ import { X, Car, User, Wrench, Calendar, Plus, Trash2, CheckCircle2 } from 'luci
 
 export function NewOrderModal() {
   const { t } = useTranslation();
-  const { isNewOrderModalOpen, setIsNewOrderModalOpen } = useApp();
+  const { isNewOrderModalOpen, setIsNewOrderModalOpen, customers, addCustomer } = useApp();
   const { navigate } = useRouter();
 
   const [brand, setBrand] = useState('Toyota');
@@ -25,6 +25,38 @@ export function NewOrderModal() {
   const [deadlineDays, setDeadlineDays] = useState('2');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
+
+  React.useEffect(() => {
+    if (isNewOrderModalOpen) {
+      const stored = sessionStorage.getItem('mkv-prefill-customer');
+      if (stored) {
+        try {
+          const c = JSON.parse(stored);
+          if (c.name) setCustomerName(c.name);
+          if (c.phone) setCustomerPhone(c.phone);
+          if (c.brand) setBrand(c.brand);
+          if (c.model) setModel(c.model);
+          if (c.plate) setPlate(c.plate);
+          if (c.year) setYear(String(c.year));
+          sessionStorage.removeItem('mkv-prefill-customer');
+        } catch (e) {}
+      }
+    }
+  }, [isNewOrderModalOpen]);
+
+  const handleSelectExistingClient = (e) => {
+    const custId = Number(e.target.value);
+    if (!custId) return;
+    const c = customers.find(x => x.id === custId);
+    if (c) {
+      setCustomerName(c.full_name);
+      if (c.phone) setCustomerPhone(c.phone);
+      if (c.car_brand) setBrand(c.car_brand);
+      if (c.car_model) setModel(c.car_model);
+      if (c.plate) setPlate(c.plate);
+      if (c.year) setYear(String(c.year));
+    }
+  };
 
   if (!isNewOrderModalOpen) return null;
 
@@ -47,6 +79,22 @@ export function NewOrderModal() {
     const deadline = new Date(Date.now() + Number(deadlineDays) * 86400000).toISOString();
 
     try {
+      // Auto-save client if new
+      if (customerName.trim() && !customers.some(c => (c.full_name || '').toLowerCase() === customerName.trim().toLowerCase())) {
+        try {
+          await addCustomer({
+            full_name: customerName.trim(),
+            phone: customerPhone.trim(),
+            car_brand: brand,
+            car_model: model,
+            plate: plate.toUpperCase(),
+            year: Number(year) || null
+          });
+        } catch (errCust) {
+          console.warn('Customer auto-create warning:', errCust);
+        }
+      }
+
       const created = await api.post('/orders', {
         brand,
         model,
@@ -174,9 +222,28 @@ export function NewOrderModal() {
 
           {/* Section: Customer */}
           <div className="space-y-3 pt-2 border-t border-brand-border">
-            <h3 className="text-xs font-bold uppercase tracking-wider text-brand-muted flex items-center gap-2">
-              <User size={14} className="text-brand-olive" /> Клієнт
-            </h3>
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+              <h3 className="text-xs font-bold uppercase tracking-wider text-brand-muted flex items-center gap-2">
+                <User size={14} className="text-brand-olive" /> Клієнт
+              </h3>
+              {customers.length > 0 && (
+                <div className="flex items-center gap-2">
+                  <span className="text-[11px] text-brand-muted">Обрати з бази:</span>
+                  <select
+                    onChange={handleSelectExistingClient}
+                    className="select py-1 text-xs max-w-[220px]"
+                    defaultValue=""
+                  >
+                    <option value="" disabled>-- Постійний клієнт --</option>
+                    {customers.map(c => (
+                      <option key={c.id} value={c.id}>
+                        {c.full_name} {c.car_brand ? `(${c.car_brand})` : ''}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+              )}
+            </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               <div>
                 <label className="block text-xs font-semibold text-brand-muted mb-1">ПІБ Клієнта</label>

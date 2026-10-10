@@ -788,6 +788,41 @@ app.get('/customers/:id/detail', (req, res) => {
   });
 });
 
+app.post('/customers', (req, res) => {
+  const { full_name, phone, car_brand, car_model, plate, year, vin, notes } = req.body;
+  if (!full_name) {
+    return res.status(400).json({ error: "Ім'я клієнта обов'язкове" });
+  }
+
+  const newCust = {
+    id: Date.now(),
+    full_name: full_name.trim(),
+    phone: phone || '',
+    car_brand: car_brand || '',
+    car_model: car_model || '',
+    plate: (plate || '').toUpperCase(),
+    year: Number(year) || null,
+    vin: (vin || '').toUpperCase(),
+    notes: notes || '',
+    orders_count: 0,
+    total_spent: 0,
+    created_at: new Date().toISOString()
+  };
+
+  db.customers.unshift(newCust);
+  logAudit('Додавання клієнта', `Зареєстровано клієнта: ${newCust.full_name} (${newCust.car_brand} ${newCust.car_model || ''})`);
+  saveDatabase();
+  res.status(201).json(newCust);
+});
+
+app.delete('/customers/:id', (req, res) => {
+  const id = Number(req.params.id);
+  db.customers = db.customers.filter(c => c.id !== id);
+  logAudit('Видалення клієнта', `Видалено клієнта #${id}`);
+  saveDatabase();
+  res.json({ ok: true });
+});
+
 // 6. Warehouse API
 app.get('/warehouse/items', (req, res) => {
   res.json(db.warehouseItems);
@@ -1013,6 +1048,52 @@ app.post('/shifts/:id/close', (req, res) => {
 // 10. Admin & Settings
 app.get('/admin/users', (req, res) => {
   res.json(db.users);
+});
+
+app.post('/admin/users', (req, res) => {
+  const { full_name, position, role_name, phone, hourly_rate, percent_bonus } = req.body;
+  if (!full_name || !position) {
+    return res.status(400).json({ error: 'ПІБ та посада є обовʼязковими' });
+  }
+
+  const role = db.roles.find(r => (r.name || '').toLowerCase() === (position || '').toLowerCase()) || {
+    id: 6740 + db.users.length,
+    name: position,
+    permissions: position === 'Власник' ? ['*'] : ['orders.read', 'checklist.update', 'shifts.self', 'tasks.read', 'tasks.update']
+  };
+
+  const newUser = {
+    id: Date.now(),
+    company_id: 843,
+    role_id: role.id,
+    full_name: full_name.trim(),
+    web_login: 'user_' + Math.floor(Math.random() * 10000),
+    position: position.trim(),
+    role_name: role_name || (position === 'Власник' ? 'Власник' : 'Цеховий фахівець'),
+    phone: phone || '',
+    hourly_rate: Number(hourly_rate) || 0,
+    percent_bonus: Number(percent_bonus) || 0,
+    ui_theme: 'dark',
+    permissions: role.permissions,
+    is_previewing: false,
+    preview_as: null
+  };
+
+  db.users.push(newUser);
+  logAudit('Реєстрація співробітника', `Зареєстровано співробітника: ${newUser.full_name} (${newUser.position})`);
+  saveDatabase();
+  res.status(201).json(newUser);
+});
+
+app.delete('/admin/users/:id', (req, res) => {
+  const id = Number(req.params.id);
+  const user = db.users.find(u => u.id === id);
+  db.users = db.users.filter(u => u.id !== id);
+  if (user) {
+    logAudit('Видалення співробітника', `Видалено обліковий запис: ${user.full_name} (${user.position})`);
+  }
+  saveDatabase();
+  res.json({ ok: true });
 });
 app.get('/admin/roles', (req, res) => {
   res.json(db.roles);

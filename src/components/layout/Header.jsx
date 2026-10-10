@@ -91,61 +91,64 @@ export function Header({ onMobileMenuToggle }) {
         </button>
 
 
-        {/* Currency Selector */}
-        <div className="relative flex items-center bg-brand-surface2 border border-brand-border rounded-lg p-0.5 text-xs font-semibold">
-          {Object.values(CURRENCIES).map((c) => (
+        {/* Secondary Toggles (Visible on desktop/tablet, available in menu on mobile) */}
+        <div className="hidden md:flex items-center gap-2">
+          {/* Currency Selector */}
+          <div className="flex items-center bg-brand-surface2 border border-brand-border rounded-lg p-0.5 text-xs font-semibold">
+            {Object.values(CURRENCIES).map((c) => (
+              <button
+                key={c.code}
+                type="button"
+                onClick={() => changeCurrency(c.code)}
+                className={`px-2 py-1 rounded-md transition-colors ${
+                  currency === c.code 
+                    ? 'bg-brand-olive text-white shadow-sm' 
+                    : 'text-brand-muted hover:text-brand-text'
+                }`}
+                title={c.label}
+              >
+                {c.symbol}
+              </button>
+            ))}
+          </div>
+
+          {/* Language Switcher */}
+          <div className="flex items-center bg-brand-surface2 border border-brand-border rounded-lg p-0.5 text-xs font-bold font-mono">
             <button
-              key={c.code}
               type="button"
-              onClick={() => changeCurrency(c.code)}
+              onClick={() => setLang('uk')}
               className={`px-2 py-1 rounded-md transition-colors ${
-                currency === c.code 
+                lang === 'uk' 
                   ? 'bg-brand-olive text-white shadow-sm' 
                   : 'text-brand-muted hover:text-brand-text'
               }`}
-              title={c.label}
             >
-              {c.symbol}
+              UA
             </button>
-          ))}
-        </div>
+            <button
+              type="button"
+              onClick={() => setLang('en')}
+              className={`px-2 py-1 rounded-md transition-colors ${
+                lang === 'en' 
+                  ? 'bg-brand-olive text-white shadow-sm' 
+                  : 'text-brand-muted hover:text-brand-text'
+              }`}
+            >
+              EN
+            </button>
+          </div>
 
-        {/* Language Switcher */}
-        <div className="flex items-center bg-brand-surface2 border border-brand-border rounded-lg p-0.5 text-xs font-bold font-mono">
+          {/* Theme Toggle */}
           <button
             type="button"
-            onClick={() => setLang('uk')}
-            className={`px-2 py-1 rounded-md transition-colors ${
-              lang === 'uk' 
-                ? 'bg-brand-olive text-white shadow-sm' 
-                : 'text-brand-muted hover:text-brand-text'
-            }`}
+            onClick={toggleTheme}
+            className="p-2 text-brand-muted hover:text-brand-text rounded-lg bg-brand-surface2 border border-brand-border transition-colors"
+            title={theme === 'dark' ? 'Увімкнути світлу тему' : 'Увімкнути темну тему'}
+            aria-label="Toggle color theme"
           >
-            UA
-          </button>
-          <button
-            type="button"
-            onClick={() => setLang('en')}
-            className={`px-2 py-1 rounded-md transition-colors ${
-              lang === 'en' 
-                ? 'bg-brand-olive text-white shadow-sm' 
-                : 'text-brand-muted hover:text-brand-text'
-            }`}
-          >
-            EN
+            {theme === 'dark' ? <Sun size={17} className="text-brand-sand" /> : <Moon size={17} />}
           </button>
         </div>
-
-        {/* Theme Toggle */}
-        <button
-          type="button"
-          onClick={toggleTheme}
-          className="p-2 text-brand-muted hover:text-brand-text rounded-lg bg-brand-surface2 border border-brand-border transition-colors"
-          title={theme === 'dark' ? 'Увімкнути світлу тему' : 'Увімкнути темну тему'}
-          aria-label="Toggle color theme"
-        >
-          {theme === 'dark' ? <Sun size={17} className="text-brand-sand" /> : <Moon size={17} />}
-        </button>
 
         {/* Profile Chip */}
         <div 

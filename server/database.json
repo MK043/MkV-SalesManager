@@ -4,7 +4,7 @@
     "company_id": 843,
     "role_id": 6738,
     "full_name": "Михайло Шевченко",
-    "web_login": "owner",
+    "web_login": null,
     "position": "Власник",
     "role_name": "Власник",
     "ui_theme": "dark",
@@ -337,6 +337,28 @@
       "telegram_id": null,
       "username": null,
       "is_active": true
+    },
+    {
+      "id": 1791632777189,
+      "company_id": 843,
+      "role_id": 6751,
+      "full_name": "Василь Мельниченко",
+      "web_login": "user_2546",
+      "position": "Механік",
+      "role_name": "Цеховий фахівець",
+      "phone": "+380509876543",
+      "hourly_rate": 250,
+      "percent_bonus": 0,
+      "ui_theme": "dark",
+      "permissions": [
+        "orders.read",
+        "checklist.update",
+        "shifts.self",
+        "tasks.read",
+        "tasks.update"
+      ],
+      "is_previewing": false,
+      "preview_as": null
     }
   ],
   "stagePositions": {
@@ -869,6 +891,234 @@
     }
   ],
   "orders": [
+    {
+      "id": 27586,
+      "brand": "Audi",
+      "model": "Q7",
+      "plate": "AO 7062 MK",
+      "customer_name": "Кравченко Андрій",
+      "customer_phone": "+380671234567",
+      "customer_type": "physical",
+      "current_stage_id": 6794,
+      "created_at": "2026-10-10T12:05:37.297Z",
+      "status": "in_progress",
+      "work_list": "[\"Планове ТО\"]",
+      "comment": "",
+      "grand_total": 3500,
+      "paid_total": 0
+    },
+    {
+      "id": 27585,
+      "company_id": 842,
+      "current_stage_id": 6795,
+      "brand": "Porsche",
+      "model": "Cayenne",
+      "plate": "AO 0001 MK",
+      "customer_name": "Остапенко Дмитро",
+      "customer_phone": "+380509990011",
+      "customer_type": "physical",
+      "customer_inn": null,
+      "created_at": "2026-10-10T12:05:37.205Z",
+      "status": "in_progress",
+      "completed_at": null,
+      "vin": null,
+      "year": 2020,
+      "color": "Чорний",
+      "target_type": "car",
+      "request_type": "Слюсарний ремонт",
+      "source": "phone",
+      "work_list": "[\"Діагностика ходової частини\"]",
+      "comment": "",
+      "deadline_at": "2026-10-13T12:05:37.205Z",
+      "car_id": 54285,
+      "customer_id": 41085,
+      "assigned_user_id": null,
+      "on_parking": false,
+      "stage": {
+        "id": 6795,
+        "name": "Діагностика",
+        "position": 1,
+        "color": "#3B82F6"
+      },
+      "grand_total": 12000,
+      "paid_total": 5000
+    },
+    {
+      "id": 27584,
+      "company_id": 842,
+      "current_stage_id": 6795,
+      "brand": "Toyota",
+      "model": "Camry",
+      "plate": "AO 7788 MK",
+      "customer_name": "Абрамов Ігор Миколайович",
+      "customer_phone": "+3809000000108",
+      "customer_type": "physical",
+      "customer_inn": null,
+      "created_at": "2026-10-10T12:00:27.910Z",
+      "status": "in_progress",
+      "completed_at": null,
+      "vin": null,
+      "year": 2021,
+      "color": "Чорний",
+      "target_type": "car",
+      "request_type": "Слюсарний ремонт",
+      "source": "phone",
+      "work_list": "[\"Комп’ютерна діагностика\",\"Заміна моторної оливи та фільтрів\",\"Заміна\"]",
+      "comment": "Клієнт скаржиться на легкий стукіт у передній підвісці",
+      "deadline_at": "2026-10-12T12:00:27.170Z",
+      "car_id": 54284,
+      "customer_id": 41084,
+      "assigned_user_id": 9273,
+      "on_parking": false,
+      "stage": {
+        "id": 6795,
+        "name": "Діагностика",
+        "position": 1,
+        "color": "#3B82F6"
+      },
+      "grand_total": 3800,
+      "paid_total": 0
+    },
+    {
+      "id": 27583,
+      "brand": "Audi",
+      "model": "Q7",
+      "plate": "AO 3973 MK",
+      "customer_name": "Кравченко Андрій",
+      "customer_phone": "+380671234567",
+      "customer_type": "physical",
+      "current_stage_id": 6794,
+      "created_at": "2026-10-10T11:46:38.069Z",
+      "status": "in_progress",
+      "work_list": "[\"Планове ТО\"]",
+      "comment": "",
+      "grand_total": 3500,
+      "paid_total": 0
+    },
+    {
+      "id": 27582,
+      "company_id": 842,
+      "current_stage_id": 6795,
+      "brand": "Porsche",
+      "model": "Cayenne",
+      "plate": "AO 0001 MK",
+      "customer_name": "Остапенко Дмитро",
+      "customer_phone": "+380509990011",
+      "customer_type": "physical",
+      "customer_inn": null,
+      "created_at": "2026-10-10T11:46:38.035Z",
+      "status": "in_progress",
+      "completed_at": null,
+      "vin": null,
+      "year": 2020,
+      "color": "Чорний",
+      "target_type": "car",
+      "request_type": "Слюсарний ремонт",
+      "source": "phone",
+      "work_list": "[\"Діагностика ходової частини\"]",
+      "comment": "",
+      "deadline_at": "2026-10-13T11:46:38.035Z",
+      "car_id": 54282,
+      "customer_id": 41082,
+      "assigned_user_id": null,
+      "on_parking": false,
+      "stage": {
+        "id": 6795,
+        "name": "Діагностика",
+        "position": 1,
+        "color": "#3B82F6"
+      },
+      "grand_total": 12000,
+      "paid_total": 5000
+    },
+    {
+      "id": 27581,
+      "brand": "Audi",
+      "model": "Q7",
+      "plate": "AO 1880 MK",
+      "customer_name": "Кравченко Андрій",
+      "customer_phone": "+380671234567",
+      "customer_type": "physical",
+      "current_stage_id": 6794,
+      "created_at": "2026-10-10T11:34:34.809Z",
+      "status": "in_progress",
+      "work_list": "[\"Планове ТО\"]",
+      "comment": "",
+      "grand_total": 3500,
+      "paid_total": 0
+    },
+    {
+      "id": 27580,
+      "company_id": 842,
+      "current_stage_id": 6795,
+      "brand": "Porsche",
+      "model": "Cayenne",
+      "plate": "AO 0001 MK",
+      "customer_name": "Остапенко Дмитро",
+      "customer_phone": "+380509990011",
+      "customer_type": "physical",
+      "customer_inn": null,
+      "created_at": "2026-10-10T11:34:34.770Z",
+      "status": "in_progress",
+      "completed_at": null,
+      "vin": null,
+      "year": 2020,
+      "color": "Чорний",
+      "target_type": "car",
+      "request_type": "Слюсарний ремонт",
+      "source": "phone",
+      "work_list": "[\"Діагностика ходової частини\"]",
+      "comment": "",
+      "deadline_at": "2026-10-13T11:34:34.770Z",
+      "car_id": 54280,
+      "customer_id": 41080,
+      "assigned_user_id": null,
+      "on_parking": false,
+      "stage": {
+        "id": 6795,
+        "name": "Діагностика",
+        "position": 1,
+        "color": "#3B82F6"
+      },
+      "grand_total": 12000,
+      "paid_total": 5000
+    },
+    {
+      "id": 27579,
+      "company_id": 842,
+      "current_stage_id": 6794,
+      "brand": "Toyota",
+      "model": "Camry",
+      "plate": "AO 7788 MK",
+      "customer_name": "Мельник Тарас Григорович",
+      "customer_phone": "+380501234567",
+      "customer_type": "physical",
+      "customer_inn": null,
+      "created_at": "2026-10-07T19:32:06.328Z",
+      "status": "in_progress",
+      "completed_at": null,
+      "vin": null,
+      "year": 2021,
+      "color": "Чорний",
+      "target_type": "car",
+      "request_type": "Слюсарний ремонт",
+      "source": "phone",
+      "work_list": "[\"Комп’ютерна діагностика\",\"Заміна моторної оливи та фільтрів\"]",
+      "comment": "Клієнт скаржиться на легкий стукіт у передній підвісці",
+      "deadline_at": "2026-10-09T19:32:01.178Z",
+      "car_id": 54279,
+      "customer_id": 41079,
+      "assigned_user_id": null,
+      "on_parking": false,
+      "stage": {
+        "id": 6794,
+        "name": "Прийомка",
+        "position": 0,
+        "color": "#8B5CF6"
+      },
+      "grand_total": 3800,
+      "paid_total": 0
+    },
     {
       "id": 27578,
       "brand": "Audi",
@@ -10720,6 +10970,326 @@
           "title": "Договір обслуговування"
         }
       ]
+    },
+    "27579": {
+      "detail": {
+        "id": 27579,
+        "company_id": 842,
+        "current_stage_id": 6794,
+        "brand": "Toyota",
+        "model": "Camry",
+        "plate": "AO 7788 MK",
+        "customer_name": "Мельник Тарас Григорович",
+        "customer_phone": "+380501234567",
+        "customer_type": "physical",
+        "customer_inn": null,
+        "created_at": "2026-10-07T19:32:06.328Z",
+        "status": "in_progress",
+        "completed_at": null,
+        "vin": null,
+        "year": 2021,
+        "color": "Чорний",
+        "target_type": "car",
+        "request_type": "Слюсарний ремонт",
+        "source": "phone",
+        "work_list": "[\"Комп’ютерна діагностика\",\"Заміна моторної оливи та фільтрів\"]",
+        "comment": "Клієнт скаржиться на легкий стукіт у передній підвісці",
+        "deadline_at": "2026-10-09T19:32:01.178Z",
+        "car_id": 54279,
+        "customer_id": 41079,
+        "assigned_user_id": null,
+        "on_parking": false,
+        "stage": {
+          "id": 6794,
+          "name": "Прийомка",
+          "position": 0,
+          "color": "#8B5CF6"
+        },
+        "grand_total": 3800,
+        "paid_total": 0
+      },
+      "events": [
+        {
+          "id": 1791401526328,
+          "text": "Замовлення-наряд створено",
+          "created_at": "2026-10-07T19:32:06.328Z"
+        }
+      ],
+      "comments": [],
+      "parts": [],
+      "payments": [],
+      "docs": [
+        {
+          "kind": "act",
+          "title": "Акт прийому-передачі"
+        },
+        {
+          "kind": "contract",
+          "title": "Договір обслуговування"
+        }
+      ]
+    },
+    "27580": {
+      "detail": {
+        "id": 27580,
+        "company_id": 842,
+        "current_stage_id": 6795,
+        "brand": "Porsche",
+        "model": "Cayenne",
+        "plate": "AO 0001 MK",
+        "customer_name": "Остапенко Дмитро",
+        "customer_phone": "+380509990011",
+        "customer_type": "physical",
+        "customer_inn": null,
+        "created_at": "2026-10-10T11:34:34.770Z",
+        "status": "in_progress",
+        "completed_at": null,
+        "vin": null,
+        "year": 2020,
+        "color": "Чорний",
+        "target_type": "car",
+        "request_type": "Слюсарний ремонт",
+        "source": "phone",
+        "work_list": "[\"Діагностика ходової частини\"]",
+        "comment": "",
+        "deadline_at": "2026-10-13T11:34:34.770Z",
+        "car_id": 54280,
+        "customer_id": 41080,
+        "assigned_user_id": null,
+        "on_parking": false,
+        "stage": {
+          "id": 6795,
+          "name": "Діагностика",
+          "position": 1,
+          "color": "#3B82F6"
+        },
+        "grand_total": 12000,
+        "paid_total": 5000
+      },
+      "events": [
+        {
+          "id": 1791632074770,
+          "text": "Замовлення-наряд створено",
+          "created_at": "2026-10-10T11:34:34.770Z"
+        }
+      ],
+      "comments": [],
+      "parts": [],
+      "payments": [
+        {
+          "id": 1791632074793,
+          "order_id": 27580,
+          "amount": 5000,
+          "method": "cash",
+          "receiver": "Михайло Шевченко",
+          "note": "Авансовий платіж",
+          "created_at": "2026-10-10T11:34:34.793Z"
+        }
+      ],
+      "docs": [
+        {
+          "kind": "act",
+          "title": "Акт прийому-передачі"
+        },
+        {
+          "kind": "contract",
+          "title": "Договір обслуговування"
+        }
+      ]
+    },
+    "27582": {
+      "detail": {
+        "id": 27582,
+        "company_id": 842,
+        "current_stage_id": 6795,
+        "brand": "Porsche",
+        "model": "Cayenne",
+        "plate": "AO 0001 MK",
+        "customer_name": "Остапенко Дмитро",
+        "customer_phone": "+380509990011",
+        "customer_type": "physical",
+        "customer_inn": null,
+        "created_at": "2026-10-10T11:46:38.035Z",
+        "status": "in_progress",
+        "completed_at": null,
+        "vin": null,
+        "year": 2020,
+        "color": "Чорний",
+        "target_type": "car",
+        "request_type": "Слюсарний ремонт",
+        "source": "phone",
+        "work_list": "[\"Діагностика ходової частини\"]",
+        "comment": "",
+        "deadline_at": "2026-10-13T11:46:38.035Z",
+        "car_id": 54282,
+        "customer_id": 41082,
+        "assigned_user_id": null,
+        "on_parking": false,
+        "stage": {
+          "id": 6795,
+          "name": "Діагностика",
+          "position": 1,
+          "color": "#3B82F6"
+        },
+        "grand_total": 12000,
+        "paid_total": 5000
+      },
+      "events": [
+        {
+          "id": 1791632798035,
+          "text": "Замовлення-наряд створено",
+          "created_at": "2026-10-10T11:46:38.035Z"
+        }
+      ],
+      "comments": [],
+      "parts": [],
+      "payments": [
+        {
+          "id": 1791632798054,
+          "order_id": 27582,
+          "amount": 5000,
+          "method": "cash",
+          "receiver": "Михайло Шевченко",
+          "note": "Авансовий платіж",
+          "created_at": "2026-10-10T11:46:38.054Z"
+        }
+      ],
+      "docs": [
+        {
+          "kind": "act",
+          "title": "Акт прийому-передачі"
+        },
+        {
+          "kind": "contract",
+          "title": "Договір обслуговування"
+        }
+      ]
+    },
+    "27584": {
+      "detail": {
+        "id": 27584,
+        "company_id": 842,
+        "current_stage_id": 6795,
+        "brand": "Toyota",
+        "model": "Camry",
+        "plate": "AO 7788 MK",
+        "customer_name": "Абрамов Ігор Миколайович",
+        "customer_phone": "+3809000000108",
+        "customer_type": "physical",
+        "customer_inn": null,
+        "created_at": "2026-10-10T12:00:27.910Z",
+        "status": "in_progress",
+        "completed_at": null,
+        "vin": null,
+        "year": 2021,
+        "color": "Чорний",
+        "target_type": "car",
+        "request_type": "Слюсарний ремонт",
+        "source": "phone",
+        "work_list": "[\"Комп’ютерна діагностика\",\"Заміна моторної оливи та фільтрів\",\"Заміна\"]",
+        "comment": "Клієнт скаржиться на легкий стукіт у передній підвісці",
+        "deadline_at": "2026-10-12T12:00:27.170Z",
+        "car_id": 54284,
+        "customer_id": 41084,
+        "assigned_user_id": 9273,
+        "on_parking": false,
+        "stage": {
+          "id": 6795,
+          "name": "Діагностика",
+          "position": 1,
+          "color": "#3B82F6"
+        },
+        "grand_total": 3800,
+        "paid_total": 0
+      },
+      "events": [
+        {
+          "id": 1791633627910,
+          "text": "Замовлення-наряд створено",
+          "created_at": "2026-10-10T12:00:27.910Z"
+        }
+      ],
+      "comments": [],
+      "parts": [],
+      "payments": [],
+      "docs": [
+        {
+          "kind": "act",
+          "title": "Акт прийому-передачі"
+        },
+        {
+          "kind": "contract",
+          "title": "Договір обслуговування"
+        }
+      ]
+    },
+    "27585": {
+      "detail": {
+        "id": 27585,
+        "company_id": 842,
+        "current_stage_id": 6795,
+        "brand": "Porsche",
+        "model": "Cayenne",
+        "plate": "AO 0001 MK",
+        "customer_name": "Остапенко Дмитро",
+        "customer_phone": "+380509990011",
+        "customer_type": "physical",
+        "customer_inn": null,
+        "created_at": "2026-10-10T12:05:37.205Z",
+        "status": "in_progress",
+        "completed_at": null,
+        "vin": null,
+        "year": 2020,
+        "color": "Чорний",
+        "target_type": "car",
+        "request_type": "Слюсарний ремонт",
+        "source": "phone",
+        "work_list": "[\"Діагностика ходової частини\"]",
+        "comment": "",
+        "deadline_at": "2026-10-13T12:05:37.205Z",
+        "car_id": 54285,
+        "customer_id": 41085,
+        "assigned_user_id": null,
+        "on_parking": false,
+        "stage": {
+          "id": 6795,
+          "name": "Діагностика",
+          "position": 1,
+          "color": "#3B82F6"
+        },
+        "grand_total": 12000,
+        "paid_total": 5000
+      },
+      "events": [
+        {
+          "id": 1791633937205,
+          "text": "Замовлення-наряд створено",
+          "created_at": "2026-10-10T12:05:37.205Z"
+        }
+      ],
+      "comments": [],
+      "parts": [],
+      "payments": [
+        {
+          "id": 1791633937257,
+          "order_id": 27585,
+          "amount": 5000,
+          "method": "cash",
+          "receiver": "Михайло Шевченко",
+          "note": "Авансовий платіж",
+          "created_at": "2026-10-10T12:05:37.257Z"
+        }
+      ],
+      "docs": [
+        {
+          "kind": "act",
+          "title": "Акт прийому-передачі"
+        },
+        {
+          "kind": "contract",
+          "title": "Договір обслуговування"
+        }
+      ]
     }
   },
   "bookings": [
@@ -10854,6 +11424,20 @@
     }
   ],
   "customers": [
+    {
+      "id": 1791632785337,
+      "full_name": "Олександр Бондаренко",
+      "phone": "+380671112233",
+      "car_brand": "Audi",
+      "car_model": "A6",
+      "plate": "AA 9988 KA",
+      "year": 2022,
+      "vin": "",
+      "notes": "",
+      "orders_count": 0,
+      "total_spent": 0,
+      "created_at": "2026-10-10T11:46:25.337Z"
+    },
     {
       "id": 13502,
       "type": "physical",
@@ -12443,6 +13027,42 @@
   ],
   "warehouseDocs": [
     {
+      "id": 1791633937321,
+      "doc_number": "WH-68",
+      "doc_type": "receipt",
+      "date": "2026-10-10T12:05:37.321Z",
+      "status": "posted",
+      "warehouse_id": 1,
+      "comment": "Тестова прибуткова накладна",
+      "items_count": 1,
+      "total_amount": 15000,
+      "posted_at": "2026-10-10T12:05:37.336Z"
+    },
+    {
+      "id": 1791632798082,
+      "doc_number": "WH-4363",
+      "doc_type": "receipt",
+      "date": "2026-10-10T11:46:38.082Z",
+      "status": "posted",
+      "warehouse_id": 1,
+      "comment": "Тестова прибуткова накладна",
+      "items_count": 1,
+      "total_amount": 15000,
+      "posted_at": "2026-10-10T11:46:38.088Z"
+    },
+    {
+      "id": 1791632074820,
+      "doc_number": "WH-632",
+      "doc_type": "receipt",
+      "date": "2026-10-10T11:34:34.820Z",
+      "status": "posted",
+      "warehouse_id": 1,
+      "comment": "Тестова прибуткова накладна",
+      "items_count": 1,
+      "total_amount": 15000,
+      "posted_at": "2026-10-10T11:34:34.825Z"
+    },
+    {
       "id": 1791284364322,
       "doc_number": "WH-304",
       "doc_type": "receipt",
@@ -12802,6 +13422,36 @@
     }
   ],
   "cashOrders": [
+    {
+      "id": 1791633937257,
+      "order_id": 27585,
+      "amount": 5000,
+      "direction": "in",
+      "type": "pko",
+      "payment_method": "cash",
+      "note": "Оплата за нарядом №27585",
+      "created_at": "2026-10-10T12:05:37.257Z"
+    },
+    {
+      "id": 1791632798054,
+      "order_id": 27582,
+      "amount": 5000,
+      "direction": "in",
+      "type": "pko",
+      "payment_method": "cash",
+      "note": "Оплата за нарядом №27582",
+      "created_at": "2026-10-10T11:46:38.054Z"
+    },
+    {
+      "id": 1791632074793,
+      "order_id": 27580,
+      "amount": 5000,
+      "direction": "in",
+      "type": "pko",
+      "payment_method": "cash",
+      "note": "Оплата за нарядом №27580",
+      "created_at": "2026-10-10T11:34:34.793Z"
+    },
     {
       "id": 1791284364273,
       "order_id": 27577,
@@ -13705,6 +14355,350 @@
   ],
   "shiftsPending": [],
   "auditActions": [
+    {
+      "id": 1791633937336,
+      "user_name": "Михайло Шевченко",
+      "action": "warehouse_post",
+      "description": "Провів складський документ №WH-68",
+      "order_id": null,
+      "created_at": "2026-10-10T12:05:37.336Z"
+    },
+    {
+      "id": 1791633937297,
+      "user_name": "Михайло Шевченко",
+      "action": "convert_booking",
+      "description": "Перевів запис клієнта Кравченко Андрій у замовлення №27586",
+      "order_id": 27586,
+      "created_at": "2026-10-10T12:05:37.297Z"
+    },
+    {
+      "id": 1791633937257,
+      "user_name": "Михайло Шевченко",
+      "action": "add_payment",
+      "description": "Провів оплату на суму 5000 ₴ для наряду №27585",
+      "order_id": 27585,
+      "created_at": "2026-10-10T12:05:37.257Z"
+    },
+    {
+      "id": 1791633937235,
+      "user_name": "Михайло Шевченко",
+      "action": "stage_transition",
+      "description": "Перевів наряд №27585 на етап «Діагностика»",
+      "order_id": 27585,
+      "created_at": "2026-10-10T12:05:37.235Z"
+    },
+    {
+      "id": 1791633937205,
+      "user_name": "Михайло Шевченко",
+      "action": "create_order",
+      "description": "Створив замовлення-наряд №27585 (Porsche Cayenne, AO 0001 MK)",
+      "order_id": 27585,
+      "created_at": "2026-10-10T12:05:37.205Z"
+    },
+    {
+      "id": 1791633651829,
+      "user_name": "Михайло Шевченко",
+      "action": "switch_user",
+      "description": "Перемкнув активний сеанс на: Михайло Шевченко (Власник)",
+      "order_id": null,
+      "created_at": "2026-10-10T12:00:51.829Z"
+    },
+    {
+      "id": 1791633640088,
+      "user_name": "Павло Юдченко",
+      "action": "assign_user",
+      "description": "Призначив виконавця: Світлана Орленко для наряду №27584",
+      "order_id": 27584,
+      "created_at": "2026-10-10T12:00:40.088Z"
+    },
+    {
+      "id": 1791633633336,
+      "user_name": "Павло Юдченко",
+      "action": "stage_transition",
+      "description": "Перевів наряд №27584 на етап «Діагностика»",
+      "order_id": 27584,
+      "created_at": "2026-10-10T12:00:33.336Z"
+    },
+    {
+      "id": 1791633627910,
+      "user_name": "Павло Юдченко",
+      "action": "create_order",
+      "description": "Створив замовлення-наряд №27584 (Toyota Camry, AO 7788 MK)",
+      "order_id": 27584,
+      "created_at": "2026-10-10T12:00:27.910Z"
+    },
+    {
+      "id": 1791633602926,
+      "user_name": "Павло Юдченко",
+      "action": "switch_user",
+      "description": "Перемкнув активний сеанс на: Павло Юдченко (Кузовник)",
+      "order_id": null,
+      "created_at": "2026-10-10T12:00:02.926Z"
+    },
+    {
+      "id": 1791633598978,
+      "user_name": "Михайло Шевченко",
+      "action": "switch_user",
+      "description": "Перемкнув активний сеанс на: Михайло Шевченко (Власник)",
+      "order_id": null,
+      "created_at": "2026-10-10T11:59:58.978Z"
+    },
+    {
+      "id": 1791633595113,
+      "user_name": "Сергій Масло",
+      "action": "switch_user",
+      "description": "Перемкнув активний сеанс на: Сергій Масло (Механік)",
+      "order_id": null,
+      "created_at": "2026-10-10T11:59:55.113Z"
+    },
+    {
+      "id": 1791633591929,
+      "user_name": "Михайло Шевченко",
+      "action": "switch_user",
+      "description": "Перемкнув активний сеанс на: Михайло Шевченко (Власник)",
+      "order_id": null,
+      "created_at": "2026-10-10T11:59:51.929Z"
+    },
+    {
+      "id": 1791633125093,
+      "user_name": "Михайло Шевченко",
+      "action": "switch_user",
+      "description": "Перемкнув активний сеанс на: Михайло Шевченко (Власник)",
+      "order_id": null,
+      "created_at": "2026-10-10T11:52:05.093Z"
+    },
+    {
+      "id": 1791633110915,
+      "user_name": "Сергій Масло",
+      "action": "switch_user",
+      "description": "Перемкнув активний сеанс на: Сергій Масло (Механік)",
+      "order_id": null,
+      "created_at": "2026-10-10T11:51:50.915Z"
+    },
+    {
+      "id": 1791632798088,
+      "user_name": "Михайло Шевченко",
+      "action": "warehouse_post",
+      "description": "Провів складський документ №WH-4363",
+      "order_id": null,
+      "created_at": "2026-10-10T11:46:38.088Z"
+    },
+    {
+      "id": 1791632798069,
+      "user_name": "Михайло Шевченко",
+      "action": "convert_booking",
+      "description": "Перевів запис клієнта Кравченко Андрій у замовлення №27583",
+      "order_id": 27583,
+      "created_at": "2026-10-10T11:46:38.069Z"
+    },
+    {
+      "id": 1791632798054,
+      "user_name": "Михайло Шевченко",
+      "action": "add_payment",
+      "description": "Провів оплату на суму 5000 ₴ для наряду №27582",
+      "order_id": 27582,
+      "created_at": "2026-10-10T11:46:38.054Z"
+    },
+    {
+      "id": 1791632798044,
+      "user_name": "Михайло Шевченко",
+      "action": "stage_transition",
+      "description": "Перевів наряд №27582 на етап «Діагностика»",
+      "order_id": 27582,
+      "created_at": "2026-10-10T11:46:38.044Z"
+    },
+    {
+      "id": 1791632798035,
+      "user_name": "Михайло Шевченко",
+      "action": "create_order",
+      "description": "Створив замовлення-наряд №27582 (Porsche Cayenne, AO 0001 MK)",
+      "order_id": 27582,
+      "created_at": "2026-10-10T11:46:38.035Z"
+    },
+    {
+      "id": 1791632789409,
+      "user_name": "Михайло Шевченко",
+      "action": "switch_user",
+      "description": "Перемкнув активний сеанс на: Михайло Шевченко (Власник)",
+      "order_id": null,
+      "created_at": "2026-10-10T11:46:29.409Z"
+    },
+    {
+      "id": 1791632785337,
+      "user_name": "Василь Мельниченко",
+      "action": "Додавання клієнта",
+      "description": "Зареєстровано клієнта: Олександр Бондаренко (Audi A6)",
+      "order_id": null,
+      "created_at": "2026-10-10T11:46:25.337Z"
+    },
+    {
+      "id": 1791632781273,
+      "user_name": "Василь Мельниченко",
+      "action": "switch_user",
+      "description": "Перемкнув активний сеанс на: Василь Мельниченко (Механік)",
+      "order_id": null,
+      "created_at": "2026-10-10T11:46:21.273Z"
+    },
+    {
+      "id": 1791632777189,
+      "user_name": "Михайло Шевченко",
+      "action": "Реєстрація співробітника",
+      "description": "Зареєстровано співробітника: Василь Мельниченко (Механік)",
+      "order_id": null,
+      "created_at": "2026-10-10T11:46:17.189Z"
+    },
+    {
+      "id": 1791632156822,
+      "user_name": "Михайло Шевченко",
+      "action": "switch_user",
+      "description": "Перемкнув активний сеанс на: Михайло Шевченко (Власник)",
+      "order_id": null,
+      "created_at": "2026-10-10T11:35:56.822Z"
+    },
+    {
+      "id": 1791632154639,
+      "user_name": "Сергій Масло",
+      "action": "switch_user",
+      "description": "Перемкнув активний сеанс на: Сергій Масло (Механік)",
+      "order_id": null,
+      "created_at": "2026-10-10T11:35:54.639Z"
+    },
+    {
+      "id": 1791632101035,
+      "user_name": "Сергій Масло",
+      "action": "switch_user",
+      "description": "Перемкнув активний сеанс на: Сергій Масло (Механік)",
+      "order_id": null,
+      "created_at": "2026-10-10T11:35:01.035Z"
+    },
+    {
+      "id": 1791632095483,
+      "user_name": "Денис Кравчук",
+      "action": "switch_user",
+      "description": "Перемкнув активний сеанс на: Денис Кравчук (Майстер-приймальник)",
+      "order_id": null,
+      "created_at": "2026-10-10T11:34:55.483Z"
+    },
+    {
+      "id": 1791632074825,
+      "user_name": "Михайло Шевченко",
+      "action": "warehouse_post",
+      "description": "Провів складський документ №WH-632",
+      "order_id": null,
+      "created_at": "2026-10-10T11:34:34.825Z"
+    },
+    {
+      "id": 1791632074809,
+      "user_name": "Михайло Шевченко",
+      "action": "convert_booking",
+      "description": "Перевів запис клієнта Кравченко Андрій у замовлення №27581",
+      "order_id": 27581,
+      "created_at": "2026-10-10T11:34:34.809Z"
+    },
+    {
+      "id": 1791632074793,
+      "user_name": "Михайло Шевченко",
+      "action": "add_payment",
+      "description": "Провів оплату на суму 5000 ₴ для наряду №27580",
+      "order_id": 27580,
+      "created_at": "2026-10-10T11:34:34.793Z"
+    },
+    {
+      "id": 1791632074781,
+      "user_name": "Михайло Шевченко",
+      "action": "stage_transition",
+      "description": "Перевів наряд №27580 на етап «Діагностика»",
+      "order_id": 27580,
+      "created_at": "2026-10-10T11:34:34.781Z"
+    },
+    {
+      "id": 1791632074770,
+      "user_name": "Михайло Шевченко",
+      "action": "create_order",
+      "description": "Створив замовлення-наряд №27580 (Porsche Cayenne, AO 0001 MK)",
+      "order_id": 27580,
+      "created_at": "2026-10-10T11:34:34.770Z"
+    },
+    {
+      "id": 1791632072285,
+      "user_name": "Михайло Шевченко",
+      "action": "switch_user",
+      "description": "Перемкнув активний сеанс на: Михайло Шевченко (Власник)",
+      "order_id": null,
+      "created_at": "2026-10-10T11:34:32.285Z"
+    },
+    {
+      "id": 1791401553176,
+      "user_name": "Павло Юдченко",
+      "action": "switch_user",
+      "description": "Перемкнув активний сеанс на: Павло Юдченко (Кузовник)",
+      "order_id": null,
+      "created_at": "2026-10-07T19:32:33.176Z"
+    },
+    {
+      "id": 1791401534562,
+      "user_name": "Сергій Масло",
+      "action": "switch_user",
+      "description": "Перемкнув активний сеанс на: Сергій Масло (Механік)",
+      "order_id": null,
+      "created_at": "2026-10-07T19:32:14.562Z"
+    },
+    {
+      "id": 1791401526395,
+      "user_name": "Павло Юдченко",
+      "action": "switch_user",
+      "description": "Перемкнув активний сеанс на: Павло Юдченко (Кузовник)",
+      "order_id": null,
+      "created_at": "2026-10-07T19:32:06.395Z"
+    },
+    {
+      "id": 1791401526328,
+      "user_name": "Денис Кравчук",
+      "action": "create_order",
+      "description": "Створив замовлення-наряд №27579 (Toyota Camry, AO 7788 MK)",
+      "order_id": 27579,
+      "created_at": "2026-10-07T19:32:06.328Z"
+    },
+    {
+      "id": 1791401521568,
+      "user_name": "Денис Кравчук",
+      "action": "switch_user",
+      "description": "Перемкнув активний сеанс на: Денис Кравчук (Майстер-приймальник)",
+      "order_id": null,
+      "created_at": "2026-10-07T19:32:01.568Z"
+    },
+    {
+      "id": 1791401518319,
+      "user_name": "Михайло Шевченко",
+      "action": "switch_user",
+      "description": "Повернувся до головного облікового запису Власника (Михайло Шевченко)",
+      "order_id": null,
+      "created_at": "2026-10-07T19:31:58.319Z"
+    },
+    {
+      "id": 1791401517461,
+      "user_name": "Михайло Шевченко",
+      "action": "switch_user",
+      "description": "Перемкнув активний сеанс на: Михайло Шевченко (Власник)",
+      "order_id": null,
+      "created_at": "2026-10-07T19:31:57.461Z"
+    },
+    {
+      "id": 1791401512828,
+      "user_name": "Денис Кравчук",
+      "action": "switch_user",
+      "description": "Перемкнув активний сеанс на: Денис Кравчук (Майстер-приймальник)",
+      "order_id": null,
+      "created_at": "2026-10-07T19:31:52.828Z"
+    },
+    {
+      "id": 1791401507993,
+      "user_name": "Сергій Масло",
+      "action": "switch_user",
+      "description": "Перемкнув активний сеанс на: Сергій Масло (Механік)",
+      "order_id": null,
+      "created_at": "2026-10-07T19:31:47.993Z"
+    },
     {
       "id": 1791284364335,
       "user_name": "Михайло Шевченко",
